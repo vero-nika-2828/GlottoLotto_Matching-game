@@ -1,0 +1,23 @@
+.game-section{
+    display: flex;
+    justify-content: center;
+}
+
+.card-area{
+    height:500px;
+    width: 500px;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-row: auto;
+    gap: 10px;
+    background-color: black;
+  
+}
+
+.card{
+    margin:1px;
+    border-radius: 25px;
+    background: linear-gradient(135deg, #00C9AC 30%, #fabeb4 50%, #fca99b 80%);
+                
+}
+
