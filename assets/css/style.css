@@ -11,13 +11,51 @@
     grid-row: auto;
     gap: 10px;
     background-color: black;
+    margin-top: 20px;
   
 }
 
 .card{
+    position:relative;
+    margin:1px;
+    border-radius: 25px;
+    /*background: linear-gradient(135deg, #00C9AC 30%, #fabeb4 50%, #fca99b 80%);*/
+    transform-style: preserve-3d;
+    transition: transform 0.5s ease-in;
+                   
+}
+
+/*.card:hover{
+    transform: rotateY(180deg)
+}*/
+
+.card-front{
+   position: absolute;
+   height: 100%;
+   width: 100%;
+   margin:1px;
+   border-radius: 25px;
+   background:linear-gradient(blue, purple);
+   backface-visibility: hidden;
+   color: white;
+   visibility: visible;
+   
+}
+
+
+.card-back{
+    position: absolute;
+    height: 100%;
+    width: 100%;
     margin:1px;
     border-radius: 25px;
     background: linear-gradient(135deg, #00C9AC 30%, #fabeb4 50%, #fca99b 80%);
-                
-}
+    backface-visibility: hidden;
+    
+    
+ }
+
+ .changecard{
+    transform: rotateY(180deg)
+ }
 
