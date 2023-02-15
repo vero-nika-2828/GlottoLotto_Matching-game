@@ -19,14 +19,13 @@
     position:relative;
     margin:1px;
     border-radius: 25px;
-    /*background: linear-gradient(135deg, #00C9AC 30%, #fabeb4 50%, #fca99b 80%);*/
     transform-style: preserve-3d;
     transition: transform 0.5s ease-in;
                    
 }
 
 /*.card:hover{
-    transform: rotateY(180deg)
+    transform: rotateY(360deg)
 }*/
 
 .card-front{
@@ -39,6 +38,7 @@
    backface-visibility: hidden;
    color: white;
    visibility: visible;
+   transform: rotateY(180deg);
    
 }
 
@@ -51,11 +51,11 @@
     border-radius: 25px;
     background: linear-gradient(135deg, #00C9AC 30%, #fabeb4 50%, #fca99b 80%);
     backface-visibility: hidden;
-    
-    
+      
  }
 
- .changecard{
-    transform: rotateY(180deg)
+ .turn-card{
+    transform: rotateY(180deg);
+       
  }
 
