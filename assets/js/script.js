@@ -31,3 +31,4 @@ matchFound(alert("YOu have got a match"))
 //or maybe get this. get element alt 
 //get (2) the text of the child of a child of card ( card -front -card - p)
 // (1) === (2)
+//
