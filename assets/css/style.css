@@ -1,7 +1,13 @@
+#title h1{
+    width: 100%;
+    text-align: center;
+}
+
 .game-section{
     display: flex;
-    justify-content: center;
+    justify-content: center;   
 }
+
 
 .card-area{
     height:500px;
@@ -27,6 +33,14 @@
 /*.card:hover{
     transform: rotateY(360deg)
 }*/
+
+.card img {
+    height:100%;
+    width:100%;
+    margin:1px;
+    border-radius: 25px;
+    object-fit: cover;
+}
 
 .card-front{
    position: absolute;
