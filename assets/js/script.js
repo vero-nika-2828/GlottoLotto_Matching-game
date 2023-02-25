@@ -1,35 +1,49 @@
 let cards = document.getElementsByClassName("card");
-const clickedCards = []
-let cardAmount = clickedCards.length
+let clickedCards = [];
+let cardAmount = clickedCards.length;
+let card3 = document.getElementById("card-3");
+card3.addEventListener("click", cardTurns);
+let counter = 0;
 
-//On a click, a card turns around and is marked as turned
+//On each click, class attribute is added which promts the clicked card to turn
+//Clicked card is added to an array
 
-for (let card of cards){
-    card.addEventListener("click", cardTurns);
-};
-
+$(".card").on("click", cardTurns);
 
 function cardTurns(){
-    this.classList.add("turn-card");
+    counter++;
+    $(this).addClass("turn-card");
     let individualCard = this.setAttribute("type", "clickedCard");
-    clickedCards.push(individualCard); 
+    clickedCards.push(counter);  
+    console.log(JSON.stringify(clickedCards)); 
 }
 
-//If no card was previously clicked and mark clicked otherwise compare clicked card to the currently clicked card 
-//data type could be clicked 
-//maybe need to add clickedCards.lenght
-
-//if (clickedCards.length === 2){
-//    cards.removeEventListener("click", cardTurns);
-//};
-
-if (parseInt(cardAmount) === parseInt(2)){
-    alert("OK")
+//When two cards get added to an array other cards cannot be flipped and Turns will increase
+if (parseInt(cardAmount) === parseInt(2)) {
+    alert("works");
     cards.removeEventListener("click", cardTurns);
 }
 
-//When we have two cards in an array - get (1)the alt from the child of a child of card  (card - card-front - img - alt)
-//or maybe get this. get element alt 
-//get (2) the text of the child of a child of card ( card -front -card - p)
-// (1) === (2)
-//
+//Game countdown
+
+let initialTime = 10 //parseInt(document.getElementById("timer").lastChild.innerHTML);
+let timeInSeconds = initialTime * 60;
+
+setInterval(timeDecrease, 1000);
+
+function timeDecrease() {
+    let mins = Math.floor(timeInSeconds / 60);
+    let secs = timeInSeconds % 60 ;
+    
+    timeInSeconds--;
+    document.getElementById("countdown").innerHTML = `{mins}: {secs}`;
+}
+
+let gameSong = new Audio();
+gameSong.src = "./assets"  
+
+gameSong.addEventListener("click", playMusic);
+
+function playMusic(){
+
+}
