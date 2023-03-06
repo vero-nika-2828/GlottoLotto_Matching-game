@@ -6,6 +6,7 @@ let cardOne = $(".active")[0];
 let cardArray = [];
 let matchedCards = [];
 
+let gameMusic = new Audio("./assets/audio/Magic Escape Room.mp3")
 
 //On each click, class attribute is added which prompts the clicked card to turn
 //Clicked card is added to an array
@@ -23,6 +24,7 @@ function cardTurns(){
         twoCardsSelected();   
         let cardText = $(this)[0].textContent;
         console.log(cardText);
+      
            
     
     }else{
@@ -100,11 +102,14 @@ function timeDecrease() {
     }
 }
 
-let gameSong = new Audio();
-gameSong.src = "./assets/audio/mixkit-cartoon-toy-whistle-616.wav"  
 
-gameSong.addEventListener("click", playMusic);
+let music = $("#game-music")
 
-function playMusic(){
-       gameSong.play();
+music.on("click", playMusic)
+
+
+function playMusic() {
+   gameMusic.play();
+   music.html("<i class='fa-solid fa-volume-high'></i>");
 }
+
