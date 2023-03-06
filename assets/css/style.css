@@ -27,7 +27,7 @@
     border-radius: 25px;
     transform-style: preserve-3d;
     transition: transform 0.5s ease-in;
-                   
+    transition: transform 1s ease-in-out;                   
 }
 
 /*.card:hover{
@@ -73,3 +73,6 @@
        
  }
 
+.matched-animation{
+    transform: scale(2);
+}
