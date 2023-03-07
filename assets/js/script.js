@@ -5,8 +5,11 @@ let counter = 0;
 let cardOne = $(".active")[0];
 let cardArray = [];
 let matchedCards = [];
+let cardDeck = Array.from(cards);
 
-let gameMusic = new Audio("./assets/audio/Magic Escape Room.mp3")
+let gameMusic = new Audio("./assets/audio/Magic Escape Room.mp3");
+//let flipSound = new Audio("./assets/audio/mixkit-cartoon-toy-whistle-616.wav")
+
 
 //On each click, class attribute is added which prompts the clicked card to turn
 //Clicked card is added to an array
@@ -24,6 +27,7 @@ function cardTurns(){
         twoCardsSelected();   
         let cardText = $(this)[0].textContent;
         console.log(cardText);
+        flipSound.play();
       
            
     
@@ -74,6 +78,19 @@ function compareCards() {
         $(".card").on("click", cardTurns);
     }};
 
+    $("#flicky-flick").on("click", shuffleDeck);
+
+
+function shuffleDeck(){
+    for( i = 0; i < cardDeck.length; i++) {
+        let cardToSwap1 = Math.floor(Math.random()  * (i + 1));
+        cardDeck[cardToSwap1].style.order = i;
+        cardDeck[i].style.order = cardToSwap1;
+    }
+}
+
+
+
 //Game countdown
 
 let initialTime = 2;
@@ -113,3 +130,13 @@ function playMusic() {
    music.html("<i class='fa-solid fa-volume-high'></i>");
 }
 
+function pauseMusic(){}
+
+music.on("click", pauseMusic)
+
+function pauseMusic() {
+    gameMusic.prop("paused");
+    console.log("switchOFF");
+    music.html("<i class='fa-solid fa-volume-xmark'></i>");
+    
+ }
