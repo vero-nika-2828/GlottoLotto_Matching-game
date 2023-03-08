@@ -8,8 +8,12 @@ let matchedCards = [];
 let cardDeck = Array.from(cards);
 
 let gameMusic = new Audio("./assets/audio/Magic Escape Room.mp3");
-//let flipSound = new Audio("./assets/audio/mixkit-cartoon-toy-whistle-616.wav")
+let flipSound = new Audio("./assets/audio/mixkit-cartoon-toy-whistle-616.wav")
 
+
+document.addEventListener("DOMContentLoaded", function(){
+    shuffleDeck();
+})
 
 //On each click, class attribute is added which prompts the clicked card to turn
 //Clicked card is added to an array
@@ -82,10 +86,10 @@ function compareCards() {
 
 
 function shuffleDeck(){
-    for( i = 0; i < cardDeck.length; i++) {
-        let cardToSwap1 = Math.floor(Math.random()  * (i + 1));
-        cardDeck[cardToSwap1].style.order = i;
-        cardDeck[i].style.order = cardToSwap1;
+    for(card = 0; card  < cardDeck.length; card ++) {
+        let cardToSwap = Math.floor(Math.random()  * (card  + 1));
+        cardDeck[cardToSwap].style.order = card ;
+        cardDeck[card].style.order = cardToSwap;
     }
 }
 
