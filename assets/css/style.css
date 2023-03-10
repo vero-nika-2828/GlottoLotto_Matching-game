@@ -27,10 +27,28 @@ img{
     margin:0;
     display: flex;
     justify-content: center;   
-
-    
 }
 
+
+#game-info{
+    height:500px;
+    width: 500px;
+    margin-top: 50px;
+    padding: 50px;
+    border-radius: 5%;
+    background: rgba(0, 72, 62, 0.9);
+}
+
+.btn{
+    background-color: #CF9EAC;
+    border:none;
+    justify-content: center;
+     
+}
+
+.btn-primary:hover{
+    background-color: #D79E06;;
+}
 
 .card-area{
     height:500px;
@@ -39,9 +57,9 @@ img{
     grid-template-columns: repeat(4,1fr);
     grid-row: auto;
     gap: 0.5rem;
-    background-color: black;
     margin-top: 50px;
     padding: 50px;
+    border-radius: 5%;
     background: rgba(0, 72, 62, 0.9);
 
 }
@@ -53,6 +71,7 @@ img{
     transform-style: preserve-3d;
     transition: transform 0.5s ease-in;
     transition: transform 1s ease-in-out;    
+    background-color:  rgba(255, 255, 255,0);
            
 }
 
@@ -66,6 +85,7 @@ img{
     margin:1px;
     border-radius: 25px;
     object-fit: cover;
+   
 }
 
 .card-front{
@@ -87,7 +107,6 @@ img{
     position: absolute;
     height: 100%;
     width: 100%;
-    margin:1px;
     border-radius: 25px;
     background: linear-gradient(135deg, #00C9AC 30%, #fabeb4 50%, #fca99b 80%);
     backface-visibility: hidden;
@@ -102,3 +121,11 @@ img{
 .matched-animation{
     transform: scale(2);
 }
+
+.btn-output{
+   
+    padding: 2rem;
+    text-align: center;
+ 
+}
+

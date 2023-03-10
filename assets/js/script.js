@@ -13,10 +13,52 @@ let flipSound = new Audio("./assets/audio/mixkit-cartoon-toy-whistle-616.wav")
 
 document.addEventListener("DOMContentLoaded", function(){
     shuffleDeck();
+   // $(".btn-output").hide();
+    
 })
 
 //On each click, class attribute is added which prompts the clicked card to turn
 //Clicked card is added to an array
+
+
+
+
+$("#btn-instructions").on("click", function() {
+    let instructionsHeader = $("<h1></h1>").text("How to Play");
+    let instructions = $("<p></p>").text("Lorem ipsum dolor sit amet. Nam omnis consequatur vel harum dolor et sunt dolorem ex internos fugiat ea ipsam sequi. Quo odit explicabo aut magni commodi ut enim totam et temporibus nihil vel cupiditate reprehenderit. Et dolor minima et numquam atque in repellendus harum.");
+    let closeButton = $("<button></button>").text("Return");
+    closeButton.addClass("btn").addClass("return");
+    $(".btn-output").show();
+    $(".btn-output").append(instructionsHeader, instructions, closeButton);
+    $(".btn-primary").hide();
+    
+})
+
+
+$("#btn-play").on("click", function() {
+    let levelA1 = $("<button></button>").text("Some text");
+    let levelB1 = $("<button></button>").text("Some text");
+    let levelCloseButton = $("<button type='button'></button>").text("Return");
+  
+    $(".btn-output").append(levelA1, levelB1, levelCloseButton);
+    $(".btn-output").show();
+    $(".btn-primary").hide();
+
+    levelA1.addClass("btn");
+    levelB1.addClass("btn");
+    levelCloseButton.addClass("btn").addClass("return");
+    levelCloseButton.attr('type', 'button');
+     
+  })
+
+
+  $(".return").on("click", function() {
+    $(".btn-output").hide();
+    $(".btn-primary").show();
+    
+})
+
+
 
 $(".card").on("click", cardTurns);
 
@@ -110,9 +152,9 @@ function timeDecrease() {
    
 
     if(secs < 10){
-        document.getElementById("countdown").innerHTML = mins + ":" + "0" + secs;
+       // document.getElementById("countdown").innerHTML = mins + ":" + "0" + secs;
     } else {
-        document.getElementById("countdown").innerHTML = mins + ":" +secs;
+       // document.getElementById("countdown").innerHTML = mins + ":" +secs;
     }
 
 
