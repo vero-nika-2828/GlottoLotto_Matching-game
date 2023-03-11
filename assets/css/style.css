@@ -58,7 +58,7 @@ img{
     grid-row: auto;
     gap: 0.5rem;
     margin-top: 50px;
-    padding: 50px;
+    padding: 10px;
     border-radius: 5%;
     background: rgba(0, 72, 62, 0.9);
 
@@ -123,9 +123,22 @@ img{
 }
 
 .btn-output{
-   
     padding: 2rem;
-    text-align: center;
+   text-align: center;
  
+}
+
+
+
+.loser-text{
+    height:500px;
+    width: 500px;
+    margin-top: 50px;
+    padding: 50px;
+    border-radius: 5%;
+    background: rgba(0, 72, 62, 0.9);
+    font-size:80px;
+    text-align: center;
+    vertical-align: middle;
 }
 

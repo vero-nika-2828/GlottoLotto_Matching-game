@@ -7,19 +7,35 @@ let cardArray = [];
 let matchedCards = [];
 let cardDeck = Array.from(cards);
 
+
+
 let gameMusic = new Audio("./assets/audio/Magic Escape Room.mp3");
 let flipSound = new Audio("./assets/audio/mixkit-cartoon-toy-whistle-616.wav")
 
 
 document.addEventListener("DOMContentLoaded", function(){
     shuffleDeck();
-   // $(".btn-output").hide();
-    
+    $(".btn-output").hide();
+    $("#you-lose").hide();
 })
+
+
+
+$(function(){
+
+    $.ajax({
+        type: "GET",
+        url:"https://api.dictionaryapi.dev/api/v2/entries/en/hello",
+        success: function(data) {
+            console.log("success", data);
+
+   }   });
+})
+
+
 
 //On each click, class attribute is added which prompts the clicked card to turn
 //Clicked card is added to an array
-
 
 
 
@@ -27,36 +43,47 @@ $("#btn-instructions").on("click", function() {
     let instructionsHeader = $("<h1></h1>").text("How to Play");
     let instructions = $("<p></p>").text("Lorem ipsum dolor sit amet. Nam omnis consequatur vel harum dolor et sunt dolorem ex internos fugiat ea ipsam sequi. Quo odit explicabo aut magni commodi ut enim totam et temporibus nihil vel cupiditate reprehenderit. Et dolor minima et numquam atque in repellendus harum.");
     let closeButton = $("<button></button>").text("Return");
+    let clearPreviousText = $(".btn-output").text("");
     closeButton.addClass("btn").addClass("return");
-    $(".btn-output").show();
-    $(".btn-output").append(instructionsHeader, instructions, closeButton);
-    $(".btn-primary").hide();
     
+    $(".btn-output").show();
+    $(".btn-output").append(clearPreviousText, instructionsHeader, instructions, closeButton);
+    $(".btn-primary").hide();
+    $(".btn-output").addClass("d-grid").addClass("gap-2");
+
+    $(".return").on("click", function() {
+        $(".btn-output").text("");
+        $(".btn-output").hide();
+        $(".btn-primary").show();
+             
+    })
+
 })
 
 
 $("#btn-play").on("click", function() {
-    let levelA1 = $("<button></button>").text("Some text");
-    let levelB1 = $("<button></button>").text("Some text");
-    let levelCloseButton = $("<button type='button'></button>").text("Return");
+    let levelA1 = $("<a href='./level-A1.html'></a>").text("A1");
+    let levelB1 = $("<a></a>").text("B2");
+    let levelCloseButton = $("<button'></button>").text("Return");
   
     $(".btn-output").append(levelA1, levelB1, levelCloseButton);
     $(".btn-output").show();
     $(".btn-primary").hide();
 
-    levelA1.addClass("btn");
+    levelA1.addClass("btn").addClass("level-A1");
     levelB1.addClass("btn");
     levelCloseButton.addClass("btn").addClass("return");
-    levelCloseButton.attr('type', 'button');
-     
+    $(".btn-output").addClass("d-grid").addClass("gap-2");
+
+    $(".return").on("click", function() {
+        $(".btn-output").text("");
+        $(".btn-output").hide();
+        $(".btn-primary").show();
+        
+    })
+   
   })
 
-
-  $(".return").on("click", function() {
-    $(".btn-output").hide();
-    $(".btn-primary").show();
-    
-})
 
 
 
@@ -139,7 +166,7 @@ function shuffleDeck(){
 
 //Game countdown
 
-let initialTime = 2;
+let initialTime = 0.1;
 let timeInSeconds = initialTime * 60;
 
 let countdown = setInterval(timeDecrease, 1000);
@@ -152,9 +179,9 @@ function timeDecrease() {
    
 
     if(secs < 10){
-       // document.getElementById("countdown").innerHTML = mins + ":" + "0" + secs;
+        document.getElementById("countdown").innerHTML = mins + ":" + "0" + secs;
     } else {
-       // document.getElementById("countdown").innerHTML = mins + ":" +secs;
+        document.getElementById("countdown").innerHTML = mins + ":" +secs;
     }
 
 
@@ -162,8 +189,24 @@ function timeDecrease() {
         console.log("Time out")
         clearInterval(countdown ); 
         document.getElementById("countdown").innerHTML = "Time Out";
+
+    }
+
+    if(mins & secs < 0 && matchedCards.length !== 6){
+        console.log("You lose");
+        $(".card-area").hide();
+        let youLose = $("<p></p>").text("Time's up!");
+        let tryAgain = $("<a href='./index.html'></a>").text("Try again!");
+
+        $("#you-lose").show();
+        $("#you-lose").append(youLose, tryAgain);
+        youLose.addClass("loser-text");
+        tryAgain.addClass("btn");
+    
     }
 }
+
+
 
 
 let music = $("#game-music")
