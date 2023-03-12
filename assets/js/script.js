@@ -7,6 +7,7 @@ let cardArray = [];
 let matchedCards = [];
 let cardDeck = Array.from(cards);
 
+let audioAPI;
 
 
 let gameMusic = new Audio("./assets/audio/Magic Escape Room.mp3");
@@ -20,17 +21,6 @@ document.addEventListener("DOMContentLoaded", function(){
 })
 
 
-
-$(function(){
-
-    $.ajax({
-        type: "GET",
-        url:"https://api.dictionaryapi.dev/api/v2/entries/en/hello",
-        success: function(data) {
-            console.log("success", data);
-
-   }   });
-})
 
 
 
@@ -48,14 +38,15 @@ $("#btn-instructions").on("click", function() {
     
     $(".btn-output").show();
     $(".btn-output").append(clearPreviousText, instructionsHeader, instructions, closeButton);
-    $(".btn-primary").hide();
+    $(".btn-primary, #intro-description").hide();
+   
     $(".btn-output").addClass("d-grid").addClass("gap-2");
 
     $(".return").on("click", function() {
         $(".btn-output").text("");
         $(".btn-output").hide();
-        $(".btn-primary").show();
-             
+        $(".btn-primary, #intro-description").show();
+                 
     })
 
 })
@@ -68,7 +59,7 @@ $("#btn-play").on("click", function() {
   
     $(".btn-output").append(levelA1, levelB1, levelCloseButton);
     $(".btn-output").show();
-    $(".btn-primary").hide();
+    $(".btn-primary, #intro-description").hide();
 
     levelA1.addClass("btn").addClass("level-A1");
     levelB1.addClass("btn");
@@ -94,16 +85,30 @@ function cardTurns(){
         counter++;
         $(this).addClass("active");
         $(this).addClass("turn-card");
-        //let cardText = $(this)[0].textContent;
         let individualCard = $(this)[0].dataset.fruit;
         cardArray.push(individualCard);
         twoCardsSelected();   
         let cardText = $(this)[0].textContent;
         console.log(cardText);
-        flipSound.play();
-      
-           
-    
+        //flipSound.play();
+       
+
+
+        let fruitName = $(this)[0].dataset.fruit;        
+        fetch(`https://api.dictionaryapi.dev/api/v2/entries/en/${fruitName}`)
+        .then(response => response.json())
+        .then(data => {
+          console.log(data);
+          // You can access the definition of "hello" from the API response like this:
+          console.log(data[0].meanings[0].definitions[0].definition);
+          audioAPI = new Audio (data[0].phonetics[0].audio);
+
+          audioAPI.play();
+        })
+        .catch(error => console.log(error));
+        
+
+
     }else{
         console.log("it is alraedy active");
         $(".active").off("click");
@@ -120,7 +125,7 @@ function twoCardsSelected(){
     if(counter === 2){
         document.getElementById("turns").innerHTML ++;
         console.log("Two cards selected");
-        $(".card").off("click", cardTurns); //instead of taking this off could I maybe delay the funtion of clicking again and put it after compare function
+        $(".card").off("click", cardTurns); 
         setTimeout(compareCards,1000);
        
     }
@@ -166,7 +171,7 @@ function shuffleDeck(){
 
 //Game countdown
 
-let initialTime = 0.1;
+let initialTime = 2;
 let timeInSeconds = initialTime * 60;
 
 let countdown = setInterval(timeDecrease, 1000);
@@ -194,19 +199,22 @@ function timeDecrease() {
 
     if(mins & secs < 0 && matchedCards.length !== 6){
         console.log("You lose");
-        $(".card-area").hide();
-        let youLose = $("<p></p>").text("Time's up!");
-        let tryAgain = $("<a href='./index.html'></a>").text("Try again!");
-
-        $("#you-lose").show();
-        $("#you-lose").append(youLose, tryAgain);
-        youLose.addClass("loser-text");
-        tryAgain.addClass("btn");
+        gameOver();
     
     }
 }
 
 
+function gameOver(){
+    $(".card-area").hide();
+    let youLose = $("<p></p>").text("Time's up!");
+    let tryAgain = $("<a href='./index.html'></a>").text("Try again!");
+
+    $("#you-lose").show();
+    $("#you-lose").append(youLose, tryAgain);
+    youLose.addClass("loser-text");
+    tryAgain.addClass("btn");
+}
 
 
 let music = $("#game-music")
