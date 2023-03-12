@@ -173,7 +173,7 @@ img{
 
 
 
-#you-lose{
+#result{
     height: 40rem;
     width: 40rem;
     margin-top: 50px;
@@ -185,12 +185,14 @@ img{
     vertical-align: middle;
 }
 
-#you-lose p{
-    margin-top: 30%;
+#result p{
+    margin-top: 25%;
 }
 
-#you-lose a{
+#result a{
     margin-top: -20%;
+    display: block;
+    margin: 5px;
 }
 
 
@@ -228,7 +230,7 @@ img{
 
 @media (max-width: 700px) {
 
-    #game-info{
+    #game-info, .card-area, #result {
         height: 30rem;
         width: 30rem;
     }
@@ -255,11 +257,9 @@ img{
     }
 
 
-    .card-area {
-        height: 30rem;
-        width: 30rem;
+    #result p {
+        margin-top: 15%;
     }
-    
 
 }
 
@@ -279,9 +279,14 @@ img{
     }
 
 
-    .card-area {
+    .card-area, #result  {
         height: 30rem;
         width: 30rem;
+    }
+
+    #result p {
+       font-size: 50px;
+       margin-top: 24% ;
     }
 }
 
@@ -327,13 +332,15 @@ img{
     }
 
     
-    .card-area {
+    .card-area, #result {
         height: 80vh;
         width: 95vw;
         border-radius: 25px;
     }
     
-
+    #result p {
+        margin-top: 65%;
+    }
 }
 
 @media (max-width: 380px) {
@@ -355,8 +362,7 @@ img{
 
     .game-scores{
         padding: 1rem;  
-         
-       /* margin-top: -15px;*/
+   
       }
 
     #timer{
@@ -366,6 +372,10 @@ img{
 
     #turns-count{
         margin-right: 4%;
+    }
+
+    #result p {
+        margin-top: 80%;
     }
 
 }

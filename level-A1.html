@@ -12,95 +12,112 @@
     <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon//favicon-16x16.png">
     <link rel="manifest" href="/site.webmanifest">
    
+     <!--Style sheet-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/css/style.css">
     
+     <!--Page title-->
     <title>GLottoLotto Game: A1 Level</title>
 </head>
+
+
 <body>
+     <!--Background image-->
     <img src="assets/images/background-image.jpg">  
+
+     <!--Level name and short instructions-->
     <section id="title">
         <h2>Level A1 -A2</h2>
         <p>Match a picture to the corresponding word</p>
         
     </section>
 
+
+    <!--Game container--> 
     <div class="game-section">
-        
+           <!--Scores container--> 
         <div class="game-scores">
            
             <div id="timer"><strong>Timer: <span id="countdown">2:00</span></strong></div>
             <div id="turns-count"><strong>Turns: <span id="turns">0</span></strong></div>
             <div id="game-music"><i class="fa-solid fa-volume-xmark"></i></div>
         </div>
+
+        <!--Playing Cards container--> 
         <div class="card-area">
-            <div class="card" id="card-1" data-fruit="Apple">
-                <div class="card-front">
-                    <img class= "card-picture" src="assets/images/apple.jpg" alt="Apple">
-                </div>
-                <div class="card-back"></div>
-           </div>
-
-            <div class="card" id="card-2" data-fruit="Apple">
-                <div class="card-front">Apple</div>
+            
+            
+            <!--Cards--> 
+            <div class="card" id="card-1" data-fruit="dog">
+                <div class="card-front">Dog</div>
                 <div class="card-back"></div>
             </div>
 
-            <div class="card" id="card-3" data-fruit="Pear">
-                <div class="card-front">Pear</div>
+            <div class="card" id="card-2" data-fruit="dog">
+                <div class="card-front">Dog</div>
                 <div class="card-back"></div>
            </div>
 
-            <div class="card" id="card-4" data-fruit="Pear">
-                <div class="card-front">Pear</div>
+            <div class="card" id="card-3" data-fruit="cat">
+                <div class="card-front">Cat</div>
                 <div class="card-back"></div>
             </div>
-            <div class="card" id="card-5" data-fruit="Peach">
-                <div class="card-front">Peach</div>
+            <div class="card" id="card-4" data-fruit="cat">
+                <div class="card-front">Cat</div>
                 <div class="card-back"></div>
            </div>
 
-            <div class="card" id="card-6" data-fruit="Peach">
-                <div class="card-front">Peach</div>
+            <div class="card" id="card-5" data-fruit="rabbit">
+                <div class="card-front">Rabbit</div>
                 <div class="card-back"></div>
             </div>
             
-            <div class="card" id="card-7" data-fruit="Banana">
-                <div class="card-front">Banana</div>
+            <div class="card" id="card-6" data-fruit="rabbit">
+                <div class="card-front">Rabbit</div>
                 <div class="card-back"></div>
            </div>
 
-            <div class="card" id="card-8" data-fruit="Banana">
-                <div class="card-front">Banana</div>
+            <div class="card" id="card-7" data-fruit="bird">
+                <div class="card-front">Bird</div>
                 <div class="card-back"></div>
             </div>
 
-            <div class="card" id="card-9" data-fruit="strawberry">
-                <div class="card-front">Strawberry</div>
+            <div class="card" id="card-8" data-fruit="bird">
+                <div class="card-front">Bird</div>
                 <div class="card-back"></div>
            </div>
 
-            <div class="card" id="card-10" data-fruit="strawberry">
-                <div class="card-front">Strawberry</div>
+            <div class="card" id="card-9" data-fruit="horse">
+                <div class="card-front">Horse</div>
                 <div class="card-back"></div>
             </div>
 
-            <div class="card" id="card-11" data-fruit="Kiwi">
-                <div class="card-front">Kiwi</div>
+            <div class="card" id="card-10" data-fruit="horse">
+                <div class="card-front">Horse</div>
                 <div class="card-back"></div>
            </div>
 
-            <div class="card" id="card-12" data-fruit="Kiwi">
-                <div class="card-front">Kiwi</div>
+           <div class="card" id="card-11" data-fruit="horse">
+                <div class="card-front">Horse</div>
+                <div class="card-back"></div>
+            </div>
+      
+           <div class="card" id="card-12" data-fruit="chicken">
+                <div class="card-front">
+                <img class= "card-picture" src="assets/images/apple.jpg" alt="Apple">
+                </div>
                 <div class="card-back"></div>
             </div>
                           
         </div>
-
-        <div id="you-lose"></div>    
+        
+        
+        <!--Result message container--> 
+        <div id="result"></div>    
        
     </div>
     
+     <!--javascript--> 
     <script
   src="https://code.jquery.com/jquery-3.6.3.js"
   integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM="

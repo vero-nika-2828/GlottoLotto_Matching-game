@@ -3,7 +3,7 @@ let clickedCards = [];
 let cardAmount = clickedCards.length;
 let counter = 0;
 let cardOne = $(".active")[0];
-let cardArray = [];
+let cardContainer = [];
 let matchedCards = [];
 let cardDeck = Array.from(cards);
 
@@ -17,7 +17,7 @@ let flipSound = new Audio("./assets/audio/mixkit-cartoon-toy-whistle-616.wav")
 document.addEventListener("DOMContentLoaded", function(){
     shuffleDeck();
     $(".btn-output").hide();
-    $("#you-lose").hide();
+    $("#result").hide();
 })
 
 
@@ -88,7 +88,7 @@ function cardTurns(){
         $(this).addClass("active");
         $(this).addClass("turn-card");
         let individualCard = $(this)[0].dataset.fruit;
-        cardArray.push(individualCard);
+        cardContainer.push(individualCard);
         twoCardsSelected();   
         let cardText = $(this)[0].textContent;
         console.log(cardText);
@@ -134,10 +134,10 @@ function twoCardsSelected(){
 }
 
 function compareCards() {
-    let card1 = cardArray[0];
-    let card2 = cardArray[1];
+    let card1 = cardContainer[0];
+    let card2 = cardContainer[1];
     counter = 0;
-    cardArray =[];
+    cardContainer =[];
 
     if(card1 === card2){
         console.log("you have a match");   
@@ -148,17 +148,14 @@ function compareCards() {
         let currentMatch = $(".matched");
         matchedCards.push(currentMatch);
         $(".card").on("click", cardTurns);
-
-
-
-
+        youWin();
     } else {
         console.log("Try again");
         $(".active").removeClass("active turn-card");
         $(".card").on("click", cardTurns);
     }};
 
-    $("#flicky-flick").on("click", shuffleDeck);
+    //$("#flicky-flick").on("click", shuffleDeck);
 
 
 function shuffleDeck(){
@@ -205,17 +202,34 @@ function timeDecrease() {
     
     }
 }
+function youWin(){
+    if(matchedCards.length === 6){
+        $(".card-area").hide();
+        let congratulations = $("<p></p>").text("You win!");
+        let playAgain = $("<a href='./level-A1.html'></a>").text("Play again!");
+        let mainMenu = $("<a href='./index.html'></a>").text("Main Menu");
+    
+        $("#result").show();
+        $("#result").append(congratulations, playAgain, mainMenu);
+        congratulations.addClass("loser-text");
+        playAgain.addClass("btn");
+        mainMenu.addClass("btn");
+    }
+        
+}
 
 
 function gameOver(){
     $(".card-area").hide();
     let youLose = $("<p></p>").text("Time's up!");
-    let tryAgain = $("<a href='./index.html'></a>").text("Try again!");
+    let tryAgain = $("<a href='./level-A1.html'></a>").text("Try again!");
+    let mainMenu = $("<a href='./index.html'></a>").text("Main Menu");
 
-    $("#you-lose").show();
-    $("#you-lose").append(youLose, tryAgain);
+    $("#result").show();
+    $("#result").append(youLose, tryAgain, mainMenu);
     youLose.addClass("loser-text");
     tryAgain.addClass("btn");
+    mainMenu.addClass("btn");
 }
 
 
