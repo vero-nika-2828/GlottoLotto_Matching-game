@@ -55,7 +55,7 @@ $("#btn-instructions").on("click", function() {
 
 $("#btn-play").on("click", function() {
     let levelA1 = $("<a href='./level-A1.html'></a>").text("A1-A2");
-    let levelB1 = $("<a></a>").text("B1-B2");
+    let levelB1 = $("<a href='./level-A1.html'></a>").text("B1-B2");
     let levelCloseButton = $("<button'></button>").text("Return");
   
     $(".btn-output").append(levelA1, levelB1, levelCloseButton);
@@ -63,7 +63,7 @@ $("#btn-play").on("click", function() {
     $(".btn-primary, #intro-description").hide();
 
     levelA1.addClass("btn").addClass("level-A1");
-    levelB1.addClass("btn");
+    levelB1.addClass("btn").addClass("level-B1");
     levelCloseButton.addClass("btn").addClass("return");
     $(".btn-output").addClass("d-grid").addClass("gap-2");
 
