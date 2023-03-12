@@ -46,6 +46,7 @@ $("#btn-instructions").on("click", function() {
         $(".btn-output").text("");
         $(".btn-output").hide();
         $(".btn-primary, #intro-description").show();
+        $(".btn-output").removeClass("d-grid").removeClass("gap-2");
                  
     })
 
@@ -53,8 +54,8 @@ $("#btn-instructions").on("click", function() {
 
 
 $("#btn-play").on("click", function() {
-    let levelA1 = $("<a href='./level-A1.html'></a>").text("A1");
-    let levelB1 = $("<a></a>").text("B2");
+    let levelA1 = $("<a href='./level-A1.html'></a>").text("A1-A2");
+    let levelB1 = $("<a></a>").text("B1-B2");
     let levelCloseButton = $("<button'></button>").text("Return");
   
     $(".btn-output").append(levelA1, levelB1, levelCloseButton);
@@ -69,7 +70,8 @@ $("#btn-play").on("click", function() {
     $(".return").on("click", function() {
         $(".btn-output").text("");
         $(".btn-output").hide();
-        $(".btn-primary").show();
+        $(".btn-primary, #intro-description").show();
+        $(".btn-output").removeClass("d-grid").removeClass("gap-2");
         
     })
    

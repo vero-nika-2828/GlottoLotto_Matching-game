@@ -19,7 +19,7 @@ img{
 #title h1{
     width: 100%;
     text-align: center;
-
+    margin-top: 50px;
 }
 
 .game-section{
@@ -29,30 +29,49 @@ img{
     justify-content: center;   
 }
 
+#intro-description{
+    text-align: center;
+    padding: 3rem, 2.5rem ;
+}
+
+#intro-description h2{
+    margin-bottom: 50px;;
+}
 
 #game-info{
-    height:500px;
-    width: 500px;
+    height: 40rem;
+    width: 40rem;
     margin-top: 50px;
     padding: 50px;
     border-radius: 5%;
     background: rgba(0, 72, 62, 0.9);
 }
 
+.game-scores{
+    margin-top:60px;
+    margin-right:1rem;
+}
+
 .btn{
     background-color: #CF9EAC;
+    color:white;
     border:none;
     justify-content: center;
      
 }
 
-.btn-primary:hover{
-    background-color: #D79E06;;
+.return {
+    max-height: 50px;
+}
+
+.btn:hover{
+    background-color: #D79E06;
+    color:white;
 }
 
 .card-area{
-    height:500px;
-    width: 500px;
+    height: 40rem;
+    width: 40rem;
     display: grid;
     grid-template-columns: repeat(4,1fr);
     grid-row: auto;
@@ -68,6 +87,7 @@ img{
     position:relative;
     margin:1px;
     border-radius: 25px;
+    border:none;
     transform-style: preserve-3d;
     transition: transform 0.5s ease-in;
     transition: transform 1s ease-in-out;    
@@ -131,8 +151,8 @@ img{
 
 
 .loser-text{
-    height:500px;
-    width: 500px;
+    height: 40rem;
+    width: 40rem;
     margin-top: 50px;
     padding: 50px;
     border-radius: 5%;
