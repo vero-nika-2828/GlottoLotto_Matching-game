@@ -16,13 +16,20 @@ img{
     z-index: -1;
 }
 
-#title h1{
+#title h1, #title h2 {
     width: 100%;
     text-align: center;
     margin-top: 50px;
     color:#D79E06;
+    font-weight: bold;
 }
 
+#title p{
+    width: 100%;
+    text-align: center;
+    color:#D79E06;
+    font-weight: bold;
+}
 
 .game-section{
     width:100%;
@@ -55,11 +62,14 @@ img{
 .game-scores{
     margin-top:60px;
     margin-right:1rem;
+    margin-left: -6%;
 }
 
 .btn{
     background-color: #CF9EAC;
     color:white;
+    font-weight: bold;
+    letter-spacing: 1px;
     border:none;
     justify-content: center;
     
@@ -101,9 +111,7 @@ img{
            
 }
 
-/*.card:hover{
-    transform: rotateY(360deg)
-}*/
+
 
 .card img {
     height:100%;
@@ -165,7 +173,7 @@ img{
 
 
 
-.loser-text{
+#you-lose{
     height: 40rem;
     width: 40rem;
     margin-top: 50px;
@@ -175,6 +183,45 @@ img{
     font-size:80px;
     text-align: center;
     vertical-align: middle;
+}
+
+#you-lose p{
+    margin-top: 30%;
+}
+
+#you-lose a{
+    margin-top: -20%;
+}
+
+
+@media (max-width: 950px) {
+    .game-scores{
+        display: flex;
+        position:absolute;
+        margin-top: 2%;
+        width: 100%;
+    }
+
+    #timer{
+        margin-left: 22%;     
+        margin-right: 2%;  
+    }
+
+    #turns-count{
+        margin-right: 43%;
+    }
+}
+
+@media (max-width: 800px) {
+    #timer{
+        margin-left: 18%;     
+        margin-right: 2%;  
+    }
+
+    #turns-count{
+        margin-right: 50%;
+    }
+
 }
 
 
@@ -197,8 +244,45 @@ img{
     #intro-description h2{
         margin-bottom: 30px ;
     }
+
+    #timer{
+        margin-left: 24%;     
+        margin-right: 2%;  
+    }
+
+    #turns-count{
+        margin-right: 35%;
+    }
+
+
+    .card-area {
+        height: 30rem;
+        width: 30rem;
+    }
     
 
+}
+
+
+@media (max-width: 630px) {
+    #title h2{
+        margin-top: 40px;
+    }
+
+    #timer{
+        margin-left: 20%;     
+        margin-right: 2%;  
+    }
+
+    #turns-count{
+        margin-right: 38%;
+    }
+
+
+    .card-area {
+        height: 30rem;
+        width: 30rem;
+    }
 }
 
 @media (max-width: 500px) {
@@ -211,14 +295,42 @@ img{
 
     }
 
+    #intro-description h2{
+        margin-top: 20px;
+    }
+
+    #intro-description p{
+        padding-top: 20px;
+    }
+
     .level-A1 {
-        margin-top: 6%;
+        margin-top: 18%;
     }
 
     .level-A1, .level-B1  {
         padding-top: 18%;
         font-size: 3rem;
         font-weight: 900;
+    }
+
+    #title h2{
+        margin-top: 30px;
+    }
+
+    #timer{
+        margin-left: 15%;     
+        margin-right: 2%;  
+    }
+
+    #turns-count{
+        margin-right: 40%;
+    }
+
+    
+    .card-area {
+        height: 80vh;
+        width: 95vw;
+        border-radius: 25px;
     }
     
 
@@ -228,6 +340,32 @@ img{
 
     #game-info{
         height: 80vh;
+    }
+
+    #intro-description h2{
+        margin-top: 20px;
+    }
+
+    .level-A1 {
+        margin-top: 8%;
+    }
+    .card-area {
+        height: 80vh;
+    }  
+
+    .game-scores{
+        padding: 1rem;  
+         
+       /* margin-top: -15px;*/
+      }
+
+    #timer{
+        margin-left: 10%;     
+        margin-right: 4%;  
+    }
+
+    #turns-count{
+        margin-right: 4%;
     }
 
 }
