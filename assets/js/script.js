@@ -55,7 +55,7 @@ $("#btn-instructions").on("click", function() {
 
 $("#btn-play").on("click", function() {
     let levelA1 = $("<a href='./level-A1.html'></a>").text("A1-A2");
-    let levelB1 = $("<a href='./level-A1.html'></a>").text("B1-B2");
+    let levelB1 = $("<a href='./level-B1.html'></a>").text("B1-B2");
     let levelCloseButton = $("<button'></button>").text("Return");
   
     $(".btn-output").append(levelA1, levelB1, levelCloseButton);
@@ -87,7 +87,7 @@ function cardTurns(){
         counter++;
         $(this).addClass("active");
         $(this).addClass("turn-card");
-        let individualCard = $(this)[0].dataset.fruit;
+        let individualCard = $(this)[0].dataset.animal;
         cardContainer.push(individualCard);
         twoCardsSelected();   
         let cardText = $(this)[0].textContent;
@@ -96,8 +96,8 @@ function cardTurns(){
        
 
 
-        let fruitName = $(this)[0].dataset.fruit;        
-        fetch(`https://api.dictionaryapi.dev/api/v2/entries/en/${fruitName}`)
+        let animalName = $(this)[0].dataset.animal;        
+        fetch(`https://api.dictionaryapi.dev/api/v2/entries/en/${animalName}`)
         .then(response => response.json())
         .then(data => {
           console.log(data);
@@ -206,11 +206,19 @@ function youWin(){
     if(matchedCards.length === 6){
         $(".card-area").hide();
         let congratulations = $("<p></p>").text("You win!");
-        let playAgain = $("<a href='./level-A1.html'></a>").text("Play again!");
+        let playAgainA1 = $("<a href='./level-A1.html'></a>").text("Play again!");
+        let playAgainB1 = $("<a href='./level-B1.html'></a>").text("Play again!");
         let mainMenu = $("<a href='./index.html'></a>").text("Main Menu");
     
         $("#result").show();
-        $("#result").append(congratulations, playAgain, mainMenu);
+        
+       // if( PULL Value for Href === <a href='./level-A1.html'></a>){
+       //     $("#result").append(congratulations, playAgainA1, mainMenu);
+       // }else{
+       //     $("#result").append(congratulations, playAgainB1, mainMenu);
+       // }
+
+        $("#result").append(congratulations, playAgainA1, mainMenu);
         congratulations.addClass("loser-text");
         playAgain.addClass("btn");
         mainMenu.addClass("btn");
