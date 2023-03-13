@@ -30,18 +30,31 @@ document.addEventListener("DOMContentLoaded", function(){
 
 
 $("#btn-instructions").on("click", function() {
-    let instructionsHeader = $("<h1></h1>").text("How to Play");
-    let instructions = $("<p></p>").text("Lorem ipsum dolor sit amet. Nam omnis consequatur vel harum dolor et sunt dolorem ex internos fugiat ea ipsam sequi. Quo odit explicabo aut magni commodi ut enim totam et temporibus nihil vel cupiditate reprehenderit. Et dolor minima et numquam atque in repellendus harum.");
-    let closeButton = $("<button></button>").text("Return");
+    //Create and define values for header, description and button in 'How to play' modal
     let clearPreviousText = $(".btn-output").text("");
-    closeButton.addClass("btn").addClass("return");
-    
+    let instructionsHeader = $("<h1></h1>").text("How to Play");
+    let instructions = $("<p></p>").text("Flip the cards and match words to pictures. Here are the instructions on how to play:");
+    let closeButton = $("<button></button>").text("Return");
+ 
+    //Map method to create list of step by step instructions
+    let list= $("<ol></ol>").text("");
+    let steps = ["Press play", "Click on a card", "Card turns around and a picture or a word will be shown","Click on another card", "If the two cards match, you will receive the points ", "If the two cards don’t match, they will turn around and you can try again", "You can continue to flip over cards until you have matched all the pairs", "To win, you must match all the pairs before the time runs out", "Enjoy playing the game and improving your language skills"];
+
+    listItems = $.map(steps, step => $("<li></li>").text(step));   
+    list.append(listItems);
+  
+    //Display "How to play" modal       
     $(".btn-output").show();
-    $(".btn-output").append(clearPreviousText, instructionsHeader, instructions, closeButton);
+    $(".btn-output").append(clearPreviousText, instructionsHeader, instructions,list, closeButton);
     $(".btn-primary, #intro-description").hide();
    
+
+    //Apply styling to the button and the "How to play modal"
+    closeButton.addClass("btn").addClass("return");
     $(".btn-output").addClass("d-grid").addClass("gap-2");
 
+    
+    //Enable return to the main menu with return button
     $(".return").on("click", function() {
         $(".btn-output").text("");
         $(".btn-output").hide();
@@ -51,6 +64,7 @@ $("#btn-instructions").on("click", function() {
     })
 
 })
+
 
 
 $("#btn-play").on("click", function() {
@@ -155,9 +169,7 @@ function compareCards() {
         $(".card").on("click", cardTurns);
     }};
 
-    //$("#flicky-flick").on("click", shuffleDeck);
-
-
+  
 function shuffleDeck(){
     for(card = 0; card  < cardDeck.length; card ++) {
         let cardToSwap = Math.floor(Math.random()  * (card  + 1));
@@ -165,7 +177,6 @@ function shuffleDeck(){
         cardDeck[card].style.order = cardToSwap;
     }
 }
-
 
 
 //Game countdown
@@ -202,6 +213,7 @@ function timeDecrease() {
     
     }
 }
+
 function youWin(){
     if(matchedCards.length === 6){
         $(".card-area").hide();
@@ -220,7 +232,7 @@ function youWin(){
 
         $("#result").append(congratulations, playAgainA1, mainMenu);
         congratulations.addClass("loser-text");
-        playAgain.addClass("btn");
+        playAgainA1.addClass("btn");
         mainMenu.addClass("btn");
     }
         
