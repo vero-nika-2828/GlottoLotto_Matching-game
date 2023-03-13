@@ -6,6 +6,7 @@ let cardOne = $(".active")[0];
 let cardContainer = [];
 let matchedCards = [];
 let cardDeck = Array.from(cards);
+let tryAgain 
 
 let audioAPI;
 
@@ -23,12 +24,7 @@ document.addEventListener("DOMContentLoaded", function(){
 
 
 
-
-//On each click, class attribute is added which prompts the clicked card to turn
-//Clicked card is added to an array
-
-
-
+//Display instructions for the game
 $("#btn-instructions").on("click", function() {
     //Create and define values for header, description and button in 'How to play' modal
     let clearPreviousText = $(".btn-output").text("");
@@ -59,10 +55,8 @@ $("#btn-instructions").on("click", function() {
         $(".btn-output").text("");
         $(".btn-output").hide();
         $(".btn-primary, #intro-description").show();
-        $(".btn-output").removeClass("d-grid").removeClass("gap-2");
-                 
+        $(".btn-output").removeClass("d-grid").removeClass("gap-2");           
     })
-
 })
 
 
@@ -93,6 +87,8 @@ $("#btn-play").on("click", function() {
 
 
 
+//On each click, class attribute is added which prompts the clicked card to turn
+//Clicked card is added to an array
 
 $(".card").on("click", cardTurns);
 
@@ -218,39 +214,41 @@ function youWin(){
     if(matchedCards.length === 6){
         $(".card-area").hide();
         let congratulations = $("<p></p>").text("You win!");
-        let playAgainA1 = $("<a href='./level-A1.html'></a>").text("Play again!");
-        let playAgainB1 = $("<a href='./level-B1.html'></a>").text("Play again!");
         let mainMenu = $("<a href='./index.html'></a>").text("Main Menu");
-    
+        retryThisLevel();
+        
         $("#result").show();
-        
-       // if( PULL Value for Href === <a href='./level-A1.html'></a>){
-       //     $("#result").append(congratulations, playAgainA1, mainMenu);
-       // }else{
-       //     $("#result").append(congratulations, playAgainB1, mainMenu);
-       // }
-
-        $("#result").append(congratulations, playAgainA1, mainMenu);
+        $("#result").append(congratulations, tryAgain, mainMenu);
         congratulations.addClass("loser-text");
-        playAgainA1.addClass("btn");
-        mainMenu.addClass("btn");
-    }
-        
+        tryAgain.addClass("btn");
+        mainMenu.addClass("btn"); 
+    }        
 }
 
 
 function gameOver(){
     $(".card-area").hide();
     let youLose = $("<p></p>").text("Time's up!");
-    let tryAgain = $("<a href='./level-A1.html'></a>").text("Try again!");
     let mainMenu = $("<a href='./index.html'></a>").text("Main Menu");
 
+    retryThisLevel ();
+ 
     $("#result").show();
     $("#result").append(youLose, tryAgain, mainMenu);
     youLose.addClass("loser-text");
     tryAgain.addClass("btn");
     mainMenu.addClass("btn");
 }
+
+function retryThisLevel (){
+    if($("title").html()  === "GLottoLotto Game: A1-A2 Level" ) {
+        console.log("A1");
+        tryAgain = $("<a href='./level-A1.html'></a>").text("Try again!");
+    }else{
+        console.log("B1")
+        tryAgain = $("<a href='./level-B1.html'></a>").text("Try again!");
+    }
+};
 
 
 let music = $("#game-music")
