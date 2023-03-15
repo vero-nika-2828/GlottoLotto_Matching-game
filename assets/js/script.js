@@ -1,3 +1,4 @@
+//Variables
 let cards = document.getElementsByClassName("card");
 let clickedCards = [];
 let cardAmount = clickedCards.length;
@@ -6,19 +7,22 @@ let cardOne = $(".active")[0];
 let cardContainer = [];
 let matchedCards = [];
 let cardDeck = Array.from(cards);
-let tryAgain 
+let tryAgain; 
+
 
 let audioAPI;
 
-
 let gameMusic = new Audio("./assets/audio/Magic Escape Room.mp3");
-let flipSound = new Audio("./assets/audio/mixkit-cartoon-toy-whistle-616.wav")
+let flipSound = new Audio("./assets/audio/mixkit-cartoon-toy-whistle-616.wav");
+let musicControl = false;
 
-
+//Game web page initiation
 document.addEventListener("DOMContentLoaded", function(){
     shuffleDeck();
     $(".btn-output").hide();
     $("#result").hide();
+  
+   
 })
 
 
@@ -211,7 +215,7 @@ function timeDecrease() {
 }
 
 function youWin(){
-    if(matchedCards.length === 6){
+    if(matchedCards.length === 8){
         $(".card-area").hide();
         let congratulations = $("<p></p>").text("You win!");
         let mainMenu = $("<a href='./index.html'></a>").text("Main Menu");
@@ -251,23 +255,31 @@ function retryThisLevel (){
 };
 
 
+
 let music = $("#game-music")
 
-music.on("click", playMusic)
+
+music.on("click", function(){
+    musicControl ?  pauseMusic() :  playMusic();
+})
 
 
 function playMusic() {
+  
    gameMusic.play();
+   console.log("playMusic works")
    music.html("<i class='fa-solid fa-volume-high'></i>");
+   music.addClass("playing");
+   musicControl = true;
 }
 
-function pauseMusic(){}
 
-music.on("click", pauseMusic)
-
-function pauseMusic() {
-    gameMusic.prop("paused");
-    console.log("switchOFF");
+function pauseMusic () {
+    gameMusic.pause();
+    console.log("pauseMusic works");
     music.html("<i class='fa-solid fa-volume-xmark'></i>");
-    
- }
+    musicControl = false;
+   
+}
+
+

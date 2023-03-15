@@ -19,7 +19,7 @@ img{
 #title h1, #title h2 {
     width: 100%;
     text-align: center;
-    margin-top: 50px;
+    margin-top: 20px;
     color:#D79E06;
     font-weight: bold;
 }
@@ -47,15 +47,15 @@ img{
 }
 
 #intro-description p{
-    padding: 0.5rem 5rem 0  ;
+    padding: 0.5rem 2rem 0  ;
 }
 
 #game-info{
-    height: 40rem;
-    width: 40rem;
-    margin-top: 50px;
-    padding: 50px;
-    border-radius: 5%;
+    height: 70vh;
+    width: 50vw;
+    margin-top: 20px;
+    padding: 2rem;
+    border-radius: 25px;
     background: rgba(0, 72, 62, 0.9);
      border: 2px solid #D79E06;
 }
@@ -97,15 +97,15 @@ ol li {
 }
 
 .card-area{
-    height: 40rem;
-    width: 40rem;
+    height: 70vh;
+    width: 50vw;
     display: grid;
     grid-template-columns: repeat(4,1fr);
     grid-row: auto;
     gap: 0.5rem;
-    margin-top: 50px;
+    margin-top: 20px;
     padding: 10px;
-    border-radius: 5%;
+    border-radius: 25px;
     background: rgba(0, 72, 62, 0.9);
 
 }
@@ -167,12 +167,12 @@ ol li {
        
  }
 
-.matched-animation{
+/*.matched-animation{
     transform: scale(2);
-}
+}*/
 
 .btn-output{
-   padding: 2rem;
+   padding: 0.5rem;
    text-align: center;
 }
 
@@ -187,13 +187,12 @@ ol li {
 }
 
 
-
 #result{
-    height: 40rem;
-    width: 40rem;
-    margin-top: 50px;
-    padding: 50px;
-    border-radius: 5%;
+    height: 70vh;
+    width: 50vw;
+    margin-top: 20px;
+    padding: 10px;
+    border-radius: 25px;
     background: rgba(0, 72, 62, 0.9);
     font-size:80px;
     text-align: center;
@@ -212,10 +211,22 @@ ol li {
 
 
 @media (max-width: 950px) {
+   /* #game-info, .card-area, #result {
+        height: 60vh;
+        width: 60vw;
+ 
+    }*/
+
+    .card-area, #result {
+        height: 70vh;
+        width: 90vw;
+    }
+
+
     .game-scores{
         display: flex;
         position:absolute;
-        margin-top: 2%;
+        margin-top: -5px;
         width: 100%;
     }
 
@@ -245,10 +256,10 @@ ol li {
 
 @media (max-width: 700px) {
 
-    #game-info, .card-area, #result {
+   /** #game-info, .card-area, #result {
         height: 30rem;
         width: 30rem;
-    }
+    }**/
 
     .level-A1 {
         margin-top: -3%;
@@ -294,10 +305,10 @@ ol li {
     }
 
 
-    .card-area, #result  {
+    /*.card-area, #result  {
         height: 30rem;
         width: 30rem;
-    }
+    }*/
 
     #result p {
        font-size: 50px;
@@ -347,11 +358,11 @@ ol li {
     }
 
     
-    .card-area, #result {
+    /*.card-area, #result {
         height: 80vh;
         width: 95vw;
         border-radius: 25px;
-    }
+    }*/
     
     #result p {
         margin-top: 65%;
@@ -360,9 +371,9 @@ ol li {
 
 @media (max-width: 380px) {
 
-    #game-info{
+   /* #game-info{
         height: 80vh;
-    }
+    }*/
 
     #intro-description h2{
         margin-top: 20px;
@@ -371,11 +382,12 @@ ol li {
     .level-A1 {
         margin-top: 8%;
     }
-    .card-area {
+    /*.card-area {
         height: 80vh;
-    }  
+    }  */
 
     .game-scores{
+        margin: -20px;
         padding: 1rem;  
    
       }
@@ -393,26 +405,41 @@ ol li {
         margin-top: 80%;
     }
 
+
+
+}
+@media (max-height: 850px) {
+    .btn-output{
+        overflow: scroll;
+    }
+
+    ol{
+        overflow: auto;
+    }
+
+    .btn-output a {
+        overflow: auto;         
+}
 }
 
-
 @media (max-height: 800px) {
-    #game-info{
+  /*  #game-info{
         margin-top: 20px;
         padding-top: 30px;
-    }
+    }*/
 
     #intro-description h2 {
         margin-bottom: 20px;
     } 
 
+    
 }
 
 @media (max-height: 670px) {
-    #game-info{
+   /* #game-info{
         height: 80vh;
         padding-top: 25px;
-    }
+    }*/
     #intro-description h2 {
         margin-top: 10px;
         margin-bottom: 20px;
