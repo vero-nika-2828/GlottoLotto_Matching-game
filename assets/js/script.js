@@ -13,7 +13,8 @@ let tryAgain;
 let audioAPI;
 
 let gameMusic = new Audio("./assets/audio/Magic Escape Room.mp3");
-let flipSound = new Audio("./assets/audio/mixkit-cartoon-toy-whistle-616.wav");
+let flipSound = new Audio("./assets/audio/clickSound.mp3");
+let correctAnswerSound = new Audio("./assets/audio/correctAnswer.mp3");
 let musicControl = false;
 
 //Game web page initiation
@@ -91,9 +92,7 @@ $("#btn-play").on("click", function() {
 
 
 
-//On each click, class attribute is added which prompts the clicked card to turn
-//Clicked card is added to an array
-
+//On each click, the selceted card turns and the user will hear the name of the animal for the corresponding card. The card cannot be clicked again 
 $(".card").on("click", cardTurns);
 
 function cardTurns(){  
@@ -106,20 +105,19 @@ function cardTurns(){
         twoCardsSelected();   
         let cardText = $(this)[0].textContent;
         console.log(cardText);
-        //flipSound.play();
-       
+        
 
 
         let animalName = $(this)[0].dataset.animal;        
         fetch(`https://api.dictionaryapi.dev/api/v2/entries/en/${animalName}`)
-        .then(response => response.json())
-        .then(data => {
-          console.log(data);
-          // You can access the definition of "hello" from the API response like this:
-          console.log(data[0].meanings[0].definitions[0].definition);
-          audioAPI = new Audio (data[0].phonetics[0].audio);
+            .then(response => response.json())
+            .then(data => {
+            console.log(data);
+            // You can access the definition of "hello" from the API response like this:
+            console.log(data[0].meanings[0].definitions[0].definition);
+            audioAPI = new Audio (data[0].phonetics[0].audio);
 
-          audioAPI.play();
+            audioAPI.play();
         })
         .catch(error => console.log(error));
         
@@ -133,17 +131,13 @@ function cardTurns(){
 
    
  
-//On each click, class attribute is added which prompts the clicked card to turn
-//Clicked card is added to an array
-
 
 function twoCardsSelected(){
     if(counter === 2){
         document.getElementById("turns").innerHTML ++;
         console.log("Two cards selected");
         $(".card").off("click", cardTurns); 
-        setTimeout(compareCards,1000);
-       
+        setTimeout(compareCards,1000);   
     }
 }
 
@@ -162,6 +156,7 @@ function compareCards() {
         let currentMatch = $(".matched");
         matchedCards.push(currentMatch);
         $(".card").on("click", cardTurns);
+        correctAnswerSound.play();
         youWin();
     } else {
         console.log("Try again");
@@ -169,13 +164,18 @@ function compareCards() {
         $(".card").on("click", cardTurns);
     }};
 
-  
+//With each new game the deck of cards changes the position randomly
 function shuffleDeck(){
     for(card = 0; card  < cardDeck.length; card ++) {
         let cardToSwap = Math.floor(Math.random()  * (card  + 1));
         cardDeck[cardToSwap].style.order = card ;
         cardDeck[card].style.order = cardToSwap;
     }
+    const countdownElement = document.getElementById("countdown");
+    if (countdownElement !== null){
+        setInterval(timeDecrease, 1000);
+    }
+    
 }
 
 
@@ -184,7 +184,6 @@ function shuffleDeck(){
 let initialTime = 2;
 let timeInSeconds = initialTime * 60;
 
-let countdown = setInterval(timeDecrease, 1000);
 
 function timeDecrease() {
     let mins = Math.floor(timeInSeconds / 60);
@@ -202,7 +201,7 @@ function timeDecrease() {
 
     if(mins & secs < 0){
         console.log("Time out")
-        clearInterval(countdown ); 
+        clearInterval(setInterval(timeDecrease, 1000)); 
         document.getElementById("countdown").innerHTML = "Time Out";
 
     }

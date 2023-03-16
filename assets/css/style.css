@@ -129,7 +129,7 @@ ol li {
     width:100%;
     margin:1px;
     border-radius: 25px;
-    object-fit: cover;
+    object-fit: scale-down;
    
 }
 
@@ -149,7 +149,7 @@ ol li {
 
 .card-front p {
     margin-top: 40%;
-    font-size: xx-large; 
+    font-size: medium; 
 }
 
 .card-back{
