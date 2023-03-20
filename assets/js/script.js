@@ -8,13 +8,13 @@ let cardContainer = [];
 let matchedCards = [];
 let cardDeck = Array.from(cards);
 let tryAgain; 
+let timeCountdown;
 
 
 let audioAPI;
 
-let gameMusic = new Audio("./assets/audio/Magic Escape Room.mp3");
-let flipSound = new Audio("./assets/audio/clickSound.mp3");
-let correctAnswerSound = new Audio("./assets/audio/correctAnswer.mp3");
+let gameMusic = new Audio("./assets/audio/background-music.mp3");
+let correctAnswerSound = new Audio("./assets/audio/correct-answer.mp3");
 let musicControl = false;
 
 //Game web page initiation
@@ -33,7 +33,7 @@ document.addEventListener("DOMContentLoaded", function(){
 $("#btn-instructions").on("click", function() {
     //Create and define values for header, description and button in 'How to play' modal
     let clearPreviousText = $(".btn-output").text("");
-    let instructionsHeader = $("<h1></h1>").text("How to Play");
+    let instructionsHeader = $("<h2></h2>").text("How to Play");
     let instructions = $("<p></p>").text("Flip the cards and match words to pictures. Here are the instructions on how to play:");
     let closeButton = $("<button></button>").text("Return");
  
@@ -91,6 +91,10 @@ $("#btn-play").on("click", function() {
   })
 
 
+
+  $("#check-score").on("click", function() {
+
+  })
 
 //On each click, the selceted card turns and the user will hear the name of the animal for the corresponding card. The card cannot be clicked again 
 $(".card").on("click", cardTurns);
@@ -173,7 +177,7 @@ function shuffleDeck(){
     }
     const countdownElement = document.getElementById("countdown");
     if (countdownElement !== null){
-        setInterval(timeDecrease, 1000);
+       timeCountdown = setInterval(timeDecrease, 1000);
     }
     
 }
@@ -201,15 +205,15 @@ function timeDecrease() {
 
     if(mins & secs < 0){
         console.log("Time out")
-        clearInterval(setInterval(timeDecrease, 1000)); 
+        clearInterval(timeCountdown); 
         document.getElementById("countdown").innerHTML = "Time Out";
 
     }
 
-    if(mins & secs < 0 && matchedCards.length !== 6){
+    if(mins & secs < 0 && matchedCards.length !== 8){
         console.log("You lose");
         gameOver();
-    
+
     }
 }
 
@@ -225,6 +229,7 @@ function youWin(){
         congratulations.addClass("loser-text");
         tryAgain.addClass("btn");
         mainMenu.addClass("btn"); 
+        localStorage.setItem("myCat", "Tom");
     }        
 }
 

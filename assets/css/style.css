@@ -1,8 +1,10 @@
 body{
-    color:#D79E06;
+    color: #D79E06;
+    font-family: 'Lato', sans-serif;
+   
 }
 
-img{
+img {
     top:0%;
     left:0%;
     margin:0;
@@ -16,6 +18,11 @@ img{
     z-index: -1;
 }
 
+#logo-image{
+    height:100%;
+    width: 100%;
+}
+
 #title h1, #title h2 {
     width: 100%;
     text-align: center;
@@ -23,6 +30,11 @@ img{
     color:#D79E06;
     font-weight: bold;
 }
+
+h2 {
+    font-family: 'Marhey', cursive;
+}
+
 
 #title p{
     width: 100%;
@@ -43,7 +55,8 @@ img{
 }
 
 #intro-description h2{
-    margin-bottom: 50px;
+    margin-top: 10px;
+    margin-bottom: 30px;
 }
 
 #intro-description p{
@@ -57,7 +70,7 @@ img{
     padding: 2rem;
     border-radius: 25px;
     background: rgba(0, 72, 62, 0.9);
-     border: 2px solid #D79E06;
+    border: 2px solid #D79E06;
 }
 
 ol{
@@ -69,7 +82,6 @@ ol li {
 }
 
 
-
 .game-scores{
     margin-top:60px;
     margin-right:1rem;
@@ -77,14 +89,14 @@ ol li {
 }
 
 .btn{
+    font-family: 'Marhey', cursive;
     background-color: #CF9EAC;
     color:white;
-    font-weight: bold;
-    letter-spacing: 1px;
+    font-weight: 700;
+    font-size: x-large;
     border:none;
     justify-content: center;
-    
-     
+    letter-spacing: 2px;    
 }
 
 .return {
@@ -148,8 +160,9 @@ ol li {
 }
 
 .card-front p {
-    margin-top: 40%;
-    font-size: medium; 
+    margin-top: 22%;
+    font-size: xx-large;
+    
 }
 
 .card-back{
@@ -172,18 +185,20 @@ ol li {
 }*/
 
 .btn-output{
+   margin-top: 2%;
    padding: 0.5rem;
    text-align: center;
 }
 
 .level-A1 {
-    margin-top: 3%;
+    margin-top: inherit;
 }
 
 .level-A1, .level-B1  {
-    padding-top: 5%;
     font-size: 5rem;
+    font-family: 'Lato', sans-serif;
     font-weight: 900;
+    padding-top: 5%;
 }
 
 
@@ -209,17 +224,57 @@ ol li {
     margin: 5px;
 }
 
+footer{
+    text-align: center;
+    margin-top: 20px;
+    color:#D79E06;
+}
+
+footer span{
+    margin-left: 10px;
+}
+
+footer a{
+    text-decoration: none;
+    color:#D79E06
+}
+
+@media (max-width: 1731px) {
+    .btn-output{
+        margin-top: 3%;
+    }
+
+    .card-front p {
+        margin-top: 25%;
+        font-size: x-large;
+        
+    }
+
+}
+
+@media (max-width: 1500px) {
+    .level-A1, .level-B1 {
+        padding-top: 6%;
+    }
+}
+
+@media (max-width: 1200px) {
+    #game-info{
+        height: 70vh;
+        width: 65vw;
+     }
+
+}
 
 @media (max-width: 950px) {
-   /* #game-info, .card-area, #result {
-        height: 60vh;
-        width: 60vw;
- 
-    }*/
-
-    .card-area, #result {
+    #game-info, #result{
         height: 70vh;
-        width: 90vw;
+        width: 70vw;
+     }
+
+    .card-area{
+        height: 70vh;
+        width: 80vw;
     }
 
 
@@ -238,10 +293,14 @@ ol li {
     #turns-count{
         margin-right: 43%;
     }
+
+    .level-A1, .level-B1 {
+        padding-top: 8%;
+    }
 }
 
 @media (max-width: 800px) {
-    #timer{
+     #timer{
         margin-left: 18%;     
         margin-right: 2%;  
     }
@@ -250,8 +309,10 @@ ol li {
         margin-right: 50%;
     }
 
+    .btn{
+        font-size: large;
+    }
 }
-
 
 
 @media (max-width: 700px) {
@@ -260,6 +321,10 @@ ol li {
         height: 30rem;
         width: 30rem;
     }**/
+
+    #title p{
+        margin-bottom: 0;
+    }
 
     .level-A1 {
         margin-top: -3%;
@@ -319,19 +384,21 @@ ol li {
 @media (max-width: 500px) {
 
     #game-info{
-        height: 80vh;
+        height: 75vh;
         width: 95vw;
         border-radius: 25px;
         padding: 1.25rem;
 
     }
+    
 
     #intro-description h2{
         margin-top: 20px;
     }
 
     #intro-description p{
-        padding-top: 20px;
+        font-size:medium;
+       
     }
 
     .level-A1 {
@@ -339,7 +406,6 @@ ol li {
     }
 
     .level-A1, .level-B1  {
-        padding-top: 18%;
         font-size: 3rem;
         font-weight: 900;
     }
@@ -363,10 +429,13 @@ ol li {
         width: 95vw;
         border-radius: 25px;
     }*/
+
     
     #result p {
         margin-top: 65%;
     }
+
+
 }
 
 @media (max-width: 380px) {
@@ -379,12 +448,12 @@ ol li {
         margin-top: 20px;
     }
 
+
+
     .level-A1 {
         margin-top: 8%;
     }
-    /*.card-area {
-        height: 80vh;
-    }  */
+
 
     .game-scores{
         margin: -20px;
@@ -405,9 +474,31 @@ ol li {
         margin-top: 80%;
     }
 
-
+    footer{
+        margin-top: 10px;
+    }
 
 }
+
+@media (max-width: 300px) {
+    #title h1 {
+        margin-top: 15px !important;
+    }
+
+    #title p{
+        font-size: small;
+    }
+
+    #game-info{
+        height: 73vh !important;
+    }
+
+    .btn{
+        height: 20px;
+        font-size: small; 
+    }
+}
+
 @media (max-height: 850px) {
     .btn-output{
         overflow: scroll;
@@ -415,40 +506,103 @@ ol li {
 
     ol{
         overflow: auto;
+    }  
+
+    .level-A1, .level-B1 {
+        font-size: xx-large;
     }
 
-    .btn-output a {
-        overflow: auto;         
-}
+
 }
 
 @media (max-height: 800px) {
-  /*  #game-info{
-        margin-top: 20px;
-        padding-top: 30px;
-    }*/
 
     #intro-description h2 {
         margin-bottom: 20px;
     } 
 
+    .btn{
+        font-size: large;
+    }
+
+    footer{
+        margin-top: 15px;
+    }
     
 }
 
 @media (max-height: 670px) {
-   /* #game-info{
-        height: 80vh;
-        padding-top: 25px;
-    }*/
+   #game-info{
+        height: 65vh;
+    }
+
     #intro-description h2 {
         margin-top: 10px;
-        margin-bottom: 20px;
+        margin-bottom: 10px;
     } 
 
     #title h1 {
         margin-top: 30px;
 
     }
+
+    .btn{
+        height: 30px;
+        /*margin-top: -20px;*/
+   }
+
 }
 
 
+@media (max-height: 550px) {
+    #intro-description p {
+        padding-top:0;
+    }
+
+    p{
+        font-size: small;
+    }
+
+    #title h1 {
+        margin-top: 10px;
+    } 
+
+    p{
+        font-size: medium;
+    }
+
+    .btn{
+        height:28px;
+        line-height: 2px;
+        margin: -1px;
+    }
+
+    .btn{
+        font-size: large;
+    }
+
+    #game-info{
+        height: 70vh;
+        margin-top:0;
+
+    }
+
+    #intro-description h2 {
+         margin-top: 5px; 
+         margin-bottom: 5px; 
+    }
+
+    .level-A1, .level-B1 {
+        height: 100px;
+        
+    }
+
+    footer{
+        margin-top: 10px;
+    }
+
+    p{
+        font-size: small;
+    }
+
+}
