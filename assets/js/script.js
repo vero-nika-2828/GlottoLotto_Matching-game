@@ -22,8 +22,7 @@ document.addEventListener("DOMContentLoaded", function(){
     shuffleDeck();
     $(".btn-output").hide();
     $("#result").hide();
-  
-   
+    //cardTurns();
 })
 
 
@@ -116,9 +115,7 @@ function cardTurns(){
         fetch(`https://api.dictionaryapi.dev/api/v2/entries/en/${animalName}`)
             .then(response => response.json())
             .then(data => {
-            console.log(data);
-            // You can access the definition of "hello" from the API response like this:
-            console.log(data[0].meanings[0].definitions[0].definition);
+  
             audioAPI = new Audio (data[0].phonetics[0].audio);
 
             audioAPI.play();
@@ -162,6 +159,7 @@ function compareCards() {
         $(".card").on("click", cardTurns);
         correctAnswerSound.play();
         youWin();
+        
     } else {
         console.log("Try again");
         $(".active").removeClass("active turn-card");
@@ -218,19 +216,63 @@ function timeDecrease() {
 }
 
 function youWin(){
-    if(matchedCards.length === 8){
+    let turnCount = parseInt($("#turns").html());
+    let congratulations = $("<p></p>").text("Well done!");
+    let pointsMessage = $("<p></p>").text("You have earned ");
+    let points = $("<span></span>").text(" ")
+    let nameLabel = $("<label></label>").text("Enter you name here");
+    let nameBox = $("<input></input>").text(" ")
+    let nameSubmit = $("<input></input>").text("Add the score")
+    let mainMenu = $("<a href='./index.html'></a>").text("Main Menu");
+    clearInterval(timeCountdown); 
+    
+    if(matchedCards.length === 8 && turnCount === 8){
         $(".card-area").hide();
-        let congratulations = $("<p></p>").text("You win!");
-        let mainMenu = $("<a href='./index.html'></a>").text("Main Menu");
         retryThisLevel();
         
         $("#result").show();
-        $("#result").append(congratulations, tryAgain, mainMenu);
-        congratulations.addClass("loser-text");
+        $("#result").append(congratulations, pointsMessage, nameBox, nameSubmit, tryAgain, mainMenu);
+       
+        pointsMessage.append(points);
+        pointsMessage.append(" points");
+        congratulations.addClass("win-text");
         tryAgain.addClass("btn");
         mainMenu.addClass("btn"); 
-        localStorage.setItem("myCat", "Tom");
-    }        
+        nameBox.addClass("<input>").text(" ");
+        nameSubmit.attr("type", "submit");
+        nameBox.prepend(nameLabel);
+       // nameBox.append(nameSubmit);
+        points.addClass("pointsDisplay");
+
+       
+        points.html("100");
+        localStorage.setItem("Points", "100");
+        console.log("100 points");
+        
+        nameSubmit.addEventListener.on("click", function(){
+            localStorage.setItem("Will add name later", "push works");
+        })
+       
+    }   else if (matchedCards.length === 8 && turnCount > 8 ){
+        let newPoints = 100 - turnCount;
+        $(".card-area").hide();
+        retryThisLevel();
+        
+        $("#result").show();
+        $("#result").append(congratulations, pointsMessage, nameBox, tryAgain, mainMenu);
+       
+        pointsMessage.append(points);
+        pointsMessage.append(" points");
+        congratulations.addClass("win-text");
+        tryAgain.addClass("btn");
+        mainMenu.addClass("btn"); 
+        points.addClass("pointsDisplay");
+
+        points.html(newPoints);
+        localStorage.setItem("Points2", newPoints);
+        console.log(newPoints);
+    
+    }       
 }
 
 
@@ -243,7 +285,7 @@ function gameOver(){
  
     $("#result").show();
     $("#result").append(youLose, tryAgain, mainMenu);
-    youLose.addClass("loser-text");
+    youLose.addClass("result-text");
     tryAgain.addClass("btn");
     mainMenu.addClass("btn");
 }
@@ -286,4 +328,17 @@ function pauseMusic () {
    
 }
 
+
+//function errorPage(){
+//    if($(location). attr("href") !== "https://8000-veronika282-glottolotto-onvr69yiy7k.ws-eu90.gitpod.io/"){
+//        $(location).attr("href", "../404.html");         
+//    }
+//}
+
+window.addEventListener("error", function (event) {
+    var error = event.error;
+    if (error && error.status === 404) {
+        window.location.href = "./404.html";
+    }
+});
 
