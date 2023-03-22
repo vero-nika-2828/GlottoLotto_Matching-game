@@ -4,6 +4,7 @@ body{
    
 }
 
+
 img {
     top:0%;
     left:0%;
@@ -98,7 +99,8 @@ ol li {
     font-size: x-large;
     border:none;
     justify-content: center;
-    letter-spacing: 2px;    
+    letter-spacing: 2px;
+    
 }
 
 .return {
@@ -226,6 +228,8 @@ ol li {
     margin: 5px;
 }
 
+
+
 footer{
     text-align: center;
     margin-top: 20px;
@@ -256,7 +260,7 @@ footer a{
 
 @media (max-width: 1500px) {
     .level-A1, .level-B1 {
-        padding-top: 6%;
+       padding-top: 6%;
     }
 }
 
@@ -302,6 +306,10 @@ footer a{
 }
 
 @media (max-width: 800px) {
+    .level-A1, .level-B1 {
+        padding-top: 10%;
+    }
+
      #timer{
         margin-left: 18%;     
         margin-right: 2%;  
@@ -311,9 +319,6 @@ footer a{
         margin-right: 50%;
     }
 
-    .btn{
-        font-size: large;
-    }
 }
 
 
@@ -328,8 +333,8 @@ footer a{
         margin-bottom: 0;
     }
 
-    .level-A1 {
-        margin-top: -3%;
+    .level-A1, .level-B1 {
+        padding-top: 12%;
     }
 
     #intro-description p{
@@ -360,6 +365,11 @@ footer a{
 @media (max-width: 630px) {
     #title h2{
         margin-top: 40px;
+    }
+
+
+    .level-A1, .level-B1 {
+    padding-top: 14%; 
     }
 
     #timer{
@@ -407,11 +417,10 @@ footer a{
     }
 
     .level-A1 {
-        margin-top: 18%;
+        margin-top: 9%;
     }
 
     .level-A1, .level-B1  {
-        font-size: 3rem;
         font-weight: 900;
     }
 
@@ -449,7 +458,7 @@ footer a{
 
 
     .level-A1 {
-        margin-top: 8%;
+        margin-top: 0;
     }
 
 
@@ -514,14 +523,12 @@ footer a{
     }
 
     ol{
-        overflow: auto;
+        overflow:scroll;
     }  
 
     .level-A1, .level-B1 {
-        font-size: xx-large;
+        font-size: 4rem;
     }
-
-
 }
 
 @media (max-height: 800px) {
@@ -534,19 +541,31 @@ footer a{
         font-size: large;
     }
 
+   
     footer{
         margin-top: 15px;
     }
     
+    .level-A1, .level-B1 {
+        font-size: 3rem;
+         
+    }
+
+     .level-A1{
+        margin-top: 5px;
+    }
+
 }
+
 
 @media (max-height: 670px) {
    #game-info{
         height: 65vh;
+        padding-top: 0;
     }
 
     #intro-description h2 {
-        margin-top: 10px;
+        margin-top: 20px;
         margin-bottom: 10px;
     } 
 
@@ -555,15 +574,15 @@ footer a{
 
     }
 
-    .btn{
-        height: 30px;
-        /*margin-top: -20px;*/
-   }
-
 }
 
 
 @media (max-height: 550px) {
+
+    #intro-description h2 {
+         margin-bottom: 5px; 
+   }
+
     #intro-description p {
         padding-top:0;
     }
@@ -596,10 +615,6 @@ footer a{
 
     }
 
-    #intro-description h2 {
-         margin-top: 5px; 
-         margin-bottom: 5px; 
-    }
 
     .level-A1, .level-B1 {
         height: 100px;
@@ -615,3 +630,4 @@ footer a{
     }
 
 }
+

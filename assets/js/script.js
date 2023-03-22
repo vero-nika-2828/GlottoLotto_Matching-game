@@ -77,7 +77,7 @@ $("#btn-play").on("click", function() {
     levelA1.addClass("btn").addClass("level-A1");
     levelB1.addClass("btn").addClass("level-B1");
     levelCloseButton.addClass("btn").addClass("return");
-    $(".btn-output").addClass("d-grid").addClass("gap-2");
+    $(".btn-output").addClass("d-grid").addClass("gap-2").addClass("overflow-control");
 
     $(".return").on("click", function() {
         $(".btn-output").text("");
