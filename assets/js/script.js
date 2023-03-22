@@ -222,50 +222,51 @@ function youWin(){
     let points = $("<span></span>").text(" ")
     let nameLabel = $("<label></label>").text("Enter you name here");
     let nameBox = $("<input></input>").text(" ")
-    let nameSubmit = $("<input></input>").text("Add the score")
+    let addName = $("<input></input>").text("Add the score")
     let mainMenu = $("<a href='./index.html'></a>").text("Main Menu");
     clearInterval(timeCountdown); 
     
-    if(matchedCards.length === 8 && turnCount === 8){
+    if(matchedCards.length === 4 && turnCount === 4){
         $(".card-area").hide();
         retryThisLevel();
         
         $("#result").show();
-        $("#result").append(congratulations, pointsMessage, nameBox, nameSubmit, tryAgain, mainMenu);
+        $("#result").append(congratulations, pointsMessage, nameBox, addName, tryAgain, mainMenu);
        
         pointsMessage.append(points);
         pointsMessage.append(" points");
         congratulations.addClass("win-text");
         tryAgain.addClass("btn");
         mainMenu.addClass("btn"); 
-        nameBox.addClass("<input>").text(" ");
-        nameSubmit.attr("type", "submit");
+        addName.attr("type", "submit");
         nameBox.prepend(nameLabel);
-       // nameBox.append(nameSubmit);
         points.addClass("pointsDisplay");
-
+        addName.addClass("submit");
        
         points.html("100");
         localStorage.setItem("Points", "100");
         console.log("100 points");
         
-        nameSubmit.addEventListener.on("click", function(){
+        addName.addEventListener.on("click", function(){
             localStorage.setItem("Will add name later", "push works");
         })
        
-    }   else if (matchedCards.length === 8 && turnCount > 8 ){
+    }   else if (matchedCards.length === 4 && turnCount > 4 ){
         let newPoints = 100 - turnCount;
         $(".card-area").hide();
         retryThisLevel();
         
         $("#result").show();
-        $("#result").append(congratulations, pointsMessage, nameBox, tryAgain, mainMenu);
+        $("#result").append(congratulations, pointsMessage, nameBox, addName, tryAgain, mainMenu);
        
         pointsMessage.append(points);
         pointsMessage.append(" points");
         congratulations.addClass("win-text");
         tryAgain.addClass("btn");
         mainMenu.addClass("btn"); 
+        nameBox.addClass("name-value")
+        addName.attr("type", "submit").attr("value","Add the score");
+        addName.addClass("submit")
         points.addClass("pointsDisplay");
 
         points.html(newPoints);
@@ -275,6 +276,12 @@ function youWin(){
     }       
 }
 
+
+submit.on("click",function(){
+    let name = $("name.value").html();
+    localStorage.setItem(name, newPoints);
+    console.log(namehtml())         
+})
 
 function gameOver(){
     $(".card-area").hide();
