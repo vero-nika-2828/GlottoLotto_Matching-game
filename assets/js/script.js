@@ -222,7 +222,7 @@ function youWin(){
     let points = $("<span></span>").text(" ")
     let nameLabel = $("<label></label>").text("Enter you name here");
     let nameBox = $("<input></input>").text(" ")
-    let addName = $("<input></input>").text("Add the score")
+    let addScore = $("<input></input>").text("Add the score")
     let mainMenu = $("<a href='./index.html'></a>").text("Main Menu");
     clearInterval(timeCountdown); 
     
@@ -231,23 +231,23 @@ function youWin(){
         retryThisLevel();
         
         $("#result").show();
-        $("#result").append(congratulations, pointsMessage, nameBox, addName, tryAgain, mainMenu);
+        $("#result").append(congratulations, pointsMessage, nameBox, addScore, tryAgain, mainMenu);
        
         pointsMessage.append(points);
         pointsMessage.append(" points");
         congratulations.addClass("win-text");
         tryAgain.addClass("btn");
         mainMenu.addClass("btn"); 
-        addName.attr("type", "submit");
+        addScore.attr("type", "submit");
         nameBox.prepend(nameLabel);
         points.addClass("pointsDisplay");
-        addName.addClass("submit");
+        addScore.addClass("submit");
        
         points.html("100");
         localStorage.setItem("Points", "100");
         console.log("100 points");
         
-        addName.addEventListener.on("click", function(){
+        addScore.addEventListener.on("click", function(){
             localStorage.setItem("Will add name later", "push works");
         })
        
@@ -257,31 +257,34 @@ function youWin(){
         retryThisLevel();
         
         $("#result").show();
-        $("#result").append(congratulations, pointsMessage, nameBox, addName, tryAgain, mainMenu);
+        $("#result").append(congratulations, pointsMessage, nameBox, addScore, tryAgain, mainMenu);
        
         pointsMessage.append(points);
         pointsMessage.append(" points");
         congratulations.addClass("win-text");
         tryAgain.addClass("btn");
         mainMenu.addClass("btn"); 
-        nameBox.addClass("name-value")
-        addName.attr("type", "submit").attr("value","Add the score");
-        addName.addClass("submit")
+        nameBox.attr("id","name-value")
+        addScore.attr("id", "submit-score").attr("type", "submit").attr("value","Add the score");
         points.addClass("pointsDisplay");
 
         points.html(newPoints);
         localStorage.setItem("Points2", newPoints);
         console.log(newPoints);
     
-    }       
+    }   
+
+    $("#submit-score").on("click",function(){
+        let name = $('#name-value').val();
+        //localStorage.setItem(name, newPoints);
+        console.log("submit button clicked");   
+        console.log(name);      
+    })    
+
 }
 
 
-submit.on("click",function(){
-    let name = $("name.value").html();
-    localStorage.setItem(name, newPoints);
-    console.log(namehtml())         
-})
+
 
 function gameOver(){
     $(".card-area").hide();
