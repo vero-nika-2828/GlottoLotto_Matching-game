@@ -30,7 +30,7 @@ document.addEventListener("DOMContentLoaded", function(){
 
 //Display instructions for the game
 $("#btn-instructions").on("click", function() {
-    //Create and define values for header, description and button in 'How to play' modal
+    //Create elements and set values for header, description and button in 'How to play' modal
     let clearPreviousText = $(".btn-output").text("");
     let instructionsHeader = $("<h2></h2>").text("How to Play");
     let instructions = $("<p></p>").text("Flip the cards and match words to pictures. Here are the instructions on how to play:");
@@ -43,13 +43,13 @@ $("#btn-instructions").on("click", function() {
     listItems = $.map(steps, step => $("<li></li>").text(step));   
     list.append(listItems);
   
-    //Display "How to play" modal       
+    //Display 'How to play' modal       
     $(".btn-output").show();
     $(".btn-output").append(clearPreviousText, instructionsHeader, instructions,list, closeButton);
     $(".btn-primary, #intro-description").hide();
    
 
-    //Apply styling to the button and the "How to play modal"
+    //Apply styling to the return button and the "How to play modal"
     closeButton.addClass("btn").addClass("return");
     $(".btn-output").addClass("d-grid").addClass("gap-2");
 
@@ -64,21 +64,25 @@ $("#btn-instructions").on("click", function() {
 })
 
 
-
+//Display A1 and B1 level options
 $("#btn-play").on("click", function() {
+    //Create elements and set values for option and return buttons in 'Play' modal 
     let levelA1 = $("<a href='./level-A1.html'></a>").text("A1-A2");
     let levelB1 = $("<a href='./level-B1.html'></a>").text("B1-B2");
     let levelCloseButton = $("<button'></button>").text("Return");
-  
+   
+    //Display 'Play' modal
     $(".btn-output").append(levelA1, levelB1, levelCloseButton);
     $(".btn-output").show();
     $(".btn-primary, #intro-description").hide();
 
+    //Apply styling to the return button and the 'Play' modal
     levelA1.addClass("btn").addClass("level-A1");
     levelB1.addClass("btn").addClass("level-B1");
     levelCloseButton.addClass("btn").addClass("return");
     $(".btn-output").addClass("d-grid").addClass("gap-2").addClass("overflow-control");
 
+     //Enable return to the main menu with return button
     $(".return").on("click", function() {
         $(".btn-output").text("");
         $(".btn-output").hide();
@@ -90,48 +94,45 @@ $("#btn-play").on("click", function() {
   })
 
 
-
-  $("#check-score").on("click", function() {
-
-  })
-
-//On each click, the selceted card turns and the user will hear the name of the animal for the corresponding card. The card cannot be clicked again 
+//On each click, turn selceted card and say the name of the animal for the corresponding card  
 $(".card").on("click", cardTurns);
 
-function cardTurns(){  
+
+function cardTurns(){ 
+    //Excecute the below code if the card has not been already clicked thus does not have the active class 
     if(!$(this).hasClass("active")){
+        //Increase counter by one, turn the card and push the name of the animal into an array
         counter++;
         $(this).addClass("active");
         $(this).addClass("turn-card");
         let individualCard = $(this)[0].dataset.animal;
         cardContainer.push(individualCard);
         twoCardsSelected();   
+
+
         let cardText = $(this)[0].textContent;
         console.log(cardText);
         
 
-
+        //Say the name of the animal on the card by calling API dictionaries
         let animalName = $(this)[0].dataset.animal;        
         fetch(`https://api.dictionaryapi.dev/api/v2/entries/en/${animalName}`)
             .then(response => response.json())
             .then(data => {
   
             audioAPI = new Audio (data[0].phonetics[0].audio);
-
-            audioAPI.play();
+             audioAPI.play();
         })
         .catch(error => console.log(error));
-        
-
-
+    
+    //Disable the option to click the card when it has been already clicked    
     }else{
         console.log("it is alraedy active");
         $(".active").off("click");
       
 }}
 
-   
- 
+
 
 function twoCardsSelected(){
     if(counter === 2){
@@ -266,7 +267,7 @@ function youWin(){
         mainMenu.addClass("btn"); 
         nameBox.attr("id","name-value")
         addScore.attr("id", "submit-score").attr("type", "submit").attr("value","Add the score");
-        points.addClass("pointsDisplay");
+        points.attr("id", "points-display");
 
         points.html(newPoints);
         localStorage.setItem("Points2", newPoints);
@@ -275,10 +276,29 @@ function youWin(){
     }   
 
     $("#submit-score").on("click",function(){
-        let name = $('#name-value').val();
+        let playerName = $('#name-value');
+        let currentScore = $("#points-display");
         //localStorage.setItem(name, newPoints);
         console.log("submit button clicked");   
-        console.log(name);      
+        console.log(playerName);      
+
+        
+        const scores = JSON.parse(localStorage.getItem("scores")) || [] ;
+        console.log(scores);
+
+        saveHighScore = e => {
+            console.log("clicked the save button")
+            e.preventDevault();
+
+        const score = {
+            score: currentScore.html(),
+            scoreboardName: playerName.val()
+        };
+
+        scores.push(score);
+        console.log(scores);
+        localStorage.setItem("scores", JSON.stringify(score));
+        };
     })    
 
 }
@@ -338,17 +358,4 @@ function pauseMusic () {
    
 }
 
-
-//function errorPage(){
-//    if($(location). attr("href") !== "https://8000-veronika282-glottolotto-onvr69yiy7k.ws-eu90.gitpod.io/"){
-//        $(location).attr("href", "../404.html");         
-//    }
-//}
-
-window.addEventListener("error", function (event) {
-    var error = event.error;
-    if (error && error.status === 404) {
-        window.location.href = "./404.html";
-    }
-});
 
