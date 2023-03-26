@@ -133,10 +133,10 @@ ol li {
     padding: 10px;
     border-radius: 25px;
     background: rgba(0, 72, 62, 0.9);
-
 }
 
 /*Card styling, positioning and tranform effect to enable turning the card*/
+/*Cursor emoji taken from https://www.emojicursor.app/*/
 .card{
     position:relative;
     margin:1px;
@@ -224,6 +224,7 @@ ol li {
     margin-top: 20px;
     padding: 10px;
     border-radius: 25px;
+    border: 2px solid #D79E06;
     background: rgba(0, 72, 62, 0.9);
     font-size:80px;
     text-align: center;
@@ -231,7 +232,7 @@ ol li {
 }
 
 #result p{
-    margin-top: 25%;
+    margin-top: 18%;
 }
 
 /*Result navigation buttons styling adjustment*/ 
@@ -239,6 +240,11 @@ ol li {
     margin-top: -20%;
     display: block;
     margin: 5px;
+}
+
+#score-list{
+    margin-left: 40%;
+    font-size: large;
 }
 
  /*Footer styling and positioning*/
@@ -321,6 +327,10 @@ footer a{
     .card-front p {
         margin-top: 15%;
     }
+
+    result p{
+        margin-top: 20%;
+    }
 }
 
 @media (max-width: 1280px) {
@@ -334,6 +344,14 @@ footer a{
 
     .return {
         padding-top: 2%;
+    }
+
+    #result p{
+        margin-top: 20%;
+    }
+
+    #score-list{
+        margin-left: 35%;
     }
 
     #error404{
@@ -472,9 +490,12 @@ footer a{
         margin-right: 35%;
     }
 
-
     #result p {
-        margin-top: 15%;
+        margin-top: 25%;
+    }
+
+    #score-list{
+        margin-left: 30%;
     }
 
     #error404 h3{
@@ -512,7 +533,11 @@ footer a{
 
     #result p {
        font-size: 50px;
-       margin-top: 24% ;
+       margin-top: 40% ;
+    }
+
+    #score-list{
+        margin-left: 25%;
     }
 
     #error404 {
@@ -572,7 +597,7 @@ footer a{
     }
     
     #result p {
-        margin-top: 65%;
+        margin-top: 55%;
     }
 
 
@@ -613,8 +638,12 @@ footer a{
         margin-top: 55%;
     }
 
-    #result p {
-        margin-top: 80%;
+    #result p{
+        margin-top: 50%;
+    }
+
+    #score-list{
+        font-size: medium;
     }
 
     footer{
