@@ -7,27 +7,33 @@
 
 # Project Overview
 
-Yasmin is a devoted photographer who has been capturing beautiful moments as well as beautiful places since 2005. Her love for nature and animals has not only become the main focus of her photography but it is a great inspiration for the majority of her photos. She uses natural features to complement overall product image her customers want to sell. She would like to offer her services to anyone who desire to create lasting memories of their pets or places they love as well as those whose aim is to get attractive photos of their product for promotional purposes. 
+GlottoLotto matching card game is a fun memory game designed with the aim to help students of English language to improve their skills and prompt them to practice the language outside of the classroom. While playing the game, the user will get opportunity not only to revise or learn new vocabulary but they will be able to practice the pronunciation of individual words and relate those words to the relevant concept.
+
+The objective of the game is for the user to  match an English word to the corresponding picture by selecting two cards at each turn from the the grid of 16 cards. There are two levels to choose from: A1-A2 and B1-B2 with suitable difficulty of words for each level. The words in each category were selected based on the dificulty indication on Cambridge Dictionary Website. The user will keep turning the cards until all pairs are found or until the time limit is reached. 
+
+
+
 
 # Project objectives
 
 ## User Goals
 
-* Find out what photography the site owner offers
-* See samples and quality of photographer's work
-* Learn about photographer's experience in the field
-* Find out what other people think about the photographer
-* Find ways to reach out to photographer
+* I want to improve my English language skills
+* I want to practice or learn the language in an engaging way 
+* I want to have fun while learning
+* I want a game that is suitable for my level
+* I want a game that helps with memorising new vocabulary and with pronunciation
+* I want a game that is easy to understand 
 
 
 ## Site Owner Goals
 
-* Attract customers for the business
-* Convince customers to choose site owner's service
-* Present their experience
-* Provide overview of their approach 
-* Demonstrate their skills 
-* Enable customers to contact them
+* Provide educational tool for students of English language
+* Enable students to practice the language outside of the classroom
+* Evoke insterest among students to learn English
+* Accommodate needs of learner with different langauge abilities
+* Help them to expand their vocabulary, practice pronunciation, and link the concepts
+
 
 # User Experience
 
@@ -35,45 +41,68 @@ Yasmin is a devoted photographer who has been capturing beautiful moments as wel
 
 ### Target user
 
-* Pet owners
-* Nature lovers, hikers, adventure seeker
-* Business owners
+* ESOL students - (English as Second Language) 
+* EFL students - (English as Foreigner language)
+* Adults and Childre
 
 ### First Time Visitor Goals
 
-1. I want to be able to quickly identify what categories of photography the photographer offers
-2. I want to be able to view photographers work to see whether that fits my requirements and expectations
-3. I want to be able to find out more about the photographer 
-4. I want to see opinions of other customers
-5. I want to be able to navigate through the website and find information easily 
-6. I want to be able to navigate the site across variety of screen sizes
-7. I want to be able to view the website on the variety of web browsers
-8. I want the links to work when I click on them 
-9. I want to be able to read the content effortlessly
-10. I want to be able to find contact details for the photographer
+1. I want to be able to find out effortlessly what this website is for  
+2. I want to be able to quickly identify where I can find different elements of the website and get to them
+3. I want to be able to read instructions on how to play this game
+4. I want to be able to play a game suitable for my level
+5. I want to see whether I am improving 
+6. I want to be able to return to main menu easily 
+7. I want to be able to replay the game of the same level 
+8. I want the new game to have the cards in different places so it doesnt become too easy to find a match
+8. I want to see clearly what I seleceted
+9. I want to know how to pronounce each word
+10. I want to know when I got the match
+11. I want to know when I didnt get the match 
+12. I want to get a chance to memorise the position of the cards I selected 
+13. I want to see how much time I have left to finish the game 
+14. I want to see how many turns I have taken 
+15. I want to know whether I won or lost when the game is finished 
+16. I want to see my score
+17. I want to keep track of my score
+18. I want it to be clear that when my score gets saved 
+19. I want to be able to control the music of the game
 
 ### Returning Visitor Goals
 
-11. I would like to be able to book the photographer directly
-12. I would like to see latest photos photographer posts on social media
+20. I want to be able to directly to play the game 
+21. I want to see my scores
+22. I want to be able to progress in the game
 
 
 ### Site owner's Goals
 
-13. I want to showcase my work to potential customers
-14. I want customers to be able to contact me and hire me 
-15. I want customers to see get the understanding of how I do my photography 
-16. I want customers to see how satisfied other customers are with my service
-17. I want to provide interesting content which will prompt potential customers to 
-hire me
-18. I want to know which photo categories are more in demand
+23. I want to ensure that users know what this game is for and how to play it 
+24. I want to make it obvious to the user wherre to find each element of the website
+25. I want user to be able to navigate to the main menu easily 
+26. I want users to enjoy the game and keep the difficulty to their level 
+27. I want returning users to go directly to the game 
+28. I want users to be able to re-play the game of the same difficulty 
+29. I want to make the game interesting for users by changing the position of cards with each new game
+30. I want users to have enough time memorise where each card is placed
+31. I want them to indicate to the users when they did or did not find the match 
+32. I want users to be able to practice pronunciation 
+33. I wnat to make it easy for users to learn different concepts 
+34. I want users to be able to practice pronunciation 
+35. I want users to see that they are improving 
+36. I want to challenge the user by giving them time limit 
+37. I want users to see how many turns they have taken during the game
+38. I want users to have some background music if they wish to listen to it
+
 
 
 # Design
 
 ## Design choices
 
-This site  will be visited by pet owners, nature enthusiast as well as business owners who want to advertise their product to increase their sales and therefore the site needs to cater for all these customers. The site should look professional with friendly and playful/creative tone and include photo examples.
+The site will be visited by students of English language. The students are expected to have diverse level of knowledge of English language and to belong to different age groups. The website should appealing to adults as well as children and in order to encourage users to keep practicing the language and enjoy it, rather than see it as an obligation, design elements should aid with evoking friendliness, positivity, playfullness and confidence.
+
+
 
 ## Colour scheme
 

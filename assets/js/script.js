@@ -92,9 +92,9 @@ $("#btn-play").on("click", function() {
 //On each click, turn selceted card and say the name of the animal for the corresponding card  
 $(".card").on("click", cardTurns);
 
-
+//Turn card function - Execute when card is clicked
 function cardTurns(){ 
-    //Excecute the below code if the card has not been already clicked thus does not have the active class 
+    //execute the below code if the card has not been already clicked thus does not have the active class 
     if(!$(this).hasClass("active")){
         const animalName = $(this)[0].dataset.animal; 
         const apiLink = "https://api.dictionaryapi.dev/api/v2/entries/en/"
@@ -126,9 +126,9 @@ function cardTurns(){
 }
 
 
-
+//Two Cards Selected function - Execute when counter icnreases to 2
 function twoCardsSelected(){
-    //Excecute when the counter increases to two    
+    //execute when the counter increases to two    
     if(counter === 2){
         //Increase turn count by one
         //Disable turn function until cards get compared
@@ -138,6 +138,7 @@ function twoCardsSelected(){
     }
 }
 
+//Compare cards function  - execute when two cards are placed in an array
 function compareCards() {
     let card1 = cardContainer[0];
     let card2 = cardContainer[1];
@@ -152,7 +153,7 @@ function compareCards() {
         $(".active").addClass("matched");
         $(".matched").children().fadeOut();
              
-        
+        //Push matched cards into matched cards array
         const currentMatch = $(".matched");
         matchedCards.push(currentMatch);
 
@@ -170,9 +171,11 @@ function compareCards() {
         $(".card").on("click", cardTurns);
     }};
 
-//With each new game the deck of cards changes the position randomly
+
+// Shuffle Deck function - execute with each new game 
 //Function built using Fisher Yates Shuffle algorithm found in this video https://www.youtube.com/watch?v=3uuQ3g92oPQ&t=342s
 function shuffleDeck(){
+    //Cards change their position randomly
     for(card = 0; card  < cardDeck.length; card ++) {
         let cardToSwap = Math.floor(Math.random()  * (card  + 1));
         cardDeck[cardToSwap].style.order = card ;
@@ -218,112 +221,141 @@ function timeDecrease() {
 
 
 function youWin(){
+     //Create elements and set values for header, amount of points and buttons in win-result modal
     let turnCount = parseInt($("#turns").html());
     let congratulations = $("<p></p>").text("Well done!");
     let pointsMessage = $("<p></p>").text("You have earned ");
     let points = $("<span></span>").text(" ")
-    let nameLabel = $("<label></label>").text("Enter you name here");
     let nameBox = $("<input></input>").text(" ")
-    let addScore = $("<button></button>").text("Add the score")
+    let addScore = $("<button></button>").text("Save to score board")
     let mainMenu = $("<a href='./index.html'></a>").text("Main Menu");
-    
+
     
     if(matchedCards.length === 4 && turnCount === 4){
+        //Stop the timer
         clearInterval(timeCountdown); 
-        $(".card-area").hide();
-        retryThisLevel();
         
+        //Hide card area
+        $(".card-area").hide();
+        $(".game-scores").hide();
+        
+        //Display result modal together with win-result text, score and navigation buttons   
+        retryThisLevel();
         $("#result").show();
         $("#result").append(congratulations, pointsMessage, nameBox, addScore, tryAgain, mainMenu);
-       
-        pointsMessage.append(points);
-        pointsMessage.append(" points");
+        
+        //Add styling and IDs to all the added elements 
         congratulations.addClass("win-text");
         tryAgain.addClass("btn");
         mainMenu.addClass("btn"); 
-        addScore.attr("type", "submit");
-        nameBox.prepend(nameLabel);
-        points.addClass("pointsDisplay");
-        addScore.addClass("submit");
-       
-        points.html("100");
-        localStorage.setItem("Points", "100");
-        console.log("100 points");
+        nameBox.attr("id","name-value").attr("type","text").attr("placeholder","Add your name here").addClass("btn");
+        addScore.attr("id", "submit-score").attr("type", "submit").addClass("btn");
+        points.attr("id", "points-display");
+         
+        //Add points into the text   
+        pointsMessage.append(points, " points");
+        points.html(newPoints);  
+        
+        //Push ponts into localStorage
+        localStorage.setItem("latestPoints", "100");
+        
+        //Save points when clicked
+        $("#submit-score").on("click",saveScore); 
         
           
     }   else if (matchedCards.length === 4 && turnCount > 4 ){
-        clearInterval(timeCountdown); 
+        //Calculate points if more than 8 turns taken to find all the matches
         let newPoints = 100 - turnCount;
-        $(".card-area").hide();
-        retryThisLevel();
         
+        //Stop the timer
+        clearInterval(timeCountdown);   
+        
+        //Hide card area
+        $(".card-area").hide();
+        $(".game-scores").hide();
+       
+        //Display result modal together with win-result text, score and navigation buttons    
+        retryThisLevel();      
         $("#result").show();
         $("#result").append(congratulations, pointsMessage, nameBox, addScore, tryAgain, mainMenu);
        
-        pointsMessage.append(points);
-        pointsMessage.append(" points");
+        //Add styling and IDs to all the added elements 
         congratulations.addClass("win-text");
         tryAgain.addClass("btn");
         mainMenu.addClass("btn"); 
-        nameBox.attr("id","name-value")
-        addScore.attr("id", "submit-score").attr("type", "submit");
+        nameBox.attr("id","name-value").attr("type","text").attr("placeholder","Add your name here").addClass("btn");
+        addScore.attr("id", "submit-score").attr("type", "submit").addClass("btn");
         points.attr("id", "points-display");
-
-        points.html(newPoints);
-        localStorage.setItem("Points2", newPoints);
-        console.log(newPoints);
+       
+        //Add points into the text   
+        pointsMessage.append(points, " points");
+        points.html(newPoints);  
+       
+        //Save points when clicked      
+        localStorage.setItem("latestPoints", newPoints);
         $("#submit-score").on("click",saveScore); 
     }   
 
 }
 
+//Save score in the localStorage
+//Built following this video https://www.youtube.com/watch?v=DFhmNLKwwGw&list=PLDlWc9AfQBfZIkdVaOQXi1tizJeNJipEx&index=9
+function saveScore(e){   
+        const mostRecentScore = localStorage.getItem("latestPoints")
+        const playerName = $('#name-value').val();
+        const highScores = JSON.parse(localStorage.getItem("highScores")) || [];
+        console.log("it is not an empty string")
 
-function saveScore(e){
-    const mostRecentScore = localStorage.getItem("Points2")
-    const playerName = $('#name-value').val();
+        //Give indication to user that the name was saved by updating the button text to saved
+        $("#submit-score").html("Saved")
+        
+        // stop the form opening new page by default
+        e.preventDefault();
+        
+        //Store the player name and score in an object
+        const scoreItem = {
+        name: playerName,
+        score: mostRecentScore
+        };  
     
-    const highScores = JSON.parse(localStorage.getItem("highScores")) || [];
-
-    e.preventDefault();
-      const scoreItem = {
-      name: playerName,
-      score: mostRecentScore
-    };
-
-    highScores.push(scoreItem);
-    highScores.sort((a, b) => b.score - a.score);
-    highScores.splice(10);
-     
-    console.log(playerName);
-    console.log(mostRecentScore);
-    console.log(highScores);
-    console.log(scoreItem);
-     
-    localStorage.setItem("highScores", JSON.stringify(highScores));
-     
+        //push the scoreItem into highScore array
+        highScores.push(scoreItem);
     
-}  
+        //Sort score from the hightest to the smallest
+        highScores.sort((a, b) => b.score - a.score);
+        
+        //Allow only 10 scores to be pushed into the array
+        highScores.splice(10);
+        
+        //Update the localStorage
+        localStorage.setItem("highScores", JSON.stringify(highScores));  
+        
+        //Clear the name from the field once added to local storage
+        $('#name-value').val("");
+    }   
+     
 
 
 $("#score-board").on("click", function() {
+     //Create elements and set values for header, list and return button of 'Score Board'
     const boardHighScores = Array.from(JSON.parse(localStorage.getItem("highScores")));
     const scoreBoardHeader = $("<h2></h2>").text("How well did you do?");
     const scoreBoardList = $("<ol></ol>").text("");
     const boardCloseButton = $("<button></button>").text("Return");
     
-
+    //Display 'Score Board' modal
     $(".btn-output").append(scoreBoardHeader, scoreBoardList, boardCloseButton  );
     $(".btn-primary, #intro-description").hide();
     $(".btn-output").show();
-
+    
+    //Crete list of names and scores 
     scoreBoardItem = $.map(boardHighScores, score => $("<li></li>").text(`${score.name} - ${score.score}`));
-    scoreBoardList.append(scoreBoardItem);
+    scoreBoardList.append(scoreBoardItem);    
     
     //Apply styling to the return button, the "Score Board modal" and Score board list 
     boardCloseButton.addClass("btn").addClass("return");
     $(".btn-output").addClass("d-grid").addClass("gap-2");
-    scoreBoardList.attr("id", "score-list"); 
-  
+    scoreBoardList.attr("id", "score-list");   
     
     //Enable return to the main menu with return button
     $(".return").on("click", function() {
@@ -335,16 +367,21 @@ $("#score-board").on("click", function() {
 })
 
 function gameOver(){
-    //Show the modal informing the user that the time has run out
-    $(".card-area").hide();
+    //Create elements and set values for header and navigation buttons'Time's up' modal 
     let youLose = $("<p></p>").text("Time's up!");
     let mainMenu = $("<a href='./index.html'></a>").text("Main Menu");
      
+    //Hide card-area
+    $(".card-area").hide();
+
     //Take the user to the same level
     retryThisLevel ();
  
+     //Display 'Result' modal
     $("#result").show();
     $("#result").append(youLose, tryAgain, mainMenu);
+
+    //Add styling to 
     youLose.addClass("result-text");
     tryAgain.addClass("btn");
     mainMenu.addClass("btn");
@@ -365,7 +402,7 @@ music.on("click", function(){
     musicControl ?  pauseMusic() :  playMusic();
 })
 
-
+//Play music function - execute when music control is set to false
 function playMusic() {
    gameMusic.play();
    music.html("<i class='fa-solid fa-volume-high'></i>");
@@ -373,7 +410,7 @@ function playMusic() {
    musicControl = true;
 }
 
-
+//Pause music function - execute when music control is set to true
 function pauseMusic () {
     gameMusic.pause();
     music.html("<i class='fa-solid fa-volume-xmark'></i>");

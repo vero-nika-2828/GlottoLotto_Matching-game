@@ -226,13 +226,21 @@ ol li {
     border-radius: 25px;
     border: 2px solid #D79E06;
     background: rgba(0, 72, 62, 0.9);
-    font-size:80px;
+    /*font-size:80px;*/
     text-align: center;
     vertical-align: middle;
 }
 
-#result p{
+/*Result text when user fails -font size and positioning*/
+.result-text{
     margin-top: 18%;
+    font-size:80px;
+}
+
+/*Result text when user wins- ont size and positioning*/
+.win-text{
+    margin-top: 10%;
+    font-size:80px;
 }
 
 /*Result navigation buttons styling adjustment*/ 
@@ -242,10 +250,30 @@ ol li {
     margin: 5px;
 }
 
+/*Name and score Save button */
+#result button{
+    display: block;
+    margin: 5px;
+    width: 99%;
+}
+
+/*Name imput field*/
+#name-value{
+    display: block;
+    margin: 5px;
+    background-color: #D79E06;
+    width: 99%;
+}
+
+
+
+/*Score list positioning*/
 #score-list{
     margin-left: 40%;
     font-size: large;
 }
+
+
 
  /*Footer styling and positioning*/
 footer{
@@ -328,12 +356,16 @@ footer a{
         margin-top: 15%;
     }
 
-    result p{
+    .result-text{
         margin-top: 20%;
     }
 }
 
 @media (max-width: 1280px) {
+    #title p{
+        font-size: smaller;
+    }
+
     .level-A1{
         margin-top: 3% !important;
     }
@@ -346,8 +378,16 @@ footer a{
         padding-top: 2%;
     }
 
-    #result p{
+   .result-text{
         margin-top: 20%;
+    }
+
+    #result button{
+        width: 98%;
+    }
+    
+    #name-value{
+        width: 98%;
     }
 
     #score-list{
@@ -462,7 +502,7 @@ footer a{
 
 @media (max-width: 700px) {
     #title p{
-        margin-bottom: 0;
+        font-size: 12px;
     }
 
     .level-A1, .level-B1 {
@@ -490,7 +530,7 @@ footer a{
         margin-right: 35%;
     }
 
-    #result p {
+   .result-text {
         margin-top: 25%;
     }
 
@@ -531,9 +571,13 @@ footer a{
     }
 
 
-    #result p {
+   .result-text {
        font-size: 50px;
        margin-top: 40% ;
+    }
+
+    .win-text{
+        font-size: 50px;
     }
 
     #score-list{
@@ -550,6 +594,10 @@ footer a{
 @media (max-width: 500px) {
     #title h1, #title h2 {
         text-shadow: 2px 1px rgba(0, 72, 62, 1);
+    }
+
+    #title p{
+        font-size: 10px;
     }
 
     #game-info, .card-area{
@@ -596,19 +644,36 @@ footer a{
 
     }
     
-    #result p {
+   .result-text {
         margin-top: 55%;
     }
 
+    .win-text {
+        margin-top: 30%;    
+    }
+
+    #result button {
+        width: 97%;
+    }
+    
+    #name-value {
+        font-size: smaller;
+    }
 
 }
 
 @media (max-width: 380px) {
+    #title h2 {
+        margin-top: 25px;
+    }
+  
+    #title p{
+        font-size: 8px;
+    }
 
     #intro-description h2{
         margin-top: 20px;
     }
-
 
     .level-A1 {
         margin-top: 0;
@@ -638,8 +703,17 @@ footer a{
         margin-top: 55%;
     }
 
-    #result p{
+   .result-text{
         margin-top: 50%;
+    }
+
+    .win-text {
+        margin-top: 15%;
+        font-size: 30px;
+    }
+
+    #result button {
+        width: 96%;
     }
 
     #score-list{
@@ -693,6 +767,11 @@ footer a{
 
     .level-A1, .level-B1{
         padding-top: 30%;
+    }
+
+    .win-text {
+        margin-top: 30%;
+      
     }
 
     #error404 {
