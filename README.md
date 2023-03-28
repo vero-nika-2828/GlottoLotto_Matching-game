@@ -107,16 +107,28 @@ The site will be visited by students of English language. The students are expec
 
 ## Colour scheme
 
-The main colors of the website are black, golden yellow and slightly brighter shades of those colours. Black colors were used in order to indicate professionality and elegance while gold was used to add a bit of contrast in order to catch the visitor's eye while at the same time this warm color indicate  playfulness and evokes positive feeling about the services offered. 
-Text color is mainly black for better contrast. White, yellow and brighter shades of yellow were used to emphasise certain text or for better contrast on dark background. 
+The main colors of the website are dark green, gold yellow, pink and white. 
+* Dark green (#00483E) is used as a background color for all the containers: Main menu, Card area and Resull to provide a contrast for the text and to evoke a positive and relaxed feelings.
+
+* Gold yellow (#D79E06) color was used for all the text apart from the button text to complement the dark green background and give the page a happy joyful feel. 
+
+* Pink color (#CF9EAC) was used as the button color. This color diverges slightly from the background and description colors and was chosen with aim to bring the users attention to the navigation menu. It is also asociate with plaufulness which is the mood we want to set before the game.
+
+* White color (#FFFFFF) was used as a button text for the contrast. 
+
+* Brighter shades of pink (#FABEB4, #FCA99B) and ligher shade of (#00C9AC) were used to create linear gradient on the back of the card.
+
+* Dark purple (#800080) and dark blue (#0000FF) used for the linear gradient for on the front of the cards to make the pictures and text stand out.
+
+* Gray (#E9EEF1) and is used for the screen background.
 
 ![Color scheme](./assets/readme%20_docs/color-scheme.jpg)
 
 ## Typography
 
-Google Fonts was used to import the fonts chosen for this website.
+Google Fonts website was used to import the fonts chosen for this website.
 
-Lato was used as a general font for the website. Acme was used for headers, emphasised words and to keep with the playful and friendly theme. San seriff was added in case browser doesn't support the other two fonts. 
+Lato was used as a general font for the website. Marhey in cursive was used for headers, button text for emphasis and to keep with the playful and friendly theme. San seriff was added in case browser doesn't support the other two fonts. 
 
 ![Typography Acme](./assets/readme%20_docs/typography_acme.JPG)
 
@@ -124,8 +136,11 @@ Lato was used as a general font for the website. Acme was used for headers, emph
 
 ## Imagery
 
-Images used were selected from pexels to reflect photographer's main areas of focus and they support the themes of pet, product and nature photography. 
+Images used were selected from pixabay with the theme of animated animals 
 
+## Sound 
+
+Sound used was selected from pixabay
 
 ## Wireframes
 <details>
@@ -153,11 +168,13 @@ Images used were selected from pexels to reflect photographer's main areas of fo
 
 # Features
 
-The website is comprised of 3 pages: Home, Portfolio and Contact page. 
+The website is comprised of 4 pages: Main Menu, Level A1-A2 and Level B1-B2. 
 
-Home page is divided into 4 sections: Hero image, Title, About and Reviews.
-Portfolio page consists of pictures organised in a grid. 
-Contact page contains the contact information for the photographer.
+Main menu consists of logo, short introduction to the game and navigation menu. Each navigation menu opens an associated modal. 
+
+Level A1-A2 and Level B1-B2 consists of the header suggesting what level it relates, brief one sentence instructions, and a card grid of 16 cards. 
+
+404 page contains text notifying the user that the page doesn't exist and allows them to return back to the main menu
 
 ## Logo and Navigations Bar
 
