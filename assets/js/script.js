@@ -345,24 +345,25 @@ $("#score-board").on("click", function() {
     if(JSON.parse(localStorage.getItem("highScores")) === null){
         //Notify the user that there are no scores in the scoreboard yet
         //Create elements and set values for header and text 
-        let noScoreHeader = $("<h2></h2>").text("No scores to show yet");
-        let noScoreText =$("<p></p>").text("To see the scores you need to play the game first and save your name and score to the score board.");
-        let goodLuckMessage =$("<p></p>").text("Good Luck!");
+        const noScoreHeader = $("<h2></h2>").text("No scores to show yet");
+        const noScoreText =$("<p></p>").text("To see the scores you need to play the game first and save your name and score to the score board.");
+        const goodLuckMessage =$("<p></p>").text("Good Luck!");
+        const noScoreButton = $("<button'></button>").text("Return");
         
         //Display 'No data to show' modal
-        $(".btn-output").append(noScoreHeader, noScoreText, goodLuckMessage);
+        $(".btn-output").append(noScoreHeader, noScoreText, goodLuckMessage, noScoreButton);
         $(".btn-primary, #intro-description").hide();
         $(".btn-output").show();
          
-        //Apply styling to the header for positioning 
-        noScoreHeader.addClass("no-score")
+        //Apply styling to the header for positioning and return button 
+        noScoreHeader.addClass("no-score");
+        noScoreButton.addClass("btn").addClass("return")
 
         //Enable return to the main menu with return button
         $(".return").on("click", function() {
-        $(".btn-output").text("");
-        $(".btn-output").hide();
-        $(".btn-primary, #intro-description").show();
-        $(".btn-output").removeClass("d-grid").removeClass("gap-2");           
+            $(".btn-output").text("");
+            $(".btn-output").hide();
+            $(".btn-primary, #intro-description").show();   
         })
 
     }else{
@@ -392,8 +393,8 @@ $("#score-board").on("click", function() {
         $(".btn-output").hide();
         $(".btn-primary, #intro-description").show();
         $(".btn-output").removeClass("d-grid").removeClass("gap-2");           
-    });}
-});
+    });
+}});
 
 function gameOver(){
     //Create elements and set values for header and navigation buttons'Time's up' modal 
