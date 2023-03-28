@@ -2,7 +2,7 @@
 
 ![Overview](./assets/readme%20_docs/project_image.JPG)
 
-[Link to the page](https://vero-nika-2828.github.io/yasmin-jas-photography/)
+[Link to the page](https://vero-nika-2828.github.io/GlottoLotto_Matching-game/)
 
 
 # Project Overview
@@ -66,7 +66,7 @@ The objective of the game is for the user to  match an English word to the corre
 17. I want to know whether I won or lost when the game is finished 
 18. I want to see my score
 19. I want to keep track of my score
-20. I want it to be clear that when my score gets saved 
+20. I want it to be clear when my score gets saved 
 21. I want to be able to control the music of the game
 
 ### Returning Visitor Goals
@@ -89,12 +89,13 @@ The objective of the game is for the user to  match an English word to the corre
 33. I want them to indicate to the users when they did or did not find the match 
 34. I want users to be able to practice pronunciation 
 35. I wnat to make it easy for users to learn different concepts 
-36. I want users to be able to practice pronunciation 
-37. I want users to see that they are improving 
-38. I want to challenge the user by giving them time limit 
-39. I want users to see how many turns they have taken during the game
-40. I want users to have some background music if they wish to listen to it
-
+36. I want users to see that they are improving 
+37. I want to challenge the user by giving them time limit 
+38. I want users to see how many turns they have taken during the game
+39. I want users to have some background music if they wish to listen to it
+40. I want users to be be able to access my github to view more projects
+41. I want to notify the user when they open a page that doesnt exist 
+42. I want to make it easy for the user to get back to my page from non-existent page
 
 
 # Design
@@ -167,6 +168,105 @@ Sound used was selected from pixabay
 
 
 # Features
+
+## Main menu
+
+### Game name and game type description
+
+* is situated above the Main menu area 
+* presents the game to the user
+* gives a clue that the user will be required to match the cards
+* specifies who the game is for
+
+### Game desciption
+
+* positioned in the center of the page 
+* header propts users to try the game and indicates that they will leran by doing 
+* the text beneath the header gives a brief description of the game, its purpose and the variety of levels
+
+### Navigation buttons 
+
+* positioned under the description
+* number of buttons limited to 3 to aid intutive navigation across the options
+* direct the users to desired element 
+* assigned name of each button gives a clear indication to the users where it will take them
+* made more evident by the use of the pink color which distinguishes itself from the backround color 
+
+
+### How to play
+ 
+* shows steps by step instructions of the game
+* user can return to the main menu from here  
+* vertical scroll bar activates for the smaller devices
+
+### Play
+
+* gives the users the choice of two levels: A1 -A2 and B1 -B2
+* A1 - A2 has lower difficulty with words suitable for beginners
+* B1 - B2 has lower difficulty with words suitable for intermediate
+* gives option of progressing in the game to a higher level, from beginner to intermediate
+* separate button allows users to go directly to the game
+* allows user to return to main menu
+
+
+### Score board
+
+* shows the scores aquired by the user with each try
+* limits the number of the scores saved to 10
+
+
+### Return button
+
+* takes users back to main menu
+
+### Level options 
+
+#### Level A1 -A2
+#### Level B1- B2
+
+## Game page
+
+* card area is centered to fit each devices' screen size wihtout activating scroll bar
+
+### Timer 
+* start as soon as the game is loaded
+* goes down by one second
+
+### Turns
+* with each two cards selected a turn coutner goes up by one
+
+### Music control
+* music is muted when the game starts
+* speaker icon  is crossed to indecate that music is off
+* when clicked on the music starts playing and the cross is removed from the speaker button to in
+* when clicked cross is removed from the speaker button to indicate that the sound is on
+
+### Card
+
+## Result section
+
+### Time's up
+### Well done message
+### Points gained
+### Name input
+### Save score button 
+### Play again
+### Main menu
+
+
+
+## Footer
+### Link to github page
+
+## 404 error page
+### Error notifiction
+### Back to game button
+
+
+
+
+
+<---------------------------------Delete these features ----------------------- >
 
 The website is comprised of 4 pages: Main Menu, Level A1-A2 and Level B1-B2. 
 
@@ -824,15 +924,13 @@ There are not any known bugs
 # Deployment & local development
 
 ## Deployment 
-The site is deployed using GitHub Pages and link can be found [here](https://vero-nika-2828.github.io/yasmin-jas-photography/)
+The site is deployed using GitHub Pages and link can be found [here](https://vero-nika-2828.github.io/GlottoLotto_Matching-game/)
 
 To Deploy the site using GitHub pages:
 
 1. Log in (or sign up) to Github.
-2. Go to the repository for this project, vero-nika-2828
-/
-yasmin-jas-photography 
-3. Click the setting button.
+2. Go to the repository for this project, *vero-nika-2828/GlottoLotto_Matching-game*
+3. Click the settings button.
 4. Select pages in the left hand navigation menu.
 5. From the source dropdown select main branch and press save.
 6. The site has now been deployed, please  note that this process may take a few minutes before site goes live.
@@ -842,15 +940,13 @@ yasmin-jas-photography
 ### How to Fork 
 
 1. Log in (or sign up) to Github.
-2. Go to the repository for this project, vero-nika-2828
-/
-yasmin-jas-photography
+2. Go to the repository for this project, *vero-nika-2828/GlottoLotto_Matching-game*
 3. Click the Fork button in the top right corner 
 
 ### How to Clone
 
 1. Log in or (sign up) to Github
-2. Go to  the repository for this project, ----> add the link 
+2. Go to  the repository for this project, vero-nika-2828/GlottoLotto_Matching-game
 3. Click on the code button  which is located to the left from the green Gitpod button
 4. Select HTTPS
 5. Copy the link shown

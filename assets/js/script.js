@@ -341,34 +341,58 @@ function saveScore(e){
 
 
 
-$("#score-board").on("click", function() {
-     //Create elements and set values for header, list and return button of 'Score Board'
-    const boardHighScores = Array.from(JSON.parse(localStorage.getItem("highScores")));
-    const scoreBoardHeader = $("<h2></h2>").text("How well did you do?");
-    const scoreBoardList = $("<ol></ol>").text("");
-    const boardCloseButton = $("<button></button>").text("Return");
-    
-    //Display 'Score Board' modal
-    $(".btn-output").append(scoreBoardHeader, scoreBoardList, boardCloseButton  );
-    $(".btn-primary, #intro-description").hide();
-    $(".btn-output").show();
-    
-    //Crete list of names and scores 
-    let scoreBoardItem = $.map(boardHighScores, score => $("<li></li>").text(`${score.name} - ${score.score}`));
-    scoreBoardList.append(scoreBoardItem);    
-    
-    //Apply styling to the return button, the "Score Board modal" and Score board list 
-    boardCloseButton.addClass("btn").addClass("return");
-    $(".btn-output").addClass("d-grid").addClass("gap-2");
-    scoreBoardList.attr("id", "score-list");   
-    
+$("#score-board").on("click", function() { 
+    if(JSON.parse(localStorage.getItem("highScores")) === null){
+        //Notify the user that there are no scores in the scoreboard yet
+        //Create elements and set values for header and text 
+        let noScoreHeader = $("<h2></h2>").text("No scores to show yet");
+        let noScoreText =$("<p></p>").text("To see the scores you need to play the game first and save your name and score to the score board.");
+        let goodLuckMessage =$("<p></p>").text("Good Luck!");
+        
+        //Display 'No data to show' modal
+        $(".btn-output").append(noScoreHeader, noScoreText, goodLuckMessage);
+        $(".btn-primary, #intro-description").hide();
+        $(".btn-output").show();
+         
+        //Apply styling to the header for positioning 
+        noScoreHeader.addClass("no-score")
+
+        //Enable return to the main menu with return button
+        $(".return").on("click", function() {
+        $(".btn-output").text("");
+        $(".btn-output").hide();
+        $(".btn-primary, #intro-description").show();
+        $(".btn-output").removeClass("d-grid").removeClass("gap-2");           
+        })
+
+    }else{
+        //Create elements and set values for header, list and return button of 'Score Board'
+        const boardHighScores = Array.from(JSON.parse(localStorage.getItem("highScores")));
+        const scoreBoardHeader = $("<h2></h2>").text("How well did you do?");
+        const scoreBoardList = $("<ol></ol>").text("");
+        const boardCloseButton = $("<button></button>").text("Return");
+
+        //Display 'Score Board' modal
+        $(".btn-output").append(scoreBoardHeader, scoreBoardList, boardCloseButton  );
+        $(".btn-primary, #intro-description").hide();
+        $(".btn-output").show();
+        
+        //Crete list of names and scores 
+        let scoreBoardItem = $.map(boardHighScores, score => $("<li></li>").text(`${score.name} - ${score.score}`));
+        scoreBoardList.append(scoreBoardItem);    
+        
+        //Apply styling to the return button, the "Score Board modal" and Score board list 
+        boardCloseButton.addClass("btn").addClass("return");
+        $(".btn-output").addClass("d-grid").addClass("gap-2");
+        scoreBoardList.attr("id", "score-list");   
+        
     //Enable return to the main menu with return button
     $(".return").on("click", function() {
         $(".btn-output").text("");
         $(".btn-output").hide();
         $(".btn-primary, #intro-description").show();
         $(".btn-output").removeClass("d-grid").removeClass("gap-2");           
-    });
+    });}
 });
 
 function gameOver(){
