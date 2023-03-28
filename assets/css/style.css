@@ -645,6 +645,7 @@ footer a:hover{
     }
 
     .card-front p {
+        font-size: medium;
         margin-top: 65%;
 
     }
