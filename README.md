@@ -51,48 +51,49 @@ The objective of the game is for the user to  match an English word to the corre
 2. I want to be able to quickly identify where I can find different elements of the website and get to them
 3. I want to be able to read instructions on how to play this game
 4. I want to be able to play a game suitable for my level
-5. I want to see whether I am improving 
-6. I want to be able to return to main menu easily 
-7. I want to be able to replay the game of the same level 
-8. I want the new game to have the cards in different places so it doesnt become too easy to find a match
-8. I want to see clearly what I seleceted
-9. I want to know how to pronounce each word
-10. I want to know when I got the match
-11. I want to know when I didnt get the match 
-12. I want to get a chance to memorise the position of the cards I selected 
-13. I want to see how much time I have left to finish the game 
-14. I want to see how many turns I have taken 
-15. I want to know whether I won or lost when the game is finished 
-16. I want to see my score
-17. I want to keep track of my score
-18. I want it to be clear that when my score gets saved 
-19. I want to be able to control the music of the game
+5. I want to be able to play the game on variety of devices effortlessly 
+6. I want to see whether I am improving 
+7. I want to be able to return to main menu easily 
+8. I want to be able to replay the game of the same level 
+9. I want the new game to have the cards in different places so it doesn't become too easy to find a match
+10. I want to see clearly what I seleceted
+11. I want to know how to pronounce each word
+12. I want to know when I got the match
+13. I want to know when I didn't get the match 
+14. I want to get a chance to memorise the position of the cards I selected 
+15. I want to see how much time I have left to finish the game 
+16. I want to see how many turns I have taken 
+17. I want to know whether I won or lost when the game is finished 
+18. I want to see my score
+19. I want to keep track of my score
+20. I want it to be clear that when my score gets saved 
+21. I want to be able to control the music of the game
 
 ### Returning Visitor Goals
 
-20. I want to be able to directly to play the game 
-21. I want to see my scores
-22. I want to be able to progress in the game
+22. I want to be able to directly to play the game 
+23. I want to see my scores
+24. I want to be able to progress in the game
 
 
 ### Site owner's Goals
 
-23. I want to ensure that users know what this game is for and how to play it 
-24. I want to make it obvious to the user wherre to find each element of the website
-25. I want user to be able to navigate to the main menu easily 
-26. I want users to enjoy the game and keep the difficulty to their level 
-27. I want returning users to go directly to the game 
-28. I want users to be able to re-play the game of the same difficulty 
-29. I want to make the game interesting for users by changing the position of cards with each new game
-30. I want users to have enough time memorise where each card is placed
-31. I want them to indicate to the users when they did or did not find the match 
-32. I want users to be able to practice pronunciation 
-33. I wnat to make it easy for users to learn different concepts 
+25. I want to ensure that users know what this game is for and how to play it 
+26. I want to make it obvious to the user wherre to find each element of the website
+27. I want user to be able to navigate to the main menu easily 
+28. I want users to enjoy the game and keep the difficulty to their level 
+29. I want returning users to go directly to the game 
+30. I want users to be able to re-play the game of the same difficulty 
+31. I want to make the game interesting for users by changing the position of cards with each new game
+32. I want users to have enough time memorise where each card is placed
+33. I want them to indicate to the users when they did or did not find the match 
 34. I want users to be able to practice pronunciation 
-35. I want users to see that they are improving 
-36. I want to challenge the user by giving them time limit 
-37. I want users to see how many turns they have taken during the game
-38. I want users to have some background music if they wish to listen to it
+35. I wnat to make it easy for users to learn different concepts 
+36. I want users to be able to practice pronunciation 
+37. I want users to see that they are improving 
+38. I want to challenge the user by giving them time limit 
+39. I want users to see how many turns they have taken during the game
+40. I want users to have some background music if they wish to listen to it
 
 
 
@@ -921,8 +922,7 @@ The grey style effect on the pictures was taken from [W3C](https://www.w3schools
 I would like to thank to following people who helped me along the way in completing this project: 
 * My Code Institute mentor, Mitko Bachvarov, for his valuable advice and comprehensive guidance
 * My tutor for being so patient with me and being there for me every time I had any questions
-* Fellow Code Institue students and staff for taking time to answer my questions on Slack
-* Oisin from Tutor support for helping me with an issue I came across in my project
+* Ed and Alan from Tutor support for helping me with an issue I came across in my project
 * My family and friends for giving me moral support and all their patience
 
 

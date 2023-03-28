@@ -10,7 +10,7 @@ let timeInSeconds = initialTime * 60;
 let timeCountdown;
 let audioAPI;
 let gameMusic = new Audio("./assets/audio/background-music.mp3");
-const music = $("#game-music")
+const music = $("#game-music");
 let musicControl = false;
 
 //Game web page initiation
@@ -19,7 +19,7 @@ document.addEventListener("DOMContentLoaded", function(){
     $(".btn-output").hide();
     $("#result").hide();
    
-})
+});
 
 
 
@@ -35,7 +35,7 @@ $("#btn-instructions").on("click", function() {
     const list= $("<ol></ol>").text("");
     const steps = ["Press play", "Click on a card", "Card turns around and a picture or a word will be shown","Click on another card", "If the two cards match, you will receive the points ", "If the two cards don’t match, they will turn around and you can try again", "You can continue to flip over cards until you have matched all the pairs", "To win, you must match all the pairs before the time runs out", "Enjoy playing the game and improving your language skills"];
 
-    listItems = $.map(steps, step => $("<li></li>").text(step));   
+    let listItems = $.map(steps, step => $("<li></li>").text(step));   
     list.append(listItems);
   
     //Display 'How to play' modal       
@@ -55,8 +55,8 @@ $("#btn-instructions").on("click", function() {
         $(".btn-output").hide();
         $(".btn-primary, #intro-description").show();
         $(".btn-output").removeClass("d-grid").removeClass("gap-2");           
-    })
-})
+    });
+});
 
 
 //Display A1 and B1 level options
@@ -84,9 +84,9 @@ $("#btn-play").on("click", function() {
         $(".btn-primary, #intro-description").show();
         $(".btn-output").removeClass("d-grid").removeClass("gap-2");
         
-    })
+    });
    
-  })
+  });
 
 
 //On each click, turn selceted card and say the name of the animal for the corresponding card  
@@ -95,10 +95,10 @@ $(".card").on("click", cardTurns);
 //Turn card function - Execute when card is clicked
 function cardTurns(){ 
     //execute the below code if the card has not been already clicked thus does not have the active class 
-    if(!$(this).hasClass("active")){
+    if(!$(this).hasClass("active") && !$(this).hasClass("matched")) {
         const animalName = $(this)[0].dataset.animal; 
-        const apiLink = "https://api.dictionaryapi.dev/api/v2/entries/en/"
-     
+        const apiLink = "https://api.dictionaryapi.dev/api/v2/entries/en/";
+        
         //Increase counter by one, turn the card and push the name of the animal into an array
         counter++;
 
@@ -109,6 +109,7 @@ function cardTurns(){
         //Push card type name into an array for comparison
         cardContainer.push(animalName);
         twoCardsSelected();   
+       
 
         //Say the name of the animal on the card by calling API dictionaries
         fetch(`${apiLink}${animalName}`)        
@@ -117,8 +118,9 @@ function cardTurns(){
   
             audioAPI = new Audio (data[0].phonetics[0].audio);
             audioAPI.play();
-        })
-       
+        });
+
+               
     //Disable the option to click the card when it has been already clicked    
     }else{
         $(".active").off("click");   
@@ -169,17 +171,16 @@ function compareCards() {
         //Turn cards back when no match is found 
         $(".active").removeClass("active turn-card");
         $(".card").on("click", cardTurns);
-    }};
-
+    }}
 
 // Shuffle Deck function - execute with each new game 
 //Function built using Fisher Yates Shuffle algorithm found in this video https://www.youtube.com/watch?v=3uuQ3g92oPQ&t=342s
 function shuffleDeck(){
     //Cards change their position randomly
-    for(card = 0; card  < cardDeck.length; card ++) {
-        let cardToSwap = Math.floor(Math.random()  * (card  + 1));
-        cardDeck[cardToSwap].style.order = card ;
-        cardDeck[card].style.order = cardToSwap;
+    for(i = 0; i  < cardDeck.length; i ++) {
+        let cardToSwap = Math.floor(Math.random()  * (i  + 1));
+        cardDeck[cardToSwap].style.order = i ;
+        cardDeck[i].style.order = cardToSwap;
     }
 
     //Start game countdown
@@ -208,12 +209,12 @@ function timeDecrease() {
         document.getElementById("countdown").innerHTML = mins + ":" +secs;
     }
 
-    if(mins & secs < 0){
+    if(mins && secs < 0){
         clearInterval(timeCountdown); 
         document.getElementById("countdown").innerHTML = "Time Out";
     }
 
-    if(mins & secs < 0 && matchedCards.length !== 8){
+    if(mins && secs < 0 && matchedCards.length !== 8){
         gameOver();
     }
 }
@@ -225,13 +226,13 @@ function youWin(){
     let turnCount = parseInt($("#turns").html());
     let congratulations = $("<p></p>").text("Well done!");
     let pointsMessage = $("<p></p>").text("You have earned ");
-    let points = $("<span></span>").text(" ")
-    let nameBox = $("<input></input>").text(" ")
-    let addScore = $("<button></button>").text("Save to score board")
+    let points = $("<span></span>").text(" ");
+    let nameBox = $("<input></input>").text(" ");
+    let addScore = $("<button></button>").text("Save to score board");
     let mainMenu = $("<a href='./index.html'></a>").text("Main Menu");
 
     
-    if(matchedCards.length === 4 && turnCount === 4){
+    if(matchedCards.length === 8 && turnCount === 8){
         //Stop the timer
         clearInterval(timeCountdown); 
         
@@ -254,7 +255,7 @@ function youWin(){
          
         //Add points into the text   
         pointsMessage.append(points, " points");
-        points.html(newPoints);  
+        points.html("100");  
         
         //Push ponts into localStorage
         localStorage.setItem("latestPoints", "100");
@@ -263,7 +264,7 @@ function youWin(){
         $("#submit-score").on("click",saveScore); 
         
           
-    }   else if (matchedCards.length === 4 && turnCount > 4 ){
+    }   else if (matchedCards.length === 8 && turnCount > 8 ){
         //Calculate points if more than 8 turns taken to find all the matches
         let newPoints = 100 - turnCount;
         
@@ -292,23 +293,25 @@ function youWin(){
         points.html(newPoints);  
        
         //Save points when clicked      
-        localStorage.setItem("latestPoints", newPoints);
+        localStorage.setItem("latestPoints", newPoints);      
         $("#submit-score").on("click",saveScore); 
+        
     }   
 
 }
 
+
 //Save score in the localStorage
 //Built following this video https://www.youtube.com/watch?v=DFhmNLKwwGw&list=PLDlWc9AfQBfZIkdVaOQXi1tizJeNJipEx&index=9
 function saveScore(e){   
-        const mostRecentScore = localStorage.getItem("latestPoints")
+        const mostRecentScore = localStorage.getItem("latestPoints");
         const playerName = $('#name-value').val();
         const highScores = JSON.parse(localStorage.getItem("highScores")) || [];
-        console.log("it is not an empty string")
+  
 
-        //Give indication to user that the name was saved by updating the button text to saved
-        $("#submit-score").html("Saved")
-        
+        //Give indication to user that the name was saved by updating the button text to saved       
+        $("#submit-score").html("Saved");
+         
         // stop the form opening new page by default
         e.preventDefault();
         
@@ -329,11 +332,13 @@ function saveScore(e){
         
         //Update the localStorage
         localStorage.setItem("highScores", JSON.stringify(highScores));  
+
         
         //Clear the name from the field once added to local storage
-        $('#name-value').val("");
+        $('#name-value').val(""); 
+ 
     }   
-     
+
 
 
 $("#score-board").on("click", function() {
@@ -349,7 +354,7 @@ $("#score-board").on("click", function() {
     $(".btn-output").show();
     
     //Crete list of names and scores 
-    scoreBoardItem = $.map(boardHighScores, score => $("<li></li>").text(`${score.name} - ${score.score}`));
+    let scoreBoardItem = $.map(boardHighScores, score => $("<li></li>").text(`${score.name} - ${score.score}`));
     scoreBoardList.append(scoreBoardItem);    
     
     //Apply styling to the return button, the "Score Board modal" and Score board list 
@@ -363,8 +368,8 @@ $("#score-board").on("click", function() {
         $(".btn-output").hide();
         $(".btn-primary, #intro-description").show();
         $(".btn-output").removeClass("d-grid").removeClass("gap-2");           
-    })
-})
+    });
+});
 
 function gameOver(){
     //Create elements and set values for header and navigation buttons'Time's up' modal 
@@ -394,13 +399,11 @@ function retryThisLevel (){
     }else{
         tryAgain = $("<a href='./level-B1.html'></a>").text("Try again!");
     }
-};
+}
 
 
 //Turn music on/off when the speaker icon is clicked
-music.on("click", function(){
-    musicControl ?  pauseMusic() :  playMusic();
-})
+music.on("click", () => musicControl ?  pauseMusic() :  playMusic());
 
 //Play music function - execute when music control is set to false
 function playMusic() {

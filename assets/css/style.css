@@ -291,6 +291,11 @@ footer a{
     color:#D79E06
 }
 
+footer a:hover{
+    text-decoration: none;
+    color:#CF9EAC;
+}
+
 
 /*404 error page styling*/
 #error-container{
