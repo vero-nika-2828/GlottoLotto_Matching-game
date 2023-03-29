@@ -228,6 +228,12 @@ Sound used was selected from pixabay
 
 * card area is centered to fit each devices' screen size wihtout activating scroll bar
 
+### Title 
+
+* positioned on the top of the page above the card container
+* indicates what level the user is playing 
+* shows short instructions of what the user is expected to do, thus match the word to the picture
+
 ### Timer 
 * start as soon as the game is loaded
 * goes down by one second
@@ -236,6 +242,7 @@ Sound used was selected from pixabay
 * with each two cards selected a turn coutner goes up by one
 
 ### Music control
+
 * music is muted when the game starts
 * speaker icon  is crossed to indecate that music is off
 * when clicked on the music starts playing and the cross is removed from the speaker button to in
@@ -243,24 +250,87 @@ Sound used was selected from pixabay
 
 ### Card
 
+* game consists of 16 cards in a grid of 4 columns and 4 rows
+* cards are styled to fit variety of screen sizes without scrolling
+* there are 8 matches in total for both levels
+* front of the card shows either a word or an image
+* with start of every game the position of cards changes
+* each card flips around when the user clicks on it
+* the animal name is being said each time card flips around
+* when two selected cards match, the cards dissaper and sound effect indicates the correct match
+* the selected cards stay up for a while before match or no match is being signalled in order for the user to memorise the position of the cards or see the cars they matched
+* it is not possible to click the same card twice in the row
+* when two selected cards don't match, the cards turn back and back of the card is shown
+
+
 ## Result section
 
 ### Time's up
-### Well done message
+
+* appears when time limit runs out and not all matches are found 
+* the message 'Time's up' indicates that the user ran out of time
+* provides 'Try again button' to enable the user to replay the game right away
+* provide 'Main menu button' to enable user get back to main menu and choose from the options
+
+
+### Well done 
+
+* appears when all 8 matches are found
+* the message 'Well done' indicates that the user was succesful at the game
+* is positioned right above the message about the gained points
+
 ### Points gained
+
+* shows the total amount of points gained at the end of the game
+* calculate based on the amount of turns taken to fnd all the matches - the less tries the more points
+* is positioned right under the 'Well done message'
+
+
 ### Name input
+
+* enables saving users' name together with their score into the score board
+* it is an imput field located under the points section
+* shows placeholder message
+* the placeholder message dissapears when name is typed in
+* the name input disapears when saved button is clicked to indicate to the users that the name was added
+
 ### Save score button 
+
+* saves the users' name and score into the scoreboard
+* the button text 'Save to the score board' indicates to the users that the name will be saved when they clicked on it
+* the button text changes to 'Saved' to confirm to the users that the name got added
+* is located under the input field 
+
 ### Play again
+
+* enables to users to play the same level game again with one click after finishing
+* is positioned bellow result modal whether it is Time's up when game is lost or 'Well done' when the users win the game
+
 ### Main menu
 
+* enables the user to return to the main menu when the is finished
+* it is positoned under 'Play again button' in result modal
 
 
 ## Footer
 ### Link to github page
 
+* link enables users to visit site owner's git hub page
+
 ## 404 error page
-### Error notifiction
+### Error notification
+
+* appears when users click on the non-existen or incorrect link for either of the levels 
+* message notifies the user that the page for that game was not found 
+
+* is positioned above the message to return to the GlottoLotto game
+
 ### Back to game button
+
+* enables users to return to the Main menu without using the navigation of the browser
+* is positioned under the error message
+
+
 
 
 
@@ -414,15 +484,18 @@ Level A1-A2 and Level B1-B2 consists of the header suggesting what level it rela
 ## Languages Used
 * HTML
 * CSS
+* Javascript
 
 ## Frameworks, libraries and programs used
  * [GitHub](https://github.com/vero-nika-2828/yasmin-jas-photography) - To save and store files and code for the website in a secure location 
   * [Gitpod](https://gitpod.io/workspaces) - A cloud based IDE used for version control, development of the code to build the website and to commit and push to GithHb
- * [Bootstrap](https://getbootstrap.com/docs/5.2/getting-started/introduction/) - Bootstrap grid used for responsive layout
+ * [Bootstrap](https://getbootstrap.com/docs/5.2/getting-started/introduction/) - Bootstrap grid used for the buttons
+ * [jQuery](https://jquery.com/) - For the coding
  * [Google Fonts](https://fonts.google.com/) - For the typography on the website
  * [Font Awesome](https://fontawesome.com/) - For the iconography on the website
  * [Balsamiq](https://balsamiq.com/) - To create wireframes
  * Google Dev Tools - To troubleshoot and test features, solve issues with responsiveness and styling
+ * [Emoji Cursor](https://www.emojicursor.app/)  -For the shamrock cursor 
  * [Am I Responsive](https://ui.dev/amiresponsive)  -To show the website image on a range of devices
 
 # Testing
@@ -433,17 +506,17 @@ Level A1-A2 and Level B1-B2 consists of the header suggesting what level it rela
  * HTML Validator 
    * index.html - pass
     <details>
-    <summary>Home page</summary>
+    <summary>Main Menu</summary>
     <br>
 
   ![Index.html Validation](./assets/readme%20_docs/W3C%20Validators/inde.html.JPG)
 
     </details> 
 
-   * portfolio.html - pass
+   * level-A1.html - pass
 
    <details>
-    <summary>Home page</summary>
+    <summary>Level A1 -A2</summary>
     <br>
 
   ![Portfolio.html Validation](./assets/readme%20_docs/W3C%20Validators/portfolio_html.JPG)
@@ -451,9 +524,9 @@ Level A1-A2 and Level B1-B2 consists of the header suggesting what level it rela
    </details> 
 
 
-   * contact.html - pass
+   * level-B1.html - pass
      <details>
-    <summary>Home page</summary>
+    <summary>Level B1 - B2</summary>
     <br>
 
    ![Contact.html Validation](./assets/readme%20_docs/W3C%20Validators/contact_html.JPG)
@@ -467,10 +540,16 @@ Level A1-A2 and Level B1-B2 consists of the header suggesting what level it rela
 
    </details>  
 
+  * Javascript Validator (https://jshint.com/) -pass
+ 
+   ![Stylesheet Valiation](./assets/readme%20_docs/W3C%20Validators/CSS%20Validator.JPG)
+
+   </details>   
+
 ### Lighthouse
 
 <details>
-<summary>Home page</summary>
+<summary>Main Menu</summary>
 <br>
 
 ![Home page Lighthouse test](./assets/readme%20_docs/lighthouse%20test/Home%20page.JPG)
@@ -478,7 +557,7 @@ Level A1-A2 and Level B1-B2 consists of the header suggesting what level it rela
 </details> 
 
 <details>
-<summary>Portfolio</summary>
+<summary>Level A1 -A2</summary>
 <br>
 
 ![Portfolio page Lighthouse test](./assets/readme%20_docs/lighthouse%20test/Portfolio%20page.JPG)
@@ -486,7 +565,7 @@ Level A1-A2 and Level B1-B2 consists of the header suggesting what level it rela
 </details> 
 
 <details>
-<summary>Contact page</summary>
+<summary>Level B1 -B2</summary>
 <br>
 
 ![Contact page Lighthouse test](./assets/readme%20_docs/lighthouse%20test/Contact%20page.JPG)
@@ -962,72 +1041,75 @@ Alternatively, you can click on Download ZIP
 
 ## Media
 
-Images were taken from [Pexels](https://www.pexels.com/) and were posted by these authors:
+Images and sounds were taken from [Pixabay](https://pixabay.com/) with an exception of background images which were taken from [Pexels](https://www.pexels.com/) and were posted by these authors:
 
-* Anastasiya Gepp
-  * [A girl with a rabbit (Hero Image)](https://www.pexels.com/photo/girl-lying-on-white-surface-petting-gray-rabbit-1462634/)
+### Images
+* OpenClipart-Vectors 
+   * [Cat](https://pixabay.com/vectors/animal-blue-cartoon-cat-feline-1297724/)
+ 
+   * [Turtle](https://pixabay.com/vectors/animals-cartoon-green-happy-1298747/)
 
-   * [A girl holding grey rabbit ](https://www.pexels.com/photo/smiling-girl-holding-gray-rabbit-1462636//)
+   * [Rabbit](https://pixabay.com/vectors/anthropomorphized-animals-bunny-1300338/)
 
-   * [A girl with a black rabbit ](https://www.pexels.com/photo/girl-holding-black-rabbit-1462635/)
+   * [Lion ](https://pixabay.com/vectors/africa-animal-cat-lion-1300564/)
 
-* Yaroslav-Shuraev
-  * [A girl giving water to a dog ](https://www.pexels.com/photo/woman-in-yellow-knit-cap-sitting-beside-siberian-husky-9632115/)
-
-   * [A girl and a dog in a park ](https://www.pexels.com/photo/close-up-shot-of-a-woman-and-her-dog-lying-down-on-a-picnic-blanket-9632605/)
-
-
-* Alesia Kozik
-  * [Oil on a board and leaf ](https://www.pexels.com/photo/close-up-photo-of-brown-glass-on-a-tray-7797104/)
-
-   * [Oils ](https://www.pexels.com/photo/photo-of-brown-bottles-7797449/)
+   * [Owl ](https://pixabay.com/vectors/bird-hole-nature-owl-brown-birds-1294865/)
 
 
- * Gustavo Fring
-   * [A couple with a dog](https://www.pexels.com/photo/smiling-couple-touching-pet-on-lawn-4005078/)
-   * [A-couple with dog in the middle](https://www.pexels.com/photo/loving-couple-having-rest-with-dog-on-lawn-4005082/)
+* Clker-Free-Vector-Images
+   * [Chicken(A1) Hen(B2)](https://pixabay.com/vectors/rooster-chick-livestock-hen-303418/)
 
-* Joan Montaner
-  * [A dog in frong of waterfall](https://www.pexels.com/photo/white-and-black-dog-standing-on-stone-1694838/)
-
-
-* Tranmautritam
-  * [A girl on a bed with two cats](https://www.pexels.com/photo/woman-lying-on-bed-with-two-cats-2215599/)
+   * [Whale ](https://pixabay.com/vectors/whale-humpback-blowhole-mammal-36828/)
+   
+   * [Pig ](https://pixabay.com/vectors/pig-animal-piglet-pork-hog-piggy-47920/)
 
 
-* Stein Egil Liland
-  * [A lake with houses](https://www.pexels.com/photo/woman-lying-on-bed-with-two-cats-2215599/)
+ * DavidRockDesign 
+   * [Cow](https://pixabay.com/vectors/cow-animal-livestock-farm-1501690/)
 
-* Quang Nguyen Vinh
-  * [A boat on a lake ](https://www.pexels.com/photo/photo-of-a-boat-on-a-river-2178175/)
+ * Glamazon 
+   * [Monkey](https://pixabay.com/vectors/monkey-chimp-ape-chimpanzee-animal-474147/)
 
-* Cmonphotography
-  * [A lake with a mountain ](https://www.pexels.com/photo/peaceful-scenery-1809653/)
+ * creozavr 
+   * [Rhino](https://pixabay.com/vectors/rhinoceros-horn-cartoony-4004201/)
 
-* Danila Giancipoli
-  * [A river with hills in the background ](https://www.pexels.com/photo/calm-blue-water-2242171/)
+* bknis 
+   * [Sheep](https://pixabay.com/vectors/lamb-sheep-cute-farm-animal-baby-1388937/)
 
 
-* Dominika Roseclay
-  * [Oil on a woodboard ](https://www.pexels.com/photo/small-essential-oil-bottle-on-decorative-tree-trunk-5462207/)
+* 15071479
+   * [Elephant](https://pixabay.com/vectors/elephant-animal-cartoon-wildlife-6087079/)
 
-* Andrea- Pacquadio
-  * [A girl holding a camera](https://www.pexels.com/photo/white-and-black-dog-standing-on-stone-1694838/)
 
-* Pixabay
-  * [Fjords](https://www.pexels.com/photo/clouds-daylight-foggy-lake-533854/)
+* GraphicMama-team
+   * [Crocodile](https://pixabay.com/vectors/crocodile-animal-wild-danger-1456038/)
 
-* Italo Melo
-  * [Joe Black (Reviewer 1)](https://www.pexels.com/photo/man-wearing-blue-crew-neck-t-shirt-2379005/)
+* Игорь Альшин
+   * [Background-image 404 page](https://www.pexels.com/photo/rubik-s-cube-on-book-2873277/) 
 
-* Lucas Pezeta
-  * [Katherine Smith (Reviewer 2)](https://www.pexels.com/photo/woman-wearing-black-framed-eyeglasses-2118708/)
+* cottonbro studio
+   * [Background-image Main Menu and Game page](https://www.pexels.com/photo/blue-orange-and-yellow-triangle-illustration-4965816/) 
+
+
+### Sounds 
+* Kevin MacLeod 
+   * [Background-music](https://incompetech.com/music/royalty-free/index.html?feels%5B%5D=Driving) 
+
+* Pixabay 
+   * [Correct Answer](https://pixabay.com/sound-effects/success-1-6297/) 
+
+
+
+
 
 ## Code
+   * *Shuffle cards function (shuffleDeck) * built based on Fisher Yates Shuffle algorithm found in [this tutorial](https://www.youtube.com/watch?v=3uuQ3g92oPQ&t=342s) 
+   * *Save score Function (saveScore)* built folloting [this tutorial](https://www.youtube.com/watch?v=DFhmNLKwwGw&list=PLDlWc9AfQBfZIkdVaOQXi1tizJeNJipEx&index=9) 
+
+
+
 For hambuger navigation menu I took inspiration from [this tutorial](https://www.youtube.com/watch?v=xXze-haVm7g), and I adjusted the code heavily in order to fit the needs of my website
 
-## Effect
-The grey style effect on the pictures was taken from [W3C](https://www.w3schools.com/w3css/w3css_effects.asp)
 
 
 ## Aknowledgement
