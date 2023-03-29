@@ -1,8 +1,7 @@
 /*Color and Font of the page*/
 body{
     color: #D79E06;
-    font-family: 'Lato', sans-serif;
-   
+    font-family: 'Lato', sans-serif;  
 }
 
 /*Background image styling*/
@@ -102,9 +101,7 @@ ol li {
     font-weight: 700;
     font-size: x-large;
     border:none;
-    justify-content: center;
-    letter-spacing: 2px;
-    
+    justify-content: center;   
 }
 
 /*Return button styling udjusted*/
