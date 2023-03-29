@@ -619,7 +619,7 @@ For hambuger navigation menu I took inspiration from [this tutorial](https://www
 I would like to thank to following people who helped me along the way in completing this project: 
 * My Code Institute mentor, Mitko Bachvarov, for his valuable advice and comprehensive guidance
 * My tutor for being so patient with me and being there for me every time I had any questions
-* Ed from Tutor support for helping me with an issue I came across in my project
+* Ed and Jason from Tutor support for helping me with some issues I came across in my project
 * My family and friends for giving me moral support and all their patience
 
 
