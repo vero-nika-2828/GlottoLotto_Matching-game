@@ -498,6 +498,9 @@ Level A1-A2 and Level B1-B2 consists of the header suggesting what level it rela
  * [Emoji Cursor](https://www.emojicursor.app/)  -For the shamrock cursor 
  * [Am I Responsive](https://ui.dev/amiresponsive)  -To show the website image on a range of devices
 
+# Testing
+Find the full testing documented in [TESTING.md](TESTING.md)
+
 ## Deployment 
 The site is deployed using GitHub Pages and link can be found [here](https://vero-nika-2828.github.io/GlottoLotto_Matching-game/)
 
