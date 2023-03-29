@@ -213,6 +213,7 @@ Sound used was selected from pixabay
 
 * shows the scores aquired by the user with each try
 * limits the number of the scores saved to 10
+* when opened before the scores are added it informs the user to play the game and add the score
 
 
 ### Return button
@@ -500,6 +501,8 @@ Level A1-A2 and Level B1-B2 consists of the header suggesting what level it rela
 
 # Testing
 Find the full testing documented in [TESTING.md](TESTING.md)
+
+# Deployment & local development
 
 ## Deployment 
 The site is deployed using GitHub Pages and link can be found [here](https://vero-nika-2828.github.io/GlottoLotto_Matching-game/)

@@ -9,7 +9,7 @@
     <summary>Main Menu</summary>
     <br>
 
-  ![Index.html (Main Menu) Validation](./assets/readme_docs/automated_testing/w3c-validator-index-page.jpg.JPG)
+    ![Index.html (Main Menu) Validation](./assets/readme_docs/automated_testing/w3c-validator-index-page.jpg.JPG)
 
     </details> 
 
@@ -19,7 +19,7 @@
     <summary>Level A1 - A2</summary>
     <br>
 
-  ![level-A1.html (Level A1 - A2) Validation](./assets/readme_docs/automated_testing/w3c-validator-level-A1-page.jpg)
+    ![level-A1.html (Level A1 - A2) Validation](./assets/readme_docs/automated_testing/w3c-validator-level-A1-page.jpg)
 
    </details> 
 
@@ -53,9 +53,11 @@
 <br>
 
 * Desktop
+
 ![Main Menu Lighthouse test](./assets/readme_docs/automated_testing/lighthouse-main-menu-index-page-desktop.JPG)
 
 * Mobile
+
 ![Main Menu Lighthouse test](./assets/readme_docs/automated_testing/lighthouse-main-menu-index-page-mobile.JPG)
 
 </details> 
@@ -64,7 +66,7 @@
 <summary>Level A1 -A2</summary>
 <br>
 
-![Portfolio page Lighthouse test](./assets/readme%20_docs/lighthouse%20test/Portfolio%20page.JPG)
+![Level A1 -A2 page Lighthouse test](./assets/readme%20_docs/lighthouse%20test/Portfolio%20page.JPG)
 
 </details> 
 
@@ -492,16 +494,16 @@ The website was tested on following devices
 ### Solved bugs 
  |  Expected |  Bug |  Fix |
  |  :---| :---|  :---|
- |  Hero image should be directly under the header | Header went over the hero image | Height property in navigation bar was updated  to 100% and that pushed the image lower |
- |The website should fit the width of a respective viewport | The scroll bar appeared at the bottom so it was necessary to move right and left to view the whole content. This was due to 'About section' was going over the set viewport width | Margin of  'About section'  was set to 0
- |Footer should cover the whole bottom of the page | There was a white space under the footer which was cause by the content of reviewer-boxes in 'Review section' overflowing | The height of the review-background was adjusted to give the text more space. The review-container was adjusted as well to fit the section without excessive free space |
- | Hamburger menu items should be centred | The menu items were all starting from the same level on the left which made portfolio to stick out | The parent navigation menu list was given display property with value block. The children a elements were given property display with value flex and justify content property with value centre which aligned the links into the middle of the screen |
- | When users of smaller screen touch the options from Hamburger navigation menu it should change the color of the whole screen from left to right | There was a space on the left when the color changed due to the ul element in header section had padding applied | Padding left property for ul element was removed |
- |  Two review boxes should get smaller when the viewport gets smaller and text should align accordingly | For the viewports under 411 px header and star rating were getting  distorted and the letters as well as stars were getting under each other and lost original alignment | Parent container was of the header and start rating was updated to block and  header and star rating were given display property with  value flex which pushed these two elements  under the picture |
- | The checkbox for the photo type selection should get stacked under each other on the devices which are narrower than 800px | The checkboxes inputs and the labels were not aligned neither vertically or horizontally |  The checkbox inputs were wrapped into the unordered list and displayed as a block 
-
+ | Return buttons should take me to the main menu | Return button in 'How to play' or 'Play' section did not react and didn't take me back to the main menu|return function was moved inside the on click for #btn-instructions and  #btn-play function and that applied the return function als when those modals are open |
+ | The user should see only the content for the chosen element when then open any of the navigation options : How to play, Play and Score board and the previvous content should not be seen  | When the How to play or play button was clicked it added the content of the modal to the main menu content and when clicked back to main content it added the content of the How to play to the bottom. The same happened in Play modal | The function to clear the existing text before adding new one was added 
+ | The timer should always show one digit for minutes and two digits for seconds | When seconds went under 10 only one digit was displayed | The timeDecrease function was adjusted to add 0 to each digit when there is only one digit represingting seconds which usually happens when they are lower than  10 |
+ |Music should play as soon as the user clicks on the speaker | The music took about  15 seconds to start playing | Thes size of the audio was trimmed and the loop was applied
+ | When the user clicks on the area where the matched cards used be it should not react| The animal sound was played when clicked on the aread where matched pictures used to be and when clicked on two matching the sound was played |  Added condition to apply the cardTurns function only to those cards which dont have matched class
+ | When match is found the cards fade out | The outline of the cards stayed visible  | Styling added to the card class (.card) to set the border to none |
+ | When users clicks on the card and it flips only the front of the card should be visible| When card was fliped to the front of the card the white outline was visible in the background  | style propety was added to remove the visibility of the front card when it flips|
+ |It is not possible for the user to submit their score if the input field is empty | The text got submitted even when the user didn't enter their name | The 'save to scoreboard' button was disabled and an even listener was added to remove the disabled attribute when the key is up
 
 ### Known bugs
-There are not any known bugs
+When the user doesn't enter the name the score will still get saved without the name
 
-# Deployment & local development
+

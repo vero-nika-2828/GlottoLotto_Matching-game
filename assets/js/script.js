@@ -251,8 +251,7 @@ function youWin(){
         nameBox.attr("id","name-value").attr("type","text").attr("placeholder","Add your name here").addClass("btn");
         addScore.attr("id", "submit-score").attr("type", "submit").addClass("btn");
         points.attr("id", "points-display");
-        $('form :submit').attr("disabled", "disabled");
-
+  
         //Add points into the text   
         pointsMessage.append(points, " points");
         points.html("100");  
@@ -261,7 +260,12 @@ function youWin(){
         localStorage.setItem("latestPoints", "100");
 
         //Save points when clicked
-        $("#submit-score").on("click",saveScore);        
+        $("#submit-score").on("click",saveScore);    
+        
+        //Prevent the user to submit their score without a name
+        document.getElementById("name-value").addEventListener("keyup", (event) => {
+            document.getElementById("submit-score").removeAttribute("disabled")
+        })
           
     }   else if (matchedCards.length === 8 && turnCount > 8 ){
         //Calculate points if more than 8 turns taken to find all the matches
@@ -283,11 +287,10 @@ function youWin(){
         congratulations.addClass("win-text");
         tryAgain.addClass("btn");
         mainMenu.addClass("btn"); 
-        nameBox.attr("id","name-value").attr("type","text").attr("placeholder","Add your name here").addClass("btn");
-        addScore.attr("id", "submit-score").attr("type", "submit").addClass("btn");
+        nameBox.attr("id","name-value").attr("type","text").attr("placeholder","Add your name here").addClass("btn")
+        addScore.attr("id", "submit-score").attr("type", "submit").attr("disabled", true).addClass("btn");
         points.attr("id", "points-display");
-        $('form :submit').attr("disabled", "disabled");
-
+      
         //Add points into the text   
         pointsMessage.append(points, " points");
         points.html(newPoints);  
@@ -295,6 +298,11 @@ function youWin(){
         //Save points when clicked      
         localStorage.setItem("latestPoints", newPoints);      
         $("#submit-score").on("click",saveScore); 
+
+        //Prevent the user to submit their score without a name
+        document.getElementById("name-value").addEventListener("keyup", (event) => {
+            document.getElementById("submit-score").removeAttribute("disabled")
+        })
        
     }   
 
@@ -332,9 +340,9 @@ function saveScore(e){
         //Update the localStorage
         localStorage.setItem("highScores", JSON.stringify(highScores));  
 
-        $("#name-value").on("keyup", function(){
-            $("#submit-score").prop("disabled", !$("#name-value").val());
-        });
+        //$("#name-value").on("keyup", function(){
+        //    $("#submit-score").prop("disabled", false);
+        //});
 
         //Clear the name from the field once added to local storage
         $('#name-value').val(""); 
@@ -432,6 +440,7 @@ music.on("click", () => musicControl ?  pauseMusic() :  playMusic());
 
 //Play music function - execute when music control is set to false
 function playMusic() {
+   gameMusic.loop = true;
    gameMusic.play();
    music.html("<i class='fa-solid fa-volume-high'></i>");
    music.addClass("playing");
