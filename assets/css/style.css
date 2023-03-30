@@ -2,7 +2,7 @@
 body{
     color: #D79E06;
     font-family: 'Lato', sans-serif;  
-    background-color: #e9eef1;
+    /*background-color: #e9eef1;*/
 }
 
 /*Background image styling*/
@@ -367,6 +367,15 @@ footer a:hover{
 }
 
 @media (max-width: 1280px) {
+   /*Scroll feature added for the text to prevent text overflowing on smaller devices */
+    .btn-output{
+        overflow: scroll;
+    }
+
+    ol{
+        overflow: scroll;
+    }  
+
     #title p{
         font-size: smaller;
     }
@@ -418,7 +427,8 @@ footer a:hover{
     #game-info{
         height: 70vh;
         width: 65vw;
-     }
+    }
+
 }
 
      
@@ -580,7 +590,7 @@ footer a:hover{
     }
 
     #turns{
-        margin-left: 12px;
+        margin-left: 5px;
     }
 
 
@@ -602,7 +612,10 @@ footer a:hover{
         width: 70%;
         padding-bottom: 8%;
     }
+
 }
+    
+
 
 @media (max-width: 500px) {
     #title h1, #title h2 {
@@ -862,11 +875,22 @@ footer a:hover{
 
     }
 
-}
-
-@media (max-height: 670px) {
     #error404 h2 {
         margin-top: 10%;
+    }
+}
+
+@media (max-height: px) {
+    #game-info{
+        min-height: 450px;
+    }
+    
+    #result{
+        min-height: 450px;
+    }
+    
+    img{
+        min-height: 650px;
     }
 }
 
@@ -893,7 +917,6 @@ footer a:hover{
     }
 
     .btn{
-        height:28px;
         line-height: 2px;
         margin: -1px;
     }
@@ -928,19 +951,7 @@ footer a:hover{
         line-height: unset;
 
     }
+  
 
 }
 
-@media (max-height: 450px) {
-    #game-info{
-        min-height: 450px;
-    }
-
-    #result{
-        min-height: 450px;
-    }
-
-    img{
-        min-height: 650px;
-    }
-}

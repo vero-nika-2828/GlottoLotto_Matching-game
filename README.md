@@ -1,6 +1,6 @@
 # *GlottoLotto* Matching Card Game
 
-![Overview](./assets/readme%20_docs/project_image.JPG)
+![Overview](./assets/readme_docs/design/responsive-design.JPG)
 
 [Link to the page](https://vero-nika-2828.github.io/GlottoLotto_Matching-game/)
 
@@ -145,27 +145,68 @@ Sound used was selected from pixabay
 
 ## Wireframes
 <details>
-<summary>Home</summary>
+<summary>Main Menu</summary>
 <br>
 
-![Home Mobile](./assets/readme%20_docs/wireframes/wireframes_home.png) 
+![Main Menu](./assets/readme_docs/wireframes/main-menu.png) 
 </details>
 
 <details>
-<summary>Portfolio</summary>
+<summary>Main Menu - How to play</summary>
 <br>
 
-![Portfolio Mobile](./assets/readme%20_docs/wireframes/wireframes_portfolio.png) 
+![Main Menu - How to play](./assets//readme_docs/wireframes/main-menu-how-to-play.png) 
 
 </details>
 
 <details>
-<summary>Contact</summary>
+<summary>Main Menu - Play</summary>
 <br>
 
-![Contact Mobile](./assets/readme%20_docs/wireframes/wireframes_contact.png) 
+![Main Menu - Play](./assets/readme_docs/wireframes/main-menu-play.png) 
 </details>
 
+<details>
+<summary>Main Menu - Scoreboard No Score</summary>
+<br>
+
+![Main Menu - Scoreboard No Score](./assets/readme_docs/wireframes/main-menu-score-board-no-score.png) 
+</details>
+
+<details>
+<summary>Main Menu - Scoreboard</summary>
+<br>
+
+![Main Menu - Scoreboard](./assets/readme_docs/wireframes/main-menu-score-board.png) 
+</details>
+
+<details>
+<summary>Level A1 -A2</summary>
+<br>
+
+![Level A1 -A2](./assets/readme_docs/wireframes/game-level-a1.png) 
+</details>
+
+<details>
+<summary>Level B1 -B2</summary>
+<br>
+
+![Level B1 -B2](./assets/readme_docs/wireframes/game-level-b1.png) 
+</details>
+
+<details>
+<summary>Win Modal</summary>
+<br>
+
+![Win modal](./assets/readme_docs/wireframes/well-done.png) 
+</details>
+
+<details>
+<summary>Time's up</summary>
+<br>
+
+![Time's up modal](./assets/readme_docs/wireframes/times-up.png) 
+</details>
 
 # Features
 
@@ -179,7 +220,7 @@ Sound used was selected from pixabay
 * specifies who the game is for
 * user stories it relates to: 1, 25
 
-![Name of the picture](./assets/readme%20_docs/footer.JPG)
+![Game name and game type](./assets/readme_docs/main_menu/glottolotto-name-present.JPG)
 
 ### Game desciption
 
@@ -188,7 +229,7 @@ Sound used was selected from pixabay
 * the text beneath the header gives a brief description of the game, its purpose and the variety of levels
 * user stories it relates to: 1, 25
 
-![Name of the picture](./assets/readme%20_docs/footer.JPG)
+![Game description](./assets/readme_docs/main_menu/game-description.JPG)
 
 ### Navigation buttons 
 
@@ -199,7 +240,7 @@ Sound used was selected from pixabay
 * made more evident by the use of the pink color which distinguishes itself from the backround color 
 * user stories it relates to: 2, 26
 
-![Name of the picture](./assets/readme%20_docs/footer.JPG)
+![Navigation buttons ](./assets/readme_docs/main_menu/navigation-buttons.JPG)
 
 
 ### How to play
@@ -542,7 +583,7 @@ Images and sounds were taken from [Pixabay](https://pixabay.com/) with an except
 
 
 ## Code
-   * *Shuffle cards function (shuffleDeck) * built based on Fisher Yates Shuffle algorithm found in [this tutorial](https://www.youtube.com/watch?v=3uuQ3g92oPQ&t=342s) 
+   * *Shuffle cards function (shuffleDeck)* built based on Fisher Yates Shuffle algorithm found in [this tutorial](https://www.youtube.com/watch?v=3uuQ3g92oPQ&t=342s) 
    * *Save score Function (saveScore)* built folloting [this tutorial](https://www.youtube.com/watch?v=DFhmNLKwwGw&list=PLDlWc9AfQBfZIkdVaOQXi1tizJeNJipEx&index=9) 
 
 
