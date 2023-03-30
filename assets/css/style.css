@@ -2,6 +2,7 @@
 body{
     color: #D79E06;
     font-family: 'Lato', sans-serif;  
+    /*background-color: #e9eef1;*/
 }
 
 /*Background image styling*/
@@ -613,7 +614,6 @@ footer a:hover{
         width: 90vw;
         border-radius: 25px;
         padding: 1.25rem;
-
     }
     
 
@@ -710,6 +710,10 @@ footer a:hover{
 
     #turns-count{
         margin-right: 6%;
+    }
+
+    #turns{
+        width: fit-content;
     }
 
     .card-front p {
@@ -923,3 +927,16 @@ footer a:hover{
 
 }
 
+@media (max-height: 450px) {
+    #game-info{
+        min-height: 450px;
+    }
+
+    #result{
+        min-height: 450px;
+    }
+
+    img{
+        min-height: 600px;
+    }
+}

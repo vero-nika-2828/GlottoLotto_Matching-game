@@ -123,25 +123,25 @@ The main colors of the website are dark green, gold yellow, pink and white.
 
 * Gray (#E9EEF1) and is used for the screen background.
 
-![Color scheme](./assets/readme%20_docs/color-scheme.jpg)
+![Color scheme](./assets/readme_docs/design/color-scheme.png)
 
 ## Typography
 
 Google Fonts website was used to import the fonts chosen for this website.
 
-Lato was used as a general font for the website. Marhey in cursive was used for headers, button text for emphasis and to keep with the playful and friendly theme. San seriff was added in case browser doesn't support the other two fonts. 
+Lato was used as a general font for the website. Marhey was used for headers, button text for emphasis and to keep with the playful and friendly theme. San seriff was added in case browser doesn't support the other two fonts. 
 
-![Typography Acme](./assets/readme%20_docs/typography_acme.JPG)
+![Typography Marhey](./assets/readme_docs/design/font-marhey.JPG)
 
-![Typography Lato](./assets/readme%20_docs/typography_lato.JPG)
+![Typography Lato](./assets/readme_docs/design/font-lato.JPG)
 
 ## Imagery
 
-Images used were selected from pixabay with the theme of animated animals 
+Images used for the cards were selected from pixabay with the theme of cartoon animals and the images for background were selected from Pexels
 
 ## Sound 
 
-Sound used was selected from pixabay
+Sound used was selected from pixabay 
 
 ## Wireframes
 <details>
@@ -222,8 +222,10 @@ Sound used was selected from pixabay
 
 ### Level options 
 
-#### Level A1 -A2
-#### Level B1- B2
+* level A1 -A2 for beginers on the top 
+* level B1 -B2 for intermediate students under the beginner level 
+* direct the user to the difficulty of their choice 
+* word difficulty based on the Cambridge Dictionary online
 
 ## Game page
 
