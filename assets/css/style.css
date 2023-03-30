@@ -2,7 +2,7 @@
 body{
     color: #D79E06;
     font-family: 'Lato', sans-serif;  
-    /*background-color: #e9eef1;*/
+    background-color: #e9eef1;
 }
 
 /*Background image styling*/
@@ -579,6 +579,10 @@ footer a:hover{
         margin-right: 38%;
     }
 
+    #turns{
+        margin-left: 12px;
+    }
+
 
    .result-text {
        font-size: 50px;
@@ -937,6 +941,6 @@ footer a:hover{
     }
 
     img{
-        min-height: 600px;
+        min-height: 650px;
     }
 }

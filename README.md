@@ -177,12 +177,18 @@ Sound used was selected from pixabay
 * presents the game to the user
 * gives a clue that the user will be required to match the cards
 * specifies who the game is for
+* user stories it relates to: 1, 25
+
+![Name of the picture](./assets/readme%20_docs/footer.JPG)
 
 ### Game desciption
 
 * positioned in the center of the page 
 * header propts users to try the game and indicates that they will leran by doing 
 * the text beneath the header gives a brief description of the game, its purpose and the variety of levels
+* user stories it relates to: 1, 25
+
+![Name of the picture](./assets/readme%20_docs/footer.JPG)
 
 ### Navigation buttons 
 
@@ -191,6 +197,9 @@ Sound used was selected from pixabay
 * direct the users to desired element 
 * assigned name of each button gives a clear indication to the users where it will take them
 * made more evident by the use of the pink color which distinguishes itself from the backround color 
+* user stories it relates to: 2, 26
+
+![Name of the picture](./assets/readme%20_docs/footer.JPG)
 
 
 ### How to play
@@ -198,6 +207,9 @@ Sound used was selected from pixabay
 * shows steps by step instructions of the game
 * user can return to the main menu from here  
 * vertical scroll bar activates for the smaller devices
+* user stories it relates to: 3
+
+![Name of the picture](./assets/readme%20_docs/footer.JPG)
 
 ### Play
 
@@ -207,6 +219,9 @@ Sound used was selected from pixabay
 * gives option of progressing in the game to a higher level, from beginner to intermediate
 * separate button allows users to go directly to the game
 * allows user to return to main menu
+* user stories it relates to: 22, 29
+
+![Name of the picture](./assets/readme%20_docs/footer.JPG)
 
 
 ### Score board
@@ -214,11 +229,16 @@ Sound used was selected from pixabay
 * shows the scores aquired by the user with each try
 * limits the number of the scores saved to 10
 * when opened before the scores are added it informs the user to play the game and add the score
+* user stories it relates to: 6, 19, 36
 
+![Name of the picture](./assets/readme%20_docs/footer.JPG)
 
 ### Return button
 
 * takes users back to main menu
+* user stories it relates to: 7, 27
+
+![Name of the picture](./assets/readme%20_docs/footer.JPG)
 
 ### Level options 
 
@@ -226,23 +246,38 @@ Sound used was selected from pixabay
 * level B1 -B2 for intermediate students under the beginner level 
 * direct the user to the difficulty of their choice 
 * word difficulty based on the Cambridge Dictionary online
+* user stories it relates to: 4, 27
+
+![Name of the picture](./assets/readme%20_docs/footer.JPG)
 
 ## Game page
 
 * card area is centered to fit each devices' screen size wihtout activating scroll bar
+* user stories it relates to: 5
+
+![Name of the picture](./assets/readme%20_docs/footer.JPG)
 
 ### Title 
 
 * positioned on the top of the page above the card container
 * indicates what level the user is playing 
-* shows short instructions of what the user is expected to do, thus match the word to the picture
+* shows short instructions of what the user is expected to do, thus match the word to the picture* user stories it relates to: 1, 25
+
+![Name of the picture](./assets/readme%20_docs/footer.JPG)
+
 
 ### Timer 
 * start as soon as the game is loaded
 * goes down by one second
+* user stories it relates to: 15, 37
+
+![Name of the picture](./assets/readme%20_docs/footer.JPG)
 
 ### Turns
 * with each two cards selected a turn coutner goes up by one
+* user stories it relates to: 16, 38
+
+![Name of the picture](./assets/readme%20_docs/footer.JPG)
 
 ### Music control
 
@@ -250,6 +285,9 @@ Sound used was selected from pixabay
 * speaker icon  is crossed to indecate that music is off
 * when clicked on the music starts playing and the cross is removed from the speaker button to in
 * when clicked cross is removed from the speaker button to indicate that the sound is on
+* user stories it relates to: 21, 39
+
+![Name of the picture](./assets/readme%20_docs/footer.JPG)
 
 ### Card
 
@@ -264,6 +302,9 @@ Sound used was selected from pixabay
 * the selected cards stay up for a while before match or no match is being signalled in order for the user to memorise the position of the cards or see the cars they matched
 * it is not possible to click the same card twice in the row
 * when two selected cards don't match, the cards turn back and back of the card is shown
+* user stories it relates to: 5, 9, 10, 11, 12, 13, 14, 31, 32, 33, 34, 35
+
+![Name of the picture](./assets/readme%20_docs/footer.JPG)
 
 
 ## Result section
@@ -274,6 +315,10 @@ Sound used was selected from pixabay
 * the message 'Time's up' indicates that the user ran out of time
 * provides 'Try again button' to enable the user to replay the game right away
 * provide 'Main menu button' to enable user get back to main menu and choose from the options
+* user stories it relates to: 17
+
+![Name of the picture](./assets/readme%20_docs/footer.JPG)
+
 
 
 ### Well done 
@@ -281,12 +326,20 @@ Sound used was selected from pixabay
 * appears when all 8 matches are found
 * the message 'Well done' indicates that the user was succesful at the game
 * is positioned right above the message about the gained points
+* user stories it relates to: 17
+
+![Name of the picture](./assets/readme%20_docs/footer.JPG)
+
 
 ### Points gained
 
 * shows the total amount of points gained at the end of the game
 * calculate based on the amount of turns taken to fnd all the matches - the less tries the more points
 * is positioned right under the 'Well done message'
+* user stories it relates to: 18, 36
+
+![Name of the picture](./assets/readme%20_docs/footer.JPG)
+
 
 
 ### Name input
@@ -296,6 +349,10 @@ Sound used was selected from pixabay
 * shows placeholder message
 * the placeholder message dissapears when name is typed in
 * the name input disapears when saved button is clicked to indicate to the users that the name was added
+* user stories it relates to: 19, 36
+
+![Name of the picture](./assets/readme%20_docs/footer.JPG)
+
 
 ### Save score button 
 
@@ -303,22 +360,38 @@ Sound used was selected from pixabay
 * the button text 'Save to the score board' indicates to the users that the name will be saved when they clicked on it
 * the button text changes to 'Saved' to confirm to the users that the name got added
 * is located under the input field 
+* user stories it relates to: 19, 20
+
+![Name of the picture](./assets/readme%20_docs/footer.JPG)
+
 
 ### Play again
 
 * enables to users to play the same level game again with one click after finishing
 * is positioned bellow result modal whether it is Time's up when game is lost or 'Well done' when the users win the game
+* user stories it relates to: 8, 30
+
+![Name of the picture](./assets/readme%20_docs/footer.JPG)
+
 
 ### Main menu
 
 * enables the user to return to the main menu when the is finished
 * it is positoned under 'Play again button' in result modal
+* user stories it relates to: 2, 27
+
+![Name of the picture](./assets/readme%20_docs/footer.JPG)
+
 
 
 ## Footer
 ### Link to github page
 
 * link enables users to visit site owner's git hub page
+* user stories it relates to: 40
+
+![Name of the picture](./assets/readme%20_docs/footer.JPG)
+
 
 ## 404 error page
 ### Error notification
@@ -327,160 +400,21 @@ Sound used was selected from pixabay
 * message notifies the user that the page for that game was not found 
 
 * is positioned above the message to return to the GlottoLotto game
+* user stories it relates to: 41
+
+![Name of the picture](./assets/readme%20_docs/footer.JPG)
+
 
 ### Back to game button
 
 * enables users to return to the Main menu without using the navigation of the browser
 * is positioned under the error message
+* user stories it relates to: 42
 
+![Name of the picture](./assets/readme%20_docs/footer.JPG)
 
-
-
-
-
-
-<---------------------------------Delete these features ----------------------- >
-
-The website is comprised of 4 pages: Main Menu, Level A1-A2 and Level B1-B2. 
-
-Main menu consists of logo, short introduction to the game and navigation menu. Each navigation menu opens an associated modal. 
-
-Level A1-A2 and Level B1-B2 consists of the header suggesting what level it relates, brief one sentence instructions, and a card grid of 16 cards. 
-
-404 page contains text notifying the user that the page doesn't exist and allows them to return back to the main menu
-
-## Logo and Navigations Bar
-
-* Repeats across all three pages for consistency and easy navigation
-* Logo on the left side in contrasting gold color displays photographer's brand clearly
-* Logo item links back to the home page 
-* Links to other pages are placed on the right to maintain the conventions expected by the user
-* Navigation menu will turn into hamburger menu on smaller devices 
-* Hamburger menu opens to show list of other pages
-* Hover effect added on the navigation links for easy navigation  
-* Relates to following user stories: 6, 8, 9 
-
-![Logo and Navigation bar](./assets/readme%20_docs/header_navbar.JPG)
-
-![Logo and Navigation bar for smaller devices](./assets/readme%20_docs/header_navbar_small_devices.JPG)
-
-## Footer
-
-* Repeats across all three pages for consistency and easy navigation
-* Logo is centred in the middle  
-* Social media links, where more content and photo examples are available, is centred in the middle under the logo 
-* Social media links open in a new tab
-* Social media links get bigger when hovered over for easier navigation 
-* Link description added for accessibility and SEO
-* Relates to following user stories:  2, 5 , 9, 12, 13, 
-
-![Footer](./assets/readme%20_docs/footer.JPG)
-
-## Home page
-
-### Hero Image
-
-* Used to catch the visitor's eye 
-* Convey the idea of photos the visitor can expect from the photographer
-* Is in accordance with the theme of one of the categories the photographer offers
-* Covers 80% of the viewport to allow content hinting
-* Relates to following user stories: 2, 14, 17
-
-![Hero image](./assets/readme%20_docs/hero_image.JPG)
-
-
-### Title 
-
-* Gives an overview of the photo categories offered 
-* Provides the hint of the following content
-* Reinforces the brand
-* Relates to following user stories: 1, 2, 15, 
-
-![Title](./assets/readme%20_docs/title.JPG)
-
-### Hire button  
-
-* Located under the title 
-* Links to contact page to enable easy navigation for direct booking
-* Hover effect added to give feedback when pointed at
-* Relates to following user stories: 11, 14
-
-![Hire me](./assets/readme%20_docs/hireme.JPG)
-
-### About
-
-* Picture of the photographer on the left accompanies the text and makes it more personal
-* Text on the right presents photographers experience and approach 
-* Above elements get stacked on top of each other for content to be intelligible
-* Some text made bold for emphasis and to make content interesting
-* Relates to following user stories: 3, 6, 9, 15, 17
-
-![About section](./assets/readme%20_docs/about.JPG)
-
-### Reviews
-
-* Two containers of the same size with pictures of reviewers with the star rating
-* Provides the opinion about the site owner's services
-* Containers get stacked on top of each other on smaller devices 
-* Relates to following user stories: 4, 6, 9, 16,  
-
-![Reviews](./assets/readme%20_docs/reviews.JPG)
-
-
-## Portfolio page
-
-* Title makes it clear on which page the visitor currently is 
-* Consists of one section only for simpler navigation
-* Presents the photographer's work. 
-* Photos organised in 3 column grid for customers to:
-   * spot their desired category quicker and 
-   * see more examples at one glance
-* Photos are displayed in 2 column grid on smaller devices, such as tablet
-* Photos are displayed in one column on even smaller devices, such as mobile phones
-* Alt description added to images for accessibility 
-* Relates to following user stories: 1, 2, 6, 
-
-![Portfolio](./assets/readme%20_docs/portfolio.JPG)
-
-## Contact page 
-
-* Title makes it clear on which page the visitor currently is 
-* Form and address box  cover 1/3 of the screen size 
-* Background image covers the rest of the page for better visual effect
-* Form and address box is centred on smaller devices
-* Relates to following user stories: 10,13
-
-![Contact page title](./assets/readme%20_docs/contact-page-title.JPG)
-![Contact page](./assets/readme%20_docs/contact-page.JPG)
-
-### Form 
-* Allows the site visitor to send their message
-* Input boxes serve to enter visitor's details for questions and bookings
-* Labels mark the above mentioned input boxes 
-* Relates to following user stories: 10, 14
-
-![Form](./assets/readme%20_docs/form.JPG)
-
-### Checkbox 
-* Allows visitors to specify their preferred photo category 
-* Enables to select multiple categories at once
-* Relates to following user stories: 18
-
-![Checkbox](./assets/readme%20_docs/checkbox.JPG)
-
-### Address
-* Located under the form 
-* Provides alternative ways of contacting the photographer 
-* Relates to following user stories: 10, 14
-
-![Checkbox](./assets/readme%20_docs/address.JPG)
 
 ## Future implementations
-
-* Change the hero image for the carousel with a series of images using JavaScript
-* A section where the people will be able to add their comments directly on the website
-* 'New' section where people will get notified about any new offers or promotions
-
 
 # Technologies Used 
 
@@ -498,8 +432,9 @@ Level A1-A2 and Level B1-B2 consists of the header suggesting what level it rela
  * [Font Awesome](https://fontawesome.com/) - For the iconography on the website
  * [Balsamiq](https://balsamiq.com/) - To create wireframes
  * Google Dev Tools - To troubleshoot and test features, solve issues with responsiveness and styling
- * [Emoji Cursor](https://www.emojicursor.app/)  -For the shamrock cursor 
- * [Am I Responsive](https://ui.dev/amiresponsive)  -To show the website image on a range of devices
+ * [Tiny PNG](https://tinypng.com/) - To compress the pictures
+ * [Emoji Cursor](https://www.emojicursor.app/) - For the shamrock cursor 
+ * [Am I Responsive](https://ui.dev/amiresponsive) - To show the website image on a range of devices
 
 # Testing
 Find the full testing documented in [TESTING.md](TESTING.md)
@@ -622,7 +557,7 @@ I would like to thank to following people who helped me along the way in complet
 * My Code Institute mentor, Mitko Bachvarov, for his valuable advice and comprehensive guidance
 * My tutor for being so patient with me and being there for me every time I had any questions
 * Ed and Jason from Tutor support for helping me with some issues I came across in my project
-* My family and friends for giving me moral support and all their patience
+* My family and friends for giving me moral support and for taking time to test the final version of the project
 
 
 
