@@ -250,7 +250,7 @@ Sound used was selected from pixabay
 * vertical scroll bar activates for the smaller devices
 * user stories it relates to: 3
 
-![Name of the picture](./assets/readme%20_docs/footer.JPG)
+![Main menu -How to play](./assets/readme_docs/main_menu/main-menu-how-to-play.png)
 
 ### Play
 
