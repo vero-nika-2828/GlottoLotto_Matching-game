@@ -795,7 +795,7 @@ The website was tested on following devices
 
 
 <details>
-<summary>iPhone 13 mini, Browser: Safari 375 x 812px</summary>
+<summary>iPhone 13 mini 375 x 812px</summary>
 <ul>
 
  <details>
@@ -840,72 +840,88 @@ The website was tested on following devices
 
 
 <details>
-<summary>Apple iPad mini, Browser: Safari</summary>
+<summary>Apple iPad mini 768 x 1024</summary>
 <ul>
 
  <details>
- <summary>Home page</summary>
+ <summary>Main Menu </summary>
  
-![Home page 1](./assets/readme%20_docs/full-testing/iPhone/Home1.JPG)
-![Home page 2](./assets/readme%20_docs/full-testing/iPhone/Home2.JPG)
-![Home page 3](./assets/readme%20_docs/full-testing/iPhone/Home3.JPG)
-![Home page 4](./assets/readme%20_docs/full-testing/iPhone/Home4.JPG)
-![Home page 5](./assets/readme%20_docs/full-testing/iPhone/Home5.JPG)
-![Home page 6](./assets/readme%20_docs/full-testing/iPhone/Home6.JPG)
+![Main Menu 1](./assets/readme_docs/full_testing/apple_ipad_mini/main-menu.PNG)
+![Main Menu 2](./assets/readme_docs/full_testing/apple_ipad_mini/main-menu-how-to-play.PNG)
+![Main Menu 3](./assets/readme_docs/full_testing/apple_ipad_mini/main-menu-play.PNG)
+![Main Menu 4](./assets/readme_docs/full_testing/apple_ipad_mini/main-menu-how-to-score-board.PNG)
+![Main Menu 5](./assets/readme_docs/full_testing/apple_ipad_mini/main-menu-how-to-score-board-score.PNG)
 
 
  </details> 
 
  <details>
- <summary>Portfolio</summary>
+ <summary>Game</summary>
  
-![Portfolio 1](./assets/readme%20_docs/full-testing/iPhone/Porfolio1.JPG)
-![Portfolio 2](./assets/readme%20_docs/full-testing/iPhone/Porfolio2.JPG)
-![Portfolio 3](./assets/readme%20_docs/full-testing/iPhone/Porfolio3.JPG)
-![Portfolio 4](./assets/readme%20_docs/full-testing/iPhone/Porfolio4.JPG)
-![Portfolio 5](./assets/readme%20_docs/full-testing/iPhone/Porfolio5.JPG)
-![Portfolio 6](./assets/readme%20_docs/full-testing/iPhone/Porfolio6.JPG)
-![Portfolio 7](./assets/readme%20_docs/full-testing/iPhone/Porfolio7.JPG)
+![Game](./assets/readme_docs/full_testing/apple_ipad_mini/game-page.PNG)
+
 
  </details> 
 
  <details>
- <summary>Contact</summary>
+ <summary>Result</summary>
  
-![Contact 1](./assets/readme%20_docs/full-testing/iPhone/Contact1.JPG)
-![Contact 2](./assets/readme%20_docs/full-testing/iPhone/Contact2.JPG)
-![Contact 3](./assets/readme%20_docs/full-testing/iPhone/Contact3.JPG)
+![Time's up](./assets/readme_docs/full_testing/apple_ipad_mini/times-up.PNG)
+![You win](./assets/readme_docs/full_testing/apple_ipad_mini/you-win.PNG)
+
 
  </details> 
 
+  <details>
+ <summary>404 page</summary>
+ 
+![404 page](./assets/readme_docs/full_testing/apple_ipad_mini/404page.PNG)
+
+
+
+ </details> 
+</ul>
+</details> 
+
  <details>
+
 <summary>Samsung Galaxy Tab A8  1280 x 634px </summary>
 <ul>
 
  <details>
- <summary>Main page</summary>
+ <summary>Main Menu</summary>
  
-![Home page 1](./assets/readme%20_docs/full-testing/Desktop/Home1.JPG)
-![Home page 2](./assets/readme%20_docs/full-testing/Desktop/Home2.JPG)
-![Home page 3](./assets/readme%20_docs/full-testing/Desktop/Home3.JPG)
-![Home page 4](./assets/readme%20_docs/full-testing/Desktop/Home4.JPG)
+![Main Menu 1](./assets/readme_docs/full_testing/samsung_galaxy_tab_a8/main-menu.PNG)
+![Main Menu 2](./assets/readme_docs/full_testing/samsung_galaxy_tab_a8/main-menu-how-to-play.PNG)
+![Main Menu 3](./assets/readme_docs/full_testing/samsung_galaxy_tab_a8/main-menu-play.PNG)
+![Main Menu 4](./assets/readme_docs/full_testing/samsung_galaxy_tab_a8/main-menu-score-board.PNG)
+![Main Menu 5](./assets/readme_docs/full_testing/samsung_galaxy_tab_a8/main-menu-score-board-score.PNG)
+
+ </details> 
+
+  <details>
+
+ <summary>Game</summary>
+ 
+![Game](./assets/readme_docs/full_testing/samsung_galaxy_tab_a8/game-page.PNG)
+
 
  </details> 
 
  <details>
- <summary>Level A1 -A2</summary>
+ <summary>Result</summary>
  
-![Portfolio 1](./assets/readme%20_docs/full-testing/Desktop/Portfolio.JPG)
-![Portfolio 2](./assets/readme%20_docs/full-testing/Desktop/Portfolio2.JPG)
-![Portfolio 3](./assets/readme%20_docs/full-testing/Desktop/Portfolio3.JPG)
+![Time's up](./assets/readme_docs/full_testing/samsung_galaxy_tab_a8/times-up.PNG)
+![You -win](./assets/readme_docs/full_testing/samsung_galaxy_tab_a8/you-win.PNG)
+
 
  </details> 
 
  <details>
- <summary>Level A1 -A2</summary>
+ <summary>404 page</summary>
  
-![Contact 1](./assets/readme%20_docs/full-testing/Desktop/Contact1.JPG)
-![Contact 2](./assets/readme%20_docs/full-testing/Desktop/Contact2.JPG)
+![404 page](./assets/readme_docs/full_testing/samsung_galaxy_tab_a8/404page.PNGG)
+
 
 
  </details> 
@@ -918,30 +934,36 @@ The website was tested on following devices
 <ul>
 
  <details>
- <summary>Main page</summary>
+ <summary>Main Menu</summary>
  
-![Home page 1](./assets/readme%20_docs/full-testing/Desktop/Home1.JPG)
-![Home page 2](./assets/readme%20_docs/full-testing/Desktop/Home2.JPG)
-![Home page 3](./assets/readme%20_docs/full-testing/Desktop/Home3.JPG)
-![Home page 4](./assets/readme%20_docs/full-testing/Desktop/Home4.JPG)
+![Main Men 1](./assets/readme_docs/full_testing/desktop/main-menu.PNG)
+![Main Men 2](./assets/readme_docs/full_testing/desktop/main-menu-how-to-play.PNG)
+![Main Men 3](./assets/readme_docs/full_testing/desktop/main-menu-play.PNG)
+![Main Men 4](./assets/readme_docs/full_testing/desktop/main-menu-score-board.PNG)
+![Main Men 5](./assets/readme_docs/full_testing/desktop/score-board-score.PNG)
 
  </details> 
 
  <details>
- <summary>Level A1 -A2</summary>
+ <summary>Game</summary>
  
-![Portfolio 1](./assets/readme%20_docs/full-testing/Desktop/Portfolio.JPG)
-![Portfolio 2](./assets/readme%20_docs/full-testing/Desktop/Portfolio2.JPG)
-![Portfolio 3](./assets/readme%20_docs/full-testing/Desktop/Portfolio3.JPG)
+![Game](./assets/readme_docs/full_testing/desktop/game-page.PNG)
 
  </details> 
 
  <details>
- <summary>Level A1 -A2</summary>
+ <summary>Result</summary>
  
-![Contact 1](./assets/readme%20_docs/full-testing/Desktop/Contact1.JPG)
-![Contact 2](./assets/readme%20_docs/full-testing/Desktop/Contact2.JPG)
+![Time's up](./assets/readme_docs/full_testing/desktop/times-up.PNG)
+![You win](./assets/readme_docs/full_testing/desktop/you-win.PNG)
 
+
+ </details> 
+
+ <details>
+ <summary>404 page</summary>
+ 
+![404 page](./assets/readme_docs/full_testing/desktop/404page.PNG)
 
  </details> 
 
