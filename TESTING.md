@@ -74,7 +74,7 @@
 <summary>Level A1 -A2</summary>
 <br>
 
-![Level A1 -A2 page Lighthouse test](./assets/readme%20_docs/lighthouse%20test/Portfolio%20page.JPG)
+![Level A1 -A2 page Lighthouse test](./assets/readme_docs/automated_testing/lighthouse-a1.PNG)
 
 </details> 
 
@@ -82,7 +82,7 @@
 <summary>Level B1 -B2</summary>
 <br>
 
-![Contact page Lighthouse test](./assets/readme%20_docs/lighthouse%20test/Contact%20page.JPG)
+![Level B1 -B2 game](./assets/readme_docs/automated_testing/lighthouse-b1.PNG)
 
 </details> 
 
@@ -102,14 +102,14 @@
 
 | User stories | Feature | Expected result | Actual result |
 |  :---| :---|  :---|  :---|
-| 5  | Layout | Game as well as initial page and result fit the screen size and there is no need to sroll | Works as expected |
+| 5  | Layout | Game as well as initial page and result fit the screen size and there is no need to scroll | Works as expected |
 | 2  | Layout | All elements are visible  | Works as expected|
 | 25 | Game name and game type description | Gives indication of the game type and who it is for| Works as expected|
 | 1, 25 | Introduction to the game | Gives the description of the game and it's use | Works as expected|
 | 2, 26 | Navigation buttons | Give me clear indication on where they will take me and are easy to read and it is intuitive| Works as expected|
 |3 | Navigation buttons - How to play | When I click 'How to play' button it takes me to How to play section | Works as expected|
 |3 | Navigation buttons - How to play on smaller devices| Instructions are easy to read and on smaller devices I have scroll option | Works as expected|
-|4, 22, 29 | Navigation buttons  -Play | When I click 'Play buton'  it takes me to game options | Works as expected|
+|4, 22, 29 | Navigation buttons  -Play | When I click 'Play button'  it takes me to game options | Works as expected|
 | 6, 36 | Navigation buttons  -Score board | When I click 'Score board'  it takes me to Scoreboard section | Works as expected|
 | 7, 27 | Return button | When I click return button it takes me back to the main menu |
 | 4, 27 | Play modal | I have two options of the games A1-A2 and  B1-B2 | Works as expected|
@@ -132,12 +132,12 @@
 | 15, 37 | Timer | Goes down by second | Works as expected|
 | 16,38 | Turns | When I select two cards the counter of the turns goes up 1 both when they match and don’t match | Works as expected|
 | 21, 39 | Music | When I click on the crossed speaker icon the cross is removed and the music starts playing |
-| 5 | Cards | Card area fiths my screen size | Works as expected|
+| 5 | Cards | Card area fits my screen size | Works as expected|
 | 5 | Card  | When game loads there are 16 cards of the same color  |  Works as expected |
 | 35 | Card  | When I click a card of my choice it turns around and I see a picture or a word  |  Works as expected |
 | 11, 34 | Card  | Each time card turns  hear the pronunciation of the animal name |  Works as expected |
-| 10 | Card  | When I click the card that is alreay selected  it doesn’t react : no animal name is said or card is not turned  |  Works as expected |
-| 12 | Card  | When I find a match the cards dissaper and sound effect is played |  Works as expected |
+| 10 | Card  | When I click the card that is already selected  it doesn’t react : no animal name is said or card is not turned  |  Works as expected |
+| 12 | Card  | When I find a match the cards dissapearand sound effect is played |  Works as expected |
 | 13, 33 | Card  | When I don’t find a match cards turn back around  |  Works as expected |
 | 10, 34 | Card  | When I click area where cards which I matched used to be it doesn’t react: no animal name is said neither can I hear a matched sound  |  Works as expected |
 | 10, 14, 32 | Card | When I select two cards they stay face up long enough to see what picture or word is on the card |  Works as expected |
@@ -185,7 +185,7 @@
 | User stories | Feature | Expected result | Actual result |
 |  :---| :---|  :---|  :---|
 | 41 | 404. html | When the game is not found I am directed to the page that tell me that the page is not found |  Works as expected |
-| 42 | Back to the game button | When I click the back to the game button it takes me back to the the Main menu  |  Works as expected |
+| 42 | Back to the game button | When I click the back to the game button it takes me back to theMain menu  |  Works as expected |
 
 </details> 
 
@@ -203,15 +203,15 @@
 
 | User stories | Feature | Expected result | Actual result |
 |  :---| :---|  :---|  :---|
-| 5  | Layout | Game as well as initial page and result fit the screen size and there is no need to sroll | Works as expected |
+| 5  | Layout | Game as well as initial page and result fit the screen size and there is no need to scroll | Works as expected |
 | 2  | Layout | All elements are visible  | Works as expected|
 | 25 | Game name and game type description | Gives indication of the game type and who it is for| Works as expected|
 | 1, 25 | Introduction to the game | Gives the description of the game and it's use | Works as expected|
 | 2, 26 | Navigation buttons | Give me clear indication on where they will take me and are easy to read and it is intuitive| Works as expected|
 |3 | Navigation buttons - How to play | When I click 'How to play' button it takes me to How to play section | Works as expected|
 |3 | Navigation buttons - How to play on smaller devices| Instructions are easy to read and on smaller devices I have scroll option | Works as expected|
-|4, 22, 29 | Navigation buttons  -Play | When I click 'Play buton'  it takes me to game options | Works as expected|
-| 6, 36 | Navigation buttons  -Score board | When I click 'Score board'  it takes me to Scoreboard section | Works as expected|
+|4, 22, 29 | Navigation buttons - Play | When I click 'Play button'  it takes me to game options | Works as expected|
+| 6, 36 | Navigation buttons - Score board | When I click 'Score board'  it takes me to Scoreboard section | Works as expected|
 | 7, 27 | Return button | When I click return button it takes me back to the main menu |
 | 4, 27 | Play modal | I have two options of the games A1-A2 and  B1-B2 | Works as expected|
 | 19, 36 | Score board | My score appears on the board | Works as expected|
@@ -233,12 +233,12 @@
 | 15, 37 | Timer | Goes down by second | Works as expected|
 | 16,38 | Turns | When I select two cards the counter of the turns goes up 1 both when they match and don’t match | Works as expected|
 | 21, 39 | Music | When I click on the crossed speaker icon the cross is removed and the music starts playing |
-| 5 | Cards | Card area fiths my screen size | Works as expected|
+| 5 | Cards | Card area fits my screen size | Works as expected|
 | 5 | Card  | When game loads there are 16 cards of the same color  |  Works as expected |
 | 35 | Card  | When I click a card of my choice it turns around and I see a picture or a word  |  Works as expected |
 | 11, 34 | Card  | Each time card turns  hear the pronunciation of the animal name |  Works as expected |
-| 10 | Card  | When I click the card that is alreay selected  it doesn’t react : no animal name is said or card is not turned  |  Works as expected |
-| 12 | Card  | When I find a match the cards dissaper and sound effect is played |  Works as expected |
+| 10 | Card  | When I click the card that is already selected  it doesn’t react : no animal name is said or card is not turned  |  Works as expected |
+| 12 | Card  | When I find a match the cards dissapear and sound effect is played |  Works as expected |
 | 13, 33 | Card  | When I don’t find a match cards turn back around  |  Works as expected |
 | 10, 34 | Card  | When I click area where cards which I matched used to be it doesn’t react: no animal name is said neither can I hear a matched sound  |  Works as expected |
 | 10, 14, 32 | Card | When I select two cards they stay face up long enough to see what picture or word is on the card |  Works as expected |
@@ -286,7 +286,7 @@
 | User stories | Feature | Expected result | Actual result |
 |  :---| :---|  :---|  :---|
 | 41 | 404. html | When the game is not found I am directed to the page that tell me that the page is not found |  Works as expected |
-| 42 | Back to the game button | When I click the back to the game button it takes me back to the the Main menu  |  Works as expected |
+| 42 | Back to the game button | When I click the back to the game button it takes me back to theMain menu  |  Works as expected |
 
 </details> 
 
@@ -304,14 +304,14 @@
 
 | User stories | Feature | Expected result | Actual result |
 |  :---| :---|  :---|  :---|
-| 5  | Layout | Game as well as initial page and result fit the screen size and there is no need to sroll | Works as expected |
+| 5  | Layout | Game as well as initial page and result fit the screen size and there is no need to scroll | Works as expected |
 | 2  | Layout | All elements are visible  | Works as expected|
 | 25 | Game name and game type description | Gives indication of the game type and who it is for| Works as expected|
 | 1, 25 | Introduction to the game | Gives the description of the game and it's use | Works as expected|
 | 2, 26 | Navigation buttons | Give me clear indication on where they will take me and are easy to read and it is intuitive| Works as expected|
 |3 | Navigation buttons - How to play | When I click 'How to play' button it takes me to How to play section | Works as expected|
 |3 | Navigation buttons - How to play on smaller devices| Instructions are easy to read and on smaller devices I have scroll option | Works as expected|
-|4, 22, 29 | Navigation buttons  -Play | When I click 'Play buton'  it takes me to game options | Works as expected|
+|4, 22, 29 | Navigation buttons  -Play | When I click 'Play button'  it takes me to game options | Works as expected|
 | 6, 36 | Navigation buttons  -Score board | When I click 'Score board'  it takes me to Scoreboard section | Works as expected|
 | 7, 27 | Return button | When I click return button it takes me back to the main menu |
 | 4, 27 | Play modal | I have two options of the games A1-A2 and  B1-B2 | Works as expected|
@@ -334,12 +334,12 @@
 | 15, 37 | Timer | Goes down by second | Works as expected|
 | 16,38 | Turns | When I select two cards the counter of the turns goes up 1 both when they match and don’t match | Works as expected|
 | 21, 39 | Music | When I click on the crossed speaker icon the cross is removed and the music starts playing |
-| 5 | Cards | Card area fiths my screen size | Works as expected|
+| 5 | Cards | Card area fits my screen size | Works as expected|
 | 5 | Card  | When game loads there are 16 cards of the same color  |  Works as expected |
 | 35 | Card  | When I click a card of my choice it turns around and I see a picture or a word  |  Works as expected |
 | 11, 34 | Card  | Each time card turns  hear the pronunciation of the animal name |  Works as expected |
-| 10 | Card  | When I click the card that is alreay selected  it doesn’t react : no animal name is said or card is not turned  |  Works as expected |
-| 12 | Card  | When I find a match the cards dissaper and sound effect is played |  Works as expected |
+| 10 | Card  | When I click the card that is already selected  it doesn’t react : no animal name is said or card is not turned  |  Works as expected |
+| 12 | Card  | When I find a match the cards dissapearand sound effect is played |  Works as expected |
 | 13, 33 | Card  | When I don’t find a match cards turn back around  |  Works as expected |
 | 10, 34 | Card  | When I click area where cards which I matched used to be it doesn’t react: no animal name is said neither can I hear a matched sound  |  Works as expected |
 | 10, 14, 32 | Card | When I select two cards they stay face up long enough to see what picture or word is on the card |  Works as expected |
@@ -387,7 +387,7 @@
 | User stories | Feature | Expected result | Actual result |
 |  :---| :---|  :---|  :---|
 | 41 | 404. html | When the game is not found I am directed to the page that tell me that the page is not found |  Works as expected |
-| 42 | Back to the game button | When I click the back to the game button it takes me back to the the Main menu  |  Works as expected |
+| 42 | Back to the game button | When I click the back to the game button it takes me back to theMain menu  |  Works as expected |
 
 </details> 
 
@@ -405,14 +405,14 @@
 
 | User stories | Feature | Expected result | Actual result |
 |  :---| :---|  :---|  :---|
-| 5  | Layout | Game as well as initial page and result fit the screen size and there is no need to sroll | Works as expected |
+| 5  | Layout | Game as well as initial page and result fit the screen size and there is no need to scroll | Works as expected |
 | 2  | Layout | All elements are visible  | Works as expected|
 | 25 | Game name and game type description | Gives indication of the game type and who it is for| Works as expected|
 | 1, 25 | Introduction to the game | Gives the description of the game and it's use | Works as expected|
 | 2, 26 | Navigation buttons | Give me clear indication on where they will take me and are easy to read and it is intuitive| Works as expected|
 |3 | Navigation buttons - How to play | When I click 'How to play' button it takes me to How to play section | Works as expected|
 |3 | Navigation buttons - How to play on smaller devices| Instructions are easy to read and on smaller devices I have scroll option | Works as expected|
-|4, 22, 29 | Navigation buttons  -Play | When I click 'Play buton'  it takes me to game options | Works as expected|
+|4, 22, 29 | Navigation buttons  -Play | When I click 'Play button'  it takes me to game options | Works as expected|
 | 6, 36 | Navigation buttons  -Score board | When I click 'Score board'  it takes me to Scoreboard section | Works as expected|
 | 7, 27 | Return button | When I click return button it takes me back to the main menu |
 | 4, 27 | Play modal | I have two options of the games A1-A2 and  B1-B2 | Works as expected|
@@ -435,12 +435,12 @@
 | 15, 37 | Timer | Goes down by second | Works as expected|
 | 16,38 | Turns | When I select two cards the counter of the turns goes up 1 both when they match and don’t match | Works as expected|
 | 21, 39 | Music | When I click on the crossed speaker icon the cross is removed and the music starts playing |
-| 5 | Cards | Card area fiths my screen size | Works as expected|
+| 5 | Cards | Card area fits my screen size | Works as expected|
 | 5 | Card  | When game loads there are 16 cards of the same color  |  Works as expected |
 | 35 | Card  | When I click a card of my choice it turns around and I see a picture or a word  |  Works as expected |
 | 11, 34 | Card  | Each time card turns  hear the pronunciation of the animal name |  Works as expected |
-| 10 | Card  | When I click the card that is alreay selected  it doesn’t react : no animal name is said or card is not turned  |  Works as expected |
-| 12 | Card  | When I find a match the cards dissaper and sound effect is played |  Works as expected |
+| 10 | Card  | When I click the card that is already selected  it doesn’t react : no animal name is said or card is not turned  |  Works as expected |
+| 12 | Card  | When I find a match the cards dissapearand sound effect is played |  Works as expected |
 | 13, 33 | Card  | When I don’t find a match cards turn back around  |  Works as expected |
 | 10, 34 | Card  | When I click area where cards which I matched used to be it doesn’t react: no animal name is said neither can I hear a matched sound  |  Works as expected |
 | 10, 14, 32 | Card | When I select two cards they stay face up long enough to see what picture or word is on the card |  Works as expected |
@@ -488,7 +488,7 @@
 | User stories | Feature | Expected result | Actual result |
 |  :---| :---|  :---|  :---|
 | 41 | 404. html | When the game is not found I am directed to the page that tell me that the page is not found |  Works as expected |
-| 42 | Back to the game button | When I click the back to the game button it takes me back to the the Main menu  |  Works as expected |
+| 42 | Back to the game button | When I click the back to the game button it takes me back to theMain menu  |  Works as expected |
 
 </details> 
 
@@ -506,14 +506,14 @@
 
 | User stories | Feature | Expected result | Actual result |
 |  :---| :---|  :---|  :---|
-| 5  | Layout | Game as well as initial page and result fit the screen size and there is no need to sroll | Works as expected |
+| 5  | Layout | Game as well as initial page and result fit the screen size and there is no need to scroll | Works as expected |
 | 2  | Layout | All elements are visible  | Works as expected|
 | 25 | Game name and game type description | Gives indication of the game type and who it is for| Works as expected|
 | 1, 25 | Introduction to the game | Gives the description of the game and it's use | Works as expected|
 | 2, 26 | Navigation buttons | Give me clear indication on where they will take me and are easy to read and it is intuitive| Works as expected|
 |3 | Navigation buttons - How to play | When I click 'How to play' button it takes me to How to play section | Works as expected|
 |3 | Navigation buttons - How to play on smaller devices| Instructions are easy to read and on smaller devices I have scroll option | Works as expected|
-|4, 22, 29 | Navigation buttons  -Play | When I click 'Play buton'  it takes me to game options | Works as expected|
+|4, 22, 29 | Navigation buttons  -Play | When I click 'Play button'  it takes me to game options | Works as expected|
 | 6, 36 | Navigation buttons  -Score board | When I click 'Score board'  it takes me to Scoreboard section | Works as expected|
 | 7, 27 | Return button | When I click return button it takes me back to the main menu |
 | 4, 27 | Play modal | I have two options of the games A1-A2 and  B1-B2 | Works as expected|
@@ -536,12 +536,12 @@
 | 15, 37 | Timer | Goes down by second | Works as expected|
 | 16,38 | Turns | When I select two cards the counter of the turns goes up 1 both when they match and don’t match | Works as expected|
 | 21, 39 | Music | When I click on the crossed speaker icon the cross is removed and the music starts playing |
-| 5 | Cards | Card area fiths my screen size | Works as expected|
+| 5 | Cards | Card area fits my screen size | Works as expected|
 | 5 | Card  | When game loads there are 16 cards of the same color  |  Works as expected |
 | 35 | Card  | When I click a card of my choice it turns around and I see a picture or a word  |  Works as expected |
 | 11, 34 | Card  | Each time card turns  hear the pronunciation of the animal name |  Works as expected |
-| 10 | Card  | When I click the card that is alreay selected  it doesn’t react : no animal name is said or card is not turned  |  Works as expected |
-| 12 | Card  | When I find a match the cards dissaper and sound effect is played |  Works as expected |
+| 10 | Card  | When I click the card that is already selected  it doesn’t react : no animal name is said or card is not turned  |  Works as expected |
+| 12 | Card  | When I find a match the cards dissapearand sound effect is played |  Works as expected |
 | 13, 33 | Card  | When I don’t find a match cards turn back around  |  Works as expected |
 | 10, 34 | Card  | When I click area where cards which I matched used to be it doesn’t react: no animal name is said neither can I hear a matched sound  |  Works as expected |
 | 10, 14, 32 | Card | When I select two cards they stay face up long enough to see what picture or word is on the card |  Works as expected |
@@ -589,7 +589,7 @@
 | User stories | Feature | Expected result | Actual result |
 |  :---| :---|  :---|  :---|
 | 41 | 404. html | When the game is not found I am directed to the page that tell me that the page is not found |  Works as expected |
-| 42 | Back to the game button | When I click the back to the game button it takes me back to the the Main menu  |  Works as expected |
+| 42 | Back to the game button | When I click the back to the game button it takes me back to theMain menu  |  Works as expected |
 
 </details> 
 
@@ -607,14 +607,14 @@
 
 | User stories | Feature | Expected result | Actual result |
 |  :---| :---|  :---|  :---|
-| 5  | Layout | Game as well as initial page and result fit the screen size and there is no need to sroll | Works as expected |
+| 5  | Layout | Game as well as initial page and result fit the screen size and there is no need to scroll | Works as expected |
 | 2  | Layout | All elements are visible  | Works as expected|
 | 25 | Game name and game type description | Gives indication of the game type and who it is for| Works as expected|
 | 1, 25 | Introduction to the game | Gives the description of the game and it's use | Works as expected|
 | 2, 26 | Navigation buttons | Give me clear indication on where they will take me and are easy to read and it is intuitive| Works as expected|
 |3 | Navigation buttons - How to play | When I click 'How to play' button it takes me to How to play section | Works as expected|
 |3 | Navigation buttons - How to play on smaller devices| Instructions are easy to read and on smaller devices I have scroll option | Works as expected|
-|4, 22, 29 | Navigation buttons  -Play | When I click 'Play buton'  it takes me to game options | Works as expected|
+|4, 22, 29 | Navigation buttons  -Play | When I click 'Play button'  it takes me to game options | Works as expected|
 | 6, 36 | Navigation buttons  -Score board | When I click 'Score board'  it takes me to Scoreboard section | Works as expected|
 | 7, 27 | Return button | When I click return button it takes me back to the main menu |
 | 4, 27 | Play modal | I have two options of the games A1-A2 and  B1-B2 | Works as expected|
@@ -637,12 +637,12 @@
 | 15, 37 | Timer | Goes down by second | Works as expected|
 | 16,38 | Turns | When I select two cards the counter of the turns goes up 1 both when they match and don’t match | Works as expected|
 | 21, 39 | Music | When I click on the crossed speaker icon the cross is removed and the music starts playing |
-| 5 | Cards | Card area fiths my screen size | Works as expected|
+| 5 | Cards | Card area fits my screen size | Works as expected|
 | 5 | Card  | When game loads there are 16 cards of the same color  |  Works as expected |
 | 35 | Card  | When I click a card of my choice it turns around and I see a picture or a word  |  Works as expected |
 | 11, 34 | Card  | Each time card turns  hear the pronunciation of the animal name |  Works as expected |
-| 10 | Card  | When I click the card that is alreay selected  it doesn’t react : no animal name is said or card is not turned  |  Works as expected |
-| 12 | Card  | When I find a match the cards dissaper and sound effect is played |  Works as expected |
+| 10 | Card  | When I click the card that is already selected  it doesn’t react : no animal name is said or card is not turned  |  Works as expected |
+| 12 | Card  | When I find a match the cards dissapearand sound effect is played |  Works as expected |
 | 13, 33 | Card  | When I don’t find a match cards turn back around  |  Works as expected |
 | 10, 34 | Card  | When I click area where cards which I matched used to be it doesn’t react: no animal name is said neither can I hear a matched sound  |  Works as expected |
 | 10, 14, 32 | Card | When I select two cards they stay face up long enough to see what picture or word is on the card |  Works as expected |
@@ -690,7 +690,7 @@
 | User stories | Feature | Expected result | Actual result |
 |  :---| :---|  :---|  :---|
 | 41 | 404. html | When the game is not found I am directed to the page that tell me that the page is not found |  Works as expected |
-| 42 | Back to the game button | When I click the back to the game button it takes me back to the the Main menu  |  Works as expected |
+| 42 | Back to the game button | When I click the back to the game button it takes me back to theMain menu  |  Works as expected |
 
 </details> 
 
@@ -981,13 +981,13 @@ The website was tested on following devices
 ### Solved bugs 
  |  Expected |  Bug |  Fix |
  |  :---| :---|  :---|
- | Return buttons should take me to the main menu | Return button in 'How to play' or 'Play' section did not react and didn't take me back to the main menu|return function was moved inside the on click for #btn-instructions and  #btn-play function and that applied the return function als when those modals are open |
- | The user should see only the content for the chosen element when then open any of the navigation options : How to play, Play and Score board and the previvous content should not be seen  | When the How to play or play button was clicked it added the content of the modal to the main menu content and when clicked back to main content it added the content of the How to play to the bottom. The same happened in Play modal | The function to clear the existing text before adding new one was added 
- | The timer should always show one digit for minutes and two digits for seconds | When seconds went under 10 only one digit was displayed | The timeDecrease function was adjusted to add 0 to each digit when there is only one digit represingting seconds which usually happens when they are lower than  10 |
- |Music should play as soon as the user clicks on the speaker | The music took about  15 seconds to start playing | Thes size of the audio was trimmed and the loop was applied
- | When the user clicks on the area where the matched cards used be it should not react| The animal sound was played when clicked on the aread where matched pictures used to be and when clicked on two matching the sound was played |  Added condition to apply the cardTurns function only to those cards which dont have matched class
+ | Return buttons should take me to the main menu | Return button in 'How to play' or 'Play' section did not react and didn't take me back to the main menu|return function was moved inside the on click for #btn-instructions and  #btn-play function and that applied the return function when those modals are open |
+ | The user should see only the content for the chosen element when then open any of the navigation options : How to play, Play and Score board and the previous content should not be seen  | When the How to play or play button was clicked it added the content of the modal to the main menu content and when clicked back to main content it added the content of the How to play to the bottom. The same happened in Play modal | The function to clear the existing text before adding new one was added 
+ | The timer should always show one digit for minutes and two digits for seconds | When seconds went under 10 only one digit was displayed | The timeDecrease function was adjusted to add 0 to each digit when there is only one digit representingseconds which usually happens when they are lower than  10 |
+ |Music should play as soon as the user clicks on the speaker | The music took about  15 seconds to start playing | The size of the audio was trimmed and the loop was applied
+ | When the user clicks on the area where the matched cards used be it should not react| The animal sound was played when clicked on the area where matched pictures used to be and when clicked on two matching the sound was played |  Added condition to apply the cardTurns function only to those cards which don't have matched class
  | When match is found the cards fade out | The outline of the cards stayed visible  | Styling added to the card class (.card) to set the border to none |
- | When users clicks on the card and it flips only the front of the card should be visible| When card was fliped to the front of the card the white outline was visible in the background  | style propety was added to remove the visibility of the front card when it flips|
+ | When users clicks on the card and it flips only the front of the card should be visible| When card was flipped to the front of the card the white outline was visible in the background  | style property was added to remove the visibility of the front card when it flips|
  |It is not possible for the user to submit their score if the input field is empty | The text got submitted even when the user didn't enter their name | The 'save to scoreboard' button was disabled and an even listener was added to remove the disabled attribute when the key is up|
  | Time's up message appears on the screen when user doesn't find all the matched before time goes to 0 | The message kept appearing every second under the previous message | The variable timeCountdown was updated to global variable
 
