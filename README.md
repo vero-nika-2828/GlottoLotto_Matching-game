@@ -220,7 +220,7 @@ Sound used was selected from pixabay
 * specifies who the game is for
 * user stories it relates to: 1, 25
 
-![Game name and game type](./assets/readme_docs/main_menu/glottolotto-name-present.JPG)
+![Game name and game type](./assets/readme_docs/main_menu/glottolotto-name-present.PNG)
 
 ### Game desciption
 
@@ -229,7 +229,7 @@ Sound used was selected from pixabay
 * the text beneath the header gives a brief description of the game, its purpose and the variety of levels
 * user stories it relates to: 1, 25
 
-![Game description](./assets/readme_docs/main_menu/game-description.JPG)
+![Game description](./assets/readme_docs/main_menu/main-menu-game-description.PNG)
 
 ### Navigation buttons 
 
@@ -240,7 +240,7 @@ Sound used was selected from pixabay
 * made more evident by the use of the pink color which distinguishes itself from the backround color 
 * user stories it relates to: 2, 26
 
-![Navigation buttons ](./assets/readme_docs/main_menu/navigation-buttons.JPG)
+![Navigation buttons ](./assets/readme_docs/main_menu/navigation-buttons.PNG)
 
 
 ### How to play
@@ -251,6 +251,7 @@ Sound used was selected from pixabay
 * user stories it relates to: 3
 
 ![Main menu -How to play](./assets/readme_docs/main_menu/main-menu-how-to-play.png)
+![Main menu -How to play (scroll)](./assets/readme_docs/main_menu/main-menu-how-to-play-scroll.PNG)
 
 ### Play
 
@@ -262,7 +263,7 @@ Sound used was selected from pixabay
 * allows user to return to main menu
 * user stories it relates to: 22, 29
 
-![Name of the picture](./assets/readme%20_docs/footer.JPG)
+![Level options](./assets/readme_docs/main_menu/main-menu-play.PNG)
 
 
 ### Score board
@@ -272,14 +273,15 @@ Sound used was selected from pixabay
 * when opened before the scores are added it informs the user to play the game and add the score
 * user stories it relates to: 6, 19, 36
 
-![Name of the picture](./assets/readme%20_docs/footer.JPG)
+![Score board - no score](./assets/readme_docs/main_menu/main-menu-score-board-no-score.PNG)
+![Score board ](./assets/readme_docs/main_menu/main-menu-score-board.PNG)
 
 ### Return button
 
 * takes users back to main menu
 * user stories it relates to: 7, 27
 
-![Name of the picture](./assets/readme%20_docs/footer.JPG)
+![return button](./assets/readme_docs/main_menu/return-button.PNG)
 
 ### Level options 
 
@@ -289,22 +291,25 @@ Sound used was selected from pixabay
 * word difficulty based on the Cambridge Dictionary online
 * user stories it relates to: 4, 27
 
-![Name of the picture](./assets/readme%20_docs/footer.JPG)
+![Level A1 -A2 button](./assets/readme_docs/main_menu/levelA1-A2-button.PNG)
+![Level B1 -B2 button](./assets/readme_docs/main_menu/levelB1-B2-button.PNG)
 
 ## Game page
 
 * card area is centered to fit each devices' screen size wihtout activating scroll bar
 * user stories it relates to: 5
 
-![Name of the picture](./assets/readme%20_docs/footer.JPG)
+![Card area](./assets/readme_docs/game_page/card-area.PNG)
 
 ### Title 
 
 * positioned on the top of the page above the card container
 * indicates what level the user is playing 
-* shows short instructions of what the user is expected to do, thus match the word to the picture* user stories it relates to: 1, 25
+* shows short instructions of what the user is expected to do, thus match the word to the picture
+* user stories it relates to: 1, 25
 
-![Name of the picture](./assets/readme%20_docs/footer.JPG)
+![Game title A1- A2](./assets/readme_docs/game_page/game-title-a1.PNG)
+![Game title B1- B2](./assets/readme_docs/game_page/game-title-b1.PNG)
 
 
 ### Timer 
@@ -312,13 +317,14 @@ Sound used was selected from pixabay
 * goes down by one second
 * user stories it relates to: 15, 37
 
-![Name of the picture](./assets/readme%20_docs/footer.JPG)
+![Timer](./assets/readme_docs/game_page/game-timer.PNG)
 
 ### Turns
 * with each two cards selected a turn coutner goes up by one
+* the turn counter starts at 
 * user stories it relates to: 16, 38
 
-![Name of the picture](./assets/readme%20_docs/footer.JPG)
+![Turns](./assets/readme_docs/game_page/game-turns.PNG)
 
 ### Music control
 
@@ -328,7 +334,8 @@ Sound used was selected from pixabay
 * when clicked cross is removed from the speaker button to indicate that the sound is on
 * user stories it relates to: 21, 39
 
-![Name of the picture](./assets/readme%20_docs/footer.JPG)
+![Music on](./assets/readme_docs/game_page/game-music-on.PNG)
+![Music off](./assets/readme_docs/game_page/game-music-off.PNG)
 
 ### Card
 
@@ -345,7 +352,10 @@ Sound used was selected from pixabay
 * when two selected cards don't match, the cards turn back and back of the card is shown
 * user stories it relates to: 5, 9, 10, 11, 12, 13, 14, 31, 32, 33, 34, 35
 
-![Name of the picture](./assets/readme%20_docs/footer.JPG)
+![Back of the card](./assets/readme_docs/game_page/card-back.PNG)
+![Front of the card picture](./assets/readme_docs/game_page/card-front-image.PNG)
+![Front of the card word](./assets/readme_docs/game_page/card-front-word.PNG)
+![Card match](./assets/readme_docs/game_page/card-match.PNG)
 
 
 ## Result section
@@ -358,32 +368,32 @@ Sound used was selected from pixabay
 * provide 'Main menu button' to enable user get back to main menu and choose from the options
 * user stories it relates to: 17
 
-![Name of the picture](./assets/readme%20_docs/footer.JPG)
+![Time's up](./assets//readme_docs/result_modal/times-up.PNG)
 
 
 
-### Well done 
+### Well done message
 
 * appears when all 8 matches are found
 * the message 'Well done' indicates that the user was succesful at the game
 * is positioned right above the message about the gained points
 * user stories it relates to: 17
 
-![Name of the picture](./assets/readme%20_docs/footer.JPG)
+![Well done message](./assets/readme_docs/result_modal/well-done.PNG)
 
 
-### Points gained
+### Points gained display
 
 * shows the total amount of points gained at the end of the game
 * calculate based on the amount of turns taken to fnd all the matches - the less tries the more points
 * is positioned right under the 'Well done message'
 * user stories it relates to: 18, 36
 
-![Name of the picture](./assets/readme%20_docs/footer.JPG)
+![Points display](./assets/readme_docs/result_modal/points-gained.PNG)
 
 
 
-### Name input
+### Name input field
 
 * enables saving users' name together with their score into the score board
 * it is an imput field located under the points section
@@ -392,7 +402,8 @@ Sound used was selected from pixabay
 * the name input disapears when saved button is clicked to indicate to the users that the name was added
 * user stories it relates to: 19, 36
 
-![Name of the picture](./assets/readme%20_docs/footer.JPG)
+![Name input before adding name and after name submission](./assets/readme_docs/result_modal/name-input-1.PNG)
+![Name input after adding name](./assets/readme_docs/result_modal/name-input-2.PNG)
 
 
 ### Save score button 
@@ -403,25 +414,27 @@ Sound used was selected from pixabay
 * is located under the input field 
 * user stories it relates to: 19, 20
 
-![Name of the picture](./assets/readme%20_docs/footer.JPG)
+![Save button - dissabled](./assets/readme_docs/result_modal/save-to-score-board-button-disabled.PNG)
+![Save button - enabled](./assets/readme_docs/result_modal/save-to-score-board-button.PNG)
+![Save button - saved](./assets/readme_docs/result_modal/save-to-score-board-button-saved.PNG)
 
 
-### Play again
+### Try again button
 
 * enables to users to play the same level game again with one click after finishing
 * is positioned bellow result modal whether it is Time's up when game is lost or 'Well done' when the users win the game
 * user stories it relates to: 8, 30
 
-![Name of the picture](./assets/readme%20_docs/footer.JPG)
+![Try again](./assets/readme_docs/result_modal/try-again-button.PNG)
 
 
-### Main menu
+### Main menu button
 
 * enables the user to return to the main menu when the is finished
 * it is positoned under 'Play again button' in result modal
 * user stories it relates to: 2, 27
 
-![Name of the picture](./assets/readme%20_docs/footer.JPG)
+![Main menu](./assets/readme_docs/result_modal/main-menu-button.PNG)
 
 
 
@@ -431,7 +444,7 @@ Sound used was selected from pixabay
 * link enables users to visit site owner's git hub page
 * user stories it relates to: 40
 
-![Name of the picture](./assets/readme%20_docs/footer.JPG)
+![Name of the picture](./assets/readme_docs/footer_and_404page/footer.PNG)
 
 
 ## 404 error page
@@ -439,11 +452,10 @@ Sound used was selected from pixabay
 
 * appears when users click on the non-existen or incorrect link for either of the levels 
 * message notifies the user that the page for that game was not found 
-
 * is positioned above the message to return to the GlottoLotto game
 * user stories it relates to: 41
 
-![Name of the picture](./assets/readme%20_docs/footer.JPG)
+![Error notification](./assets/readme_docs/footer_and_404page/error-message.PNG)
 
 
 ### Back to game button
@@ -452,7 +464,7 @@ Sound used was selected from pixabay
 * is positioned under the error message
 * user stories it relates to: 42
 
-![Name of the picture](./assets/readme%20_docs/footer.JPG)
+![Back to the game button](./assets/readme_docs/footer_and_404page/back-to-the-game-button.PNG)
 
 
 ## Future implementations

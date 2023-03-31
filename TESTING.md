@@ -152,7 +152,7 @@
 | 19 | Save to the scoreboard button  | When I click save to the  score board button it saves my name in the scoreboard |  Works as expected |
 | 19 | Save to the scoreboard button  | When I click save to the  score board button it saves my name in the scoreboard |  Works as expected |
 | 20 | Save to the scoreboard button  | When I click save to the  score board button the text of the button changes to Saved  |  Works as expected |
-| 8,30 | Play again button | When I click play again button it takes me to the same level  |  Works as expected |
+| 8,30 | Try again button | When I click try again button it takes me to the same level  |  Works as expected |
 | 2, 27 | Main menu button  | When I click Main menu  button it takes me to Main menu  |  Works as expected |
 
 </details> 
@@ -253,7 +253,7 @@
 | 19 | Save to the scoreboard button  | When I click save to the  score board button it saves my name in the scoreboard |  Works as expected |
 | 19 | Save to the scoreboard button  | When I click save to the  score board button it saves my name in the scoreboard |  Works as expected |
 | 20 | Save to the scoreboard button  | When I click save to the  score board button the text of the button changes to Saved  |  Works as expected |
-| 8,30 | Play again button | When I click play again button it takes me to the same level  |  Works as expected |
+| 8,30 | Try again button | When I click try again button it takes me to the same level  |  Works as expected |
 | 2, 27 | Main menu button  | When I click Main menu  button it takes me to Main menu  |  Works as expected |
 
 </details> 
@@ -285,7 +285,7 @@
 </details> 
 
 <details>
-<summary> User 3:   Device -  iPhone SE, Browser: Safari
+<summary> User 3:   Device -  iPhone 13 mini, Browser: Safari
 </summary>
 <br>
 
@@ -354,7 +354,7 @@
 | 19 | Save to the scoreboard button  | When I click save to the  score board button it saves my name in the scoreboard |  Works as expected |
 | 19 | Save to the scoreboard button  | When I click save to the  score board button it saves my name in the scoreboard |  Works as expected |
 | 20 | Save to the scoreboard button  | When I click save to the  score board button the text of the button changes to Saved  |  Works as expected |
-| 8,30 | Play again button | When I click play again button it takes me to the same level  |  Works as expected |
+| 8,30 | Try again button | When I click try again button it takes me to the same level  |  Works as expected |
 | 2, 27 | Main menu button  | When I click Main menu  button it takes me to Main menu  |  Works as expected |
 
 </details> 
@@ -591,6 +591,6 @@ The website was tested on following devices
  |It is not possible for the user to submit their score if the input field is empty | The text got submitted even when the user didn't enter their name | The 'save to scoreboard' button was disabled and an even listener was added to remove the disabled attribute when the key is up
 
 ### Known bugs
-When the user doesn't enter the name the score will still get saved without the name
+There are no known bugs
 
 
