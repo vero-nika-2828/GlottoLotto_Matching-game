@@ -582,6 +582,9 @@ Images and sounds were taken from [Pixabay](https://pixabay.com/) with an except
 * cottonbro studio
    * [Background-image Main Menu and Game page](https://www.pexels.com/photo/blue-orange-and-yellow-triangle-illustration-4965816/) 
 
+* cottonbro studio
+   * [Favicon Image - adapted to reseble deck of cards](https://www.pexels.com/photo/flag-of-the-united-kingdom-12592538/) 
+
 
 ### Sounds 
 * Aleksandr Karabanov
