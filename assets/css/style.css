@@ -892,6 +892,8 @@ footer a:hover{
     img{
         min-height: 700px;
     }
+
+
 }
 
 @media (max-height: 550px) {
@@ -951,7 +953,11 @@ footer a:hover{
         line-height: unset;
 
     }
-  
-
 }
 
+
+@media (max-height: 400px) {
+    .btn {
+        font-size: x-small;
+    }
+}

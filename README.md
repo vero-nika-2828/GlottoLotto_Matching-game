@@ -7,9 +7,9 @@
 
 # Project Overview
 
-GlottoLotto matching card game is a fun memory game designed with the aim to help students of English language to improve their skills and prompt them to practice the language outside of the classroom. While playing the game, the user will get opportunity not only to revise or learn new vocabulary but they will be able to practice the pronunciation of individual words and relate those words to the relevant concept.
+GlottoLotto matching card game is a fun memory game designed with the aim to help students of English language to improve their skills and prompt them to practice the language outside of the classroom. While playing the game, the user will get opportunity not only to revise or learn new vocabulary, but they will be able to practice the pronunciation of individual words and relate those words to the relevant concept.
 
-The objective of the game is for the user to  match an English word to the corresponding picture by selecting two cards at each turn from the the grid of 16 cards. There are two levels to choose from: A1-A2 and B1-B2 with suitable difficulty of words for each level. The words in each category were selected based on the dificulty indication on Cambridge Dictionary Website. The user will keep turning the cards until all pairs are found or until the time limit is reached. 
+The objective of the game is for the user to match an English word to the corresponding picture by selecting two cards at each turn from the grid of 16 cards. There are two levels to choose from: A1-A2 and B1-B2 with suitable difficulty of words for each level. The words in each category were selected based on the difficulty indication on Cambridge Dictionary Website. The user will keep turning the cards until all pairs are found or until the time limit is reached. 
 
 
 
@@ -30,8 +30,8 @@ The objective of the game is for the user to  match an English word to the corre
 
 * Provide educational tool for students of English language
 * Enable students to practice the language outside of the classroom
-* Evoke insterest among students to learn English
-* Accommodate needs of learner with different langauge abilities
+* Evoke interest among students to learn English
+* Accommodate needs of learner with different language abilities
 * Help them to expand their vocabulary, practice pronunciation, and link the concepts
 
 
@@ -43,7 +43,7 @@ The objective of the game is for the user to  match an English word to the corre
 
 * ESOL students - (English as Second Language) 
 * EFL students - (English as Foreigner language)
-* Adults and Childre
+* Adults and children
 
 ### First Time Visitor Goals
 
@@ -56,7 +56,7 @@ The objective of the game is for the user to  match an English word to the corre
 7. I want to be able to return to main menu easily 
 8. I want to be able to replay the game of the same level 
 9. I want the new game to have the cards in different places so it doesn't become too easy to find a match
-10. I want to see clearly what I seleceted
+10. I want to see clearly what I selected
 11. I want to know how to pronounce each word
 12. I want to know when I got the match
 13. I want to know when I didn't get the match 
@@ -79,7 +79,7 @@ The objective of the game is for the user to  match an English word to the corre
 ### Site owner's Goals
 
 25. I want to ensure that users know what this game is for and how to play it 
-26. I want to make it obvious to the user wherre to find each element of the website
+26. I want to make it obvious to the user where to find each element of the website
 27. I want user to be able to navigate to the main menu easily 
 28. I want users to enjoy the game and keep the difficulty to their level 
 29. I want returning users to go directly to the game 
@@ -88,13 +88,13 @@ The objective of the game is for the user to  match an English word to the corre
 32. I want users to have enough time memorise where each card is placed
 33. I want them to indicate to the users when they did or did not find the match 
 34. I want users to be able to practice pronunciation 
-35. I wnat to make it easy for users to learn different concepts 
+35. I want to make it easy for users to learn different concepts 
 36. I want users to see that they are improving 
 37. I want to challenge the user by giving them time limit 
 38. I want users to see how many turns they have taken during the game
 39. I want users to have some background music if they wish to listen to it
-40. I want users to be be able to access my github to view more projects
-41. I want to notify the user when they open a page that doesnt exist 
+40. I want users to be able to access my github to view more projects
+41. I want to notify the user when they open a page that doesn't exist 
 42. I want to make it easy for the user to get back to my page from non-existent page
 
 
@@ -109,15 +109,15 @@ The site will be visited by students of English language. The students are expec
 ## Colour scheme
 
 The main colors of the website are dark green, gold yellow, pink and white. 
-* Dark green (#00483E) is used as a background color for all the containers: Main menu, Card area and Resull to provide a contrast for the text and to evoke a positive and relaxed feelings.
+* Dark green (#00483E) is used as a background color for all the containers: Main menu, Card area and Result to provide a contrast for the text and to evoke a positive and relaxed feelings.
 
 * Gold yellow (#D79E06) color was used for all the text apart from the button text to complement the dark green background and give the page a happy joyful feel. 
 
-* Pink color (#CF9EAC) was used as the button color. This color diverges slightly from the background and description colors and was chosen with aim to bring the users attention to the navigation menu. It is also asociate with plaufulness which is the mood we want to set before the game.
+* Pink color (#CF9EAC) was used as the button color. This color diverges slightly from the background and description colors and was chosen with aim to bring the users attention to the navigation menu. It is also associate with plaufulness which is the mood we want to set before the game.
 
 * White color (#FFFFFF) was used as a button text for the contrast. 
 
-* Brighter shades of pink (#FABEB4, #FCA99B) and ligher shade of (#00C9AC) were used to create linear gradient on the back of the card.
+* Brighter shades of pink (#FABEB4, #FCA99B) and lighter shade of (#00C9AC) were used to create linear gradient on the back of the card.
 
 * Dark purple (#800080) and dark blue (#0000FF) used for the linear gradient for on the front of the cards to make the pictures and text stand out.
 
@@ -234,10 +234,10 @@ Sound used was selected from pixabay
 ### Navigation buttons 
 
 * positioned under the description
-* number of buttons limited to 3 to aid intutive navigation across the options
+* number of buttons limited to 3 to aid intuitive navigation across the options
 * direct the users to desired element 
 * assigned name of each button gives a clear indication to the users where it will take them
-* made more evident by the use of the pink color which distinguishes itself from the backround color 
+* made more evident by the use of the pink color which distinguishes itself from the background color 
 * user stories it relates to: 2, 26
 
 ![Navigation buttons ](./assets/readme_docs/main_menu/navigation-buttons.PNG)
@@ -268,7 +268,7 @@ Sound used was selected from pixabay
 
 ### Score board
 
-* shows the scores aquired by the user with each try
+* shows the scores acquired by the user with each try
 * limits the number of the scores saved to 10
 * when opened before the scores are added it informs the user to play the game and add the score
 * user stories it relates to: 6, 19, 36
@@ -285,7 +285,7 @@ Sound used was selected from pixabay
 
 ### Level options 
 
-* level A1 -A2 for beginers on the top 
+* level A1 -A2 for beginners on the top 
 * level B1 -B2 for intermediate students under the beginner level 
 * direct the user to the difficulty of their choice 
 * word difficulty based on the Cambridge Dictionary online
@@ -296,7 +296,7 @@ Sound used was selected from pixabay
 
 ## Game page
 
-* card area is centered to fit each devices' screen size wihtout activating scroll bar
+* card area is centred to fit each devices' screen size without activating scroll bar
 * user stories it relates to: 5
 
 ![Card area](./assets/readme_docs/game_page/card-area.PNG)
@@ -320,7 +320,7 @@ Sound used was selected from pixabay
 ![Timer](./assets/readme_docs/game_page/game-timer.PNG)
 
 ### Turns
-* with each two cards selected a turn coutner goes up by one
+* with each two cards selected a turn counter goes up by one
 * the turn counter starts at 
 * user stories it relates to: 16, 38
 
@@ -329,7 +329,7 @@ Sound used was selected from pixabay
 ### Music control
 
 * music is muted when the game starts
-* speaker icon  is crossed to indecate that music is off
+* speaker icon  is crossed to indicate that music is off
 * when clicked on the music starts playing and the cross is removed from the speaker button to in
 * when clicked cross is removed from the speaker button to indicate that the sound is on
 * user stories it relates to: 21, 39
@@ -346,7 +346,7 @@ Sound used was selected from pixabay
 * with start of every game the position of cards changes
 * each card flips around when the user clicks on it
 * the animal name is being said each time card flips around
-* when two selected cards match, the cards dissaper and sound effect indicates the correct match
+* when two selected cards match, the cards dissapear and sound effect indicates the correct match
 * the selected cards stay up for a while before match or no match is being signalled in order for the user to memorise the position of the cards or see the cars they matched
 * it is not possible to click the same card twice in the row
 * when two selected cards don't match, the cards turn back and back of the card is shown
@@ -375,7 +375,7 @@ Sound used was selected from pixabay
 ### Well done message
 
 * appears when all 8 matches are found
-* the message 'Well done' indicates that the user was succesful at the game
+* the message 'Well done' indicates that the user was successful at the game
 * is positioned right above the message about the gained points
 * user stories it relates to: 17
 
@@ -385,7 +385,7 @@ Sound used was selected from pixabay
 ### Points gained display
 
 * shows the total amount of points gained at the end of the game
-* calculate based on the amount of turns taken to fnd all the matches - the less tries the more points
+* calculate based on the amount of turns taken to find all the matches - the less tries the more points
 * is positioned right under the 'Well done message'
 * user stories it relates to: 18, 36
 

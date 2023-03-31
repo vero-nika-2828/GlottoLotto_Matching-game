@@ -234,6 +234,10 @@ function youWin(){
     if(matchedCards.length === 8 && turnCount === 8){
         //Stop the timer
         clearInterval(timeCountdown); 
+
+       //Stop the music when result box appears
+        gameMusic.pause();
+       
         
         //Hide card area
         $(".card-area").hide();
@@ -273,6 +277,10 @@ function youWin(){
         
         //Stop the timer
         clearInterval(timeCountdown);   
+
+        //Stop the music when result box appears
+        gameMusic.pause();
+       
         
         //Hide card area
         $(".card-area").hide();
@@ -408,7 +416,10 @@ function gameOver(){
     //Create elements and set values for header and navigation buttons'Time's up' modal 
     let youLose = $("<p></p>").text("Time's up!");
     let mainMenu = $("<a href='./index.html'></a>").text("Main Menu");
-     
+    
+    //Stop the music when the game is over
+    gameMusic.pause();
+       
     //Hide card-area
     $(".card-area").hide();
     $(".game-scores").hide();
@@ -420,7 +431,7 @@ function gameOver(){
     $("#result").show();
     $("#result").append(youLose, tryAgain, mainMenu);
 
-    //Add styling to 
+    //Add styling to result text and buttons
     youLose.addClass("result-text");
     tryAgain.addClass("btn");
     mainMenu.addClass("btn");

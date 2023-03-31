@@ -737,6 +737,7 @@ The website was tested on following devices
 
  </details> 
 
+ <details>
   <summary>404</summary>
  
 ![404](./assets/readme_docs/full_testing/samsung_s9/404page.PNG)
@@ -920,7 +921,7 @@ The website was tested on following devices
  <details>
  <summary>404 page</summary>
  
-![404 page](./assets/readme_docs/full_testing/samsung_galaxy_tab_a8/404page.PNGG)
+![404 page](./assets/readme_docs/full_testing/samsung_galaxy_tab_a8/404page.PNG)
 
 
 
@@ -987,7 +988,8 @@ The website was tested on following devices
  | When the user clicks on the area where the matched cards used be it should not react| The animal sound was played when clicked on the aread where matched pictures used to be and when clicked on two matching the sound was played |  Added condition to apply the cardTurns function only to those cards which dont have matched class
  | When match is found the cards fade out | The outline of the cards stayed visible  | Styling added to the card class (.card) to set the border to none |
  | When users clicks on the card and it flips only the front of the card should be visible| When card was fliped to the front of the card the white outline was visible in the background  | style propety was added to remove the visibility of the front card when it flips|
- |It is not possible for the user to submit their score if the input field is empty | The text got submitted even when the user didn't enter their name | The 'save to scoreboard' button was disabled and an even listener was added to remove the disabled attribute when the key is up
+ |It is not possible for the user to submit their score if the input field is empty | The text got submitted even when the user didn't enter their name | The 'save to scoreboard' button was disabled and an even listener was added to remove the disabled attribute when the key is up|
+ | Time's up message appears on the screen when user doesn't find all the matched before time goes to 0 | The message kept appearing every second under the previous message | The variable timeCountdown was updated to global variable
 
 ### Known bugs
 There are no known bugs
