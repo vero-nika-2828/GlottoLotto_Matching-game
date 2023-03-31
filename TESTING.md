@@ -170,7 +170,7 @@
 </details> 
 
 <details>
-<summary> Main page
+<summary> 404error page
 </summary>
 <br>
 
@@ -271,7 +271,7 @@
 </details> 
 
 <details>
-<summary> Main page
+<summary> 404error page
 </summary>
 <br>
 
@@ -372,7 +372,7 @@
 </details> 
 
 <details>
-<summary> Main page
+<summary> 404error page
 </summary>
 <br>
 
@@ -380,6 +380,8 @@
 |  :---| :---|  :---|  :---|
 | 41 | 404. html | When the game is not found I am directed to the page that tell me that the page is not found |  Works as expected |
 | 42 | Back to the game button | When I click the back to the game button it takes me back to the the Main menu  |  Works as expected |
+
+</details> 
 
 </details> 
 
