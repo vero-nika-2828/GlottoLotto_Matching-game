@@ -5,23 +5,23 @@
 ### CSS Validator (W3C)
  * HTML Validator 
    * index.html (Main Menu) - pass
-    <details>
-    <summary>Main Menu</summary>
-    <br>
+      <details>
+      <summary>Main Menu</summary>
+      <br>
 
-    ![Index.html (Main Menu) Validation](./assets/readme_docs/automated_testing/w3c-validator-index-page.jpg.JPG)
+      ![Index.html (Main Menu) Validation](./assets/readme_docs/automated_testing/w3c-validator-index-page.jpg.JPG)
 
-    </details> 
+      </details> 
 
    * level-A1.html - pass
 
-    <details>
-    <summary>Level A1 - A2</summary>
-    <br>
+      <details>
+      <summary>Level A1 - A2</summary>
+      <br>
 
-     ![level-A1.html (Level A1 - A2) Validation](./assets/readme_docs/automated_testing/w3c-validator-level-A1-page.jpg)
+      ![level-A1.html (Level A1 - A2) Validation](./assets/readme_docs/automated_testing/w3c-validator-level-A1-page.jpg)
 
-    </details> 
+      </details> 
 
 
    * level-B1.html - pass
@@ -35,16 +35,24 @@
 
 
  * CSS Validator -pass
+    
+   <details>
+   <summary>CSS Validator screenshot</summary>
+   <br>
  
    ![Stylesheet Valiation](./assets/readme_docs/automated_testing/w3c-css-validator.JPG)
 
    </details>  
 
   * Javascript Validator (https://jshint.com/) -pass
- 
-   ![Javascript Valiation](./assets/readme_docs/automated_testing/jshint-validator-javascript.JPG)
 
-   </details>   
+    <details>
+    <summary>JSHINT Validator screenshot</summary>
+    <br>
+  
+    ![Javascript Valiation](./assets/readme_docs/automated_testing/jshint-validator-javascript.JPG)
+
+    </details>   
 
 ### Lighthouse
 
@@ -693,46 +701,46 @@
 </details> 
 
 
-<details>
-<summary>Screenshot</summary>
-<br>
-
-![Title](./assets/readme%20_docs/user%20testing/title.JPG)
-
-</details> 
-
 ### Full Testing
 
 The website was tested on following devices
 
 <details>
-<summary>iPhone 12 mini  375px wide</summary>
+<summary>Samsung Galaxy S9  360 x 740px </summary>
 <ul>
 
  <details>
- <summary>Main page</summary>
+ <summary>Main menu</summary>
  
-![Home page 1](./assets/readme%20_docs/full-testing/Desktop/Home1.JPG)
-![Home page 2](./assets/readme%20_docs/full-testing/Desktop/Home2.JPG)
-![Home page 3](./assets/readme%20_docs/full-testing/Desktop/Home3.JPG)
-![Home page 4](./assets/readme%20_docs/full-testing/Desktop/Home4.JPG)
+![Main menu 1](./assets/readme_docs/full_testing/samsung_s9/main-menu.PNG)
+![Main menu 2](./assets/readme_docs/full_testing/samsung_s9/main-menu-how-to-play.PNG)
+![Main menu 3](./assets/readme_docs/full_testing/samsung_s9/main-menu-play.PNG)
+![Main menu 4](./assets/readme_docs/full_testing/samsung_s9/main-menu-score-board.PNG)
+![Main menu 5](./assets/readme_docs/full_testing/samsung_s9/main-menu-score-board-scores.PNG)
 
  </details> 
 
  <details>
- <summary>Level A1 -A2</summary>
+ <summary>Game</summary>
  
-![Portfolio 1](./assets/readme%20_docs/full-testing/Desktop/Portfolio.JPG)
-![Portfolio 2](./assets/readme%20_docs/full-testing/Desktop/Portfolio2.JPG)
-![Portfolio 3](./assets/readme%20_docs/full-testing/Desktop/Portfolio3.JPG)
+![Game](./assets/readme_docs/full_testing/samsung_s9/game-page.PNG)
+
 
  </details> 
 
  <details>
- <summary>Level A1 -A2</summary>
+ <summary>Result</summary>
  
-![Contact 1](./assets/readme%20_docs/full-testing/Desktop/Contact1.JPG)
-![Contact 2](./assets/readme%20_docs/full-testing/Desktop/Contact2.JPG)
+![Time's up](./assets/readme_docs/full_testing/samsung_s9/times%20up.PNG)
+![You win ](./assets/readme_docs/full_testing/samsung_s9/you-win.PNG)
+
+
+ </details> 
+
+  <summary>404</summary>
+ 
+![404](./assets/readme_docs/full_testing/samsung_s9/404page.PNG)
+
 
 
  </details> 
@@ -742,33 +750,42 @@ The website was tested on following devices
 
 
 <details>
-<summary>Nest Hub Max 1280px wide</summary>
+<summary>Huawei P30 Lite 360 x 780px</summary>
 <ul>
 
  <details>
- <summary>Home page</summary>
+ <summary>Main menu</summary>
  
-![Home page 1](./assets/readme%20_docs/full-testing/NestHubMax/Home1.JPG)
-![Home page 2](./assets/readme%20_docs/full-testing/NestHubMax/Home2.JPG)
-![Home page 3](./assets/readme%20_docs/full-testing/NestHubMax/Home3.JPG)
-![Home page 4](./assets/readme%20_docs/full-testing/NestHubMax/Home4.JPG)
+![Main menu 1](./assets/readme_docs/full_testing/huawei_p30_lite/main-menu.PNG)
+![Main menu 2](./assets/readme_docs/full_testing/huawei_p30_lite/main-menu-how-to-play.PNG)
+![Main menu 3](./assets/readme_docs/full_testing/huawei_p30_lite/main-menu-play.PNG)
+![Main menu 4](./assets/readme_docs/full_testing/huawei_p30_lite/score-board.PNG)
+![Main menu 5](./assets/readme_docs/full_testing/huawei_p30_lite/score-board-score.PNG)
+
 
  </details> 
 
  <details>
- <summary>Portfolio</summary>
+ <summary>Game</summary>
  
-![Portfolio 1](./assets/readme%20_docs/full-testing/NestHubMax/Portfolio1.JPG)
-![Portfolio 2](./assets/readme%20_docs/full-testing/NestHubMax/Portfolio2.JPG)
-![Portfolio 3](./assets/readme%20_docs/full-testing/NestHubMax/Portfolio3.JPG)
+![Game](./assets/readme_docs/full_testing/huawei_p30_lite/card-page.PNG)
 
  </details> 
 
  <details>
- <summary>Contact</summary>
+ <summary>Result</summary>
  
-![Contact 1](./assets/readme%20_docs/full-testing/NestHubMax/Contact1.JPG)
-![Contact 2](./assets/readme%20_docs/full-testing/NestHubMax/Contact2.JPG)
+![Times up](./assets/readme_docs/full_testing/huawei_p30_lite/times%20up.PNG)
+![You win](./assets/readme_docs/full_testing/huawei_p30_lite/you-win.PNG)
+
+
+ </details> 
+
+  <details>
+ <summary>404 page</summary>
+ 
+![404 page](./assets/readme_docs/full_testing/huawei_p30_lite/404page.PNG)
+
 
 
  </details> 
@@ -778,37 +795,42 @@ The website was tested on following devices
 
 
 <details>
-<summary>Surface Duo 540px wide</summary>
+<summary>iPhone 13 mini, Browser: Safari 375 x 812px</summary>
 <ul>
 
  <details>
- <summary>Home page</summary>
+ <summary>Main menu</summary>
  
-![Home page 1](./assets/readme%20_docs/full-testing/SurfaceDuo/Home1.JPG)
-![Home page 2](./assets/readme%20_docs/full-testing/SurfaceDuo/Home2.JPG)
-![Home page 3](./assets/readme%20_docs/full-testing/SurfaceDuo/Home3.JPG)
-![Home page 4](./assets/readme%20_docs/full-testing/SurfaceDuo/Home4.JPG)
-![Home page 5](./assets/readme%20_docs/full-testing/SurfaceDuo/Home5.JPG)
+![Main menu 1](./assets/readme_docs/full_testing/iphone13_mini/main-menu.PNG)
+![Main menu2](./assets/readme_docs/full_testing/iphone13_mini/main-menu-how-to-play-play.PNG)
+![Main menu 3](./assets/readme_docs/full_testing/iphone13_mini/main-menu-how-to-play.PNG)
+![Main menu 4](./assets/readme_docs/full_testing/iphone13_mini/main-menu-score-board.PNG)
+![Main menu 5](./assets/readme_docs/full_testing/iphone13_mini/score-board-score.PNG)
 
  </details> 
 
  <details>
- <summary>Portfolio</summary>
+ <summary>Game</summary>
  
-![Portfolio 1](./assets/readme%20_docs/full-testing/SurfaceDuo/Portfolio1.JPG)
-![Portfolio 2](./assets/readme%20_docs/full-testing/SurfaceDuo/Portfolio2.JPG)
-![Portfolio 3](./assets/readme%20_docs/full-testing/SurfaceDuo/Portfolio3.JPG)
-![Portfolio 4](./assets/readme%20_docs/full-testing/SurfaceDuo/Portfolio4.JPG)
-![Portfolio 5](./assets/readme%20_docs/full-testing/SurfaceDuo/Portfolio5.JPG)
+![Game](./assets/readme_docs/full_testing/iphone13_mini/game-page.PNG)
 
  </details> 
 
  <details>
- <summary>Contact</summary>
+ <summary>Result</summary>
  
-![Contact 1](./assets/readme%20_docs/full-testing/SurfaceDuo/Contact1.JPG)
-![Contact 2](./assets/readme%20_docs/full-testing/SurfaceDuo/Contact2.JPG)
-![Contact 3](./assets/readme%20_docs/full-testing/SurfaceDuo/Contact3.JPG)
+![Time's up](./assets/readme_docs/full_testing/iphone13_mini/times%20up.PNG)
+![You win](./assets/readme_docs/full_testing/iphone13_mini/you-win.PNG)
+
+
+ </details> 
+
+ <details>
+ <summary>404 page</summary>
+ 
+![404 page](./assets/readme_docs/full_testing/iphone13_mini/404page.PNG)
+
+
 
  </details> 
 
@@ -818,7 +840,7 @@ The website was tested on following devices
 
 
 <details>
-<summary>iPhone SE 375px wide</summary>
+<summary>Apple iPad mini, Browser: Safari</summary>
 <ul>
 
  <details>
@@ -855,6 +877,77 @@ The website was tested on following devices
 ![Contact 3](./assets/readme%20_docs/full-testing/iPhone/Contact3.JPG)
 
  </details> 
+
+ <details>
+<summary>Samsung Galaxy Tab A8  1280 x 634px </summary>
+<ul>
+
+ <details>
+ <summary>Main page</summary>
+ 
+![Home page 1](./assets/readme%20_docs/full-testing/Desktop/Home1.JPG)
+![Home page 2](./assets/readme%20_docs/full-testing/Desktop/Home2.JPG)
+![Home page 3](./assets/readme%20_docs/full-testing/Desktop/Home3.JPG)
+![Home page 4](./assets/readme%20_docs/full-testing/Desktop/Home4.JPG)
+
+ </details> 
+
+ <details>
+ <summary>Level A1 -A2</summary>
+ 
+![Portfolio 1](./assets/readme%20_docs/full-testing/Desktop/Portfolio.JPG)
+![Portfolio 2](./assets/readme%20_docs/full-testing/Desktop/Portfolio2.JPG)
+![Portfolio 3](./assets/readme%20_docs/full-testing/Desktop/Portfolio3.JPG)
+
+ </details> 
+
+ <details>
+ <summary>Level A1 -A2</summary>
+ 
+![Contact 1](./assets/readme%20_docs/full-testing/Desktop/Contact1.JPG)
+![Contact 2](./assets/readme%20_docs/full-testing/Desktop/Contact2.JPG)
+
+
+ </details> 
+
+</ul>
+</details> 
+
+<details>
+<summary>Desktop 1600 x 900px</summary>
+<ul>
+
+ <details>
+ <summary>Main page</summary>
+ 
+![Home page 1](./assets/readme%20_docs/full-testing/Desktop/Home1.JPG)
+![Home page 2](./assets/readme%20_docs/full-testing/Desktop/Home2.JPG)
+![Home page 3](./assets/readme%20_docs/full-testing/Desktop/Home3.JPG)
+![Home page 4](./assets/readme%20_docs/full-testing/Desktop/Home4.JPG)
+
+ </details> 
+
+ <details>
+ <summary>Level A1 -A2</summary>
+ 
+![Portfolio 1](./assets/readme%20_docs/full-testing/Desktop/Portfolio.JPG)
+![Portfolio 2](./assets/readme%20_docs/full-testing/Desktop/Portfolio2.JPG)
+![Portfolio 3](./assets/readme%20_docs/full-testing/Desktop/Portfolio3.JPG)
+
+ </details> 
+
+ <details>
+ <summary>Level A1 -A2</summary>
+ 
+![Contact 1](./assets/readme%20_docs/full-testing/Desktop/Contact1.JPG)
+![Contact 2](./assets/readme%20_docs/full-testing/Desktop/Contact2.JPG)
+
+
+ </details> 
+
+</ul>
+</details> 
+
 
 </ul>
 </details> 
