@@ -80,13 +80,331 @@
 
 ## Manual testing
 
-### Testing user stories 
+### Testing user stories (Real user testing)
 
-1 .I want to be able to quickly identify what categories of photography the photographer offers
+<details>
+<summary> User 1:   Device -  Samsung Galaxy S9, Browser: Samsung Browser
+</summary>
+<br>
 
-| Feature | Expected result | Actual result |
-|  :---| :---|  :---|
-| Title  | Title section is displayed on the bottom of each viewport under the hero image  and takes 20% of viewport height | Works as expected|
+<details>
+<summary> Main page
+</summary>
+<br>
+
+| User stories | Feature | Expected result | Actual result |
+|  :---| :---|  :---|  :---|
+| 5  | Layout | Game as well as initial page and result fit the screen size and there is no need to sroll | Works as expected |
+| 2  | Layout | All elements are visible  | Works as expected|
+| 25 | Game name and game type description | Gives indication of the game type and who it is for| Works as expected|
+| 1, 25 | Introduction to the game | Gives the description of the game and it's use | Works as expected|
+| 2, 26 | Navigation buttons | Give me clear indication on where they will take me and are easy to read and it is intuitive| Works as expected|
+|3 | Navigation buttons - How to play | When I click 'How to play' button it takes me to How to play section | Works as expected|
+|3 | Navigation buttons - How to play on smaller devices| Instructions are easy to read and on smaller devices I have scroll option | Works as expected|
+|4, 22, 29 | Navigation buttons  -Play | When I click 'Play buton'  it takes me to game options | Works as expected|
+| 6, 36 | Navigation buttons  -Score board | When I click 'Score board'  it takes me to Scoreboard section | Works as expected|
+| 7, 27 | Return button | When I click return button it takes me back to the main menu |
+| 4, 27 | Play modal | I have two options of the games A1-A2 and  B1-B2 | Works as expected|
+| 19, 36 | Score board | My score appears on the board | Works as expected|
+| 4, 27 | Level options  A1-A2  button | A1-A2  button takes me to  A1-A2  game | Works as expected|
+| 4, 24, 27 | Level options  B1-B2 button | B1-B2 button takes me to B1-B2 game|
+
+</details> 
+
+<details>
+<summary> Game page
+</summary>
+<br>
+
+| User stories | Feature | Expected result | Actual result |
+|  :---| :---|  :---|  :---|
+| User stories | Feature | Expected result | Actual result |
+|  :---| :---|  :---|  :---|
+| 15, 37 | Timer | Time starts as soon as the games loads | Works as expected|
+| 15, 37 | Timer | Goes down by second | Works as expected|
+| 16,38 | Turns | When I select two cards the counter of the turns goes up 1 both when they match and don’t match | Works as expected|
+| 21, 39 | Music | When I click on the crossed speaker icon the cross is removed and the music starts playing |
+| 5 | Cards | Card area fiths my screen size | Works as expected|
+| 5 | Card  | When game loads there are 16 cards of the same color  |  Works as expected |
+| 35 | Card  | When I click a card of my choice it turns around and I see a picture or a word  |  Works as expected |
+| 11, 34 | Card  | Each time card turns  hear the pronunciation of the animal name |  Works as expected |
+| 10 | Card  | When I click the card that is alreay selected  it doesn’t react : no animal name is said or card is not turned  |  Works as expected |
+| 12 | Card  | When I find a match the cards dissaper and sound effect is played |  Works as expected |
+| 13, 33 | Card  | When I don’t find a match cards turn back around  |  Works as expected |
+| 10, 34 | Card  | When I click area where cards which I matched used to be it doesn’t react: no animal name is said neither can I hear a matched sound  |  Works as expected |
+| 10, 14, 32 | Card | When I select two cards they stay face up long enough to see what picture or word is on the card |  Works as expected |
+| 9, 31 | Card | With each new game cards are in a different position  |  Works as expected |
+
+</details> 
+
+<details>
+<summary> Result section
+</summary>
+<br>
+ 
+| User stories | Feature | Expected result | Actual result |
+|  :---| :---|  :---|  :---|
+| 17 | Time's up | When 2 minutes are over the game finished and Time'us message pop's up |  Works as expected |
+| 17 | Well done  | When all pairs are matched Well done message pop's up |  Works as expected |
+| 18, 36 | Points  | Underneath  the Well done message I can see how many points I earned  |  Works as expected |
+| 19,36 | Input  | Input field shows text "Write your name here "  |  Works as expected |
+| 19,36 | Input  | When I type anything in the field it overrides the placeholder message |  Works as expected |
+| 19 | Save to the scoreboard button  | When I click save to the  score board button it saves my name in the scoreboard |  Works as expected |
+| 19 | Save to the scoreboard button  | When I click save to the  score board button it saves my name in the scoreboard |  Works as expected |
+| 20 | Save to the scoreboard button  | When I click save to the  score board button the text of the button changes to Saved  |  Works as expected |
+| 8,30 | Play again button | When I click play again button it takes me to the same level  |  Works as expected |
+| 2, 27 | Main menu button  | When I click Main menu  button it takes me to Main menu  |  Works as expected |
+
+</details> 
+
+<details>
+<summary> Footer
+</summary>
+<br>
+
+| User stories | Feature | Expected result | Actual result |
+|  :---| :---|  :---|  :---|
+| 40 | Link | When I click link it opens on a new page |  Works as expected |
+| 40 | Link | When I click link it takes me to git hub page |  Works as expected |
+
+</details> 
+
+<details>
+<summary> Main page
+</summary>
+<br>
+
+| User stories | Feature | Expected result | Actual result |
+|  :---| :---|  :---|  :---|
+| 41 | 404. html | When the game is not found I am directed to the page that tell me that the page is not found |  Works as expected |
+| 42 | Back to the game button | When I click the back to the game button it takes me back to the the Main menu  |  Works as expected |
+
+</details> 
+
+</details> 
+
+<details>
+<summary> User 2:   Device -  Huawei P30 Lite, Browser: Huawei browser
+</summary>
+<br>
+
+<details>
+<summary> Main page
+</summary>
+<br>
+
+| User stories | Feature | Expected result | Actual result |
+|  :---| :---|  :---|  :---|
+| 5  | Layout | Game as well as initial page and result fit the screen size and there is no need to sroll | Works as expected |
+| 2  | Layout | All elements are visible  | Works as expected|
+| 25 | Game name and game type description | Gives indication of the game type and who it is for| Works as expected|
+| 1, 25 | Introduction to the game | Gives the description of the game and it's use | Works as expected|
+| 2, 26 | Navigation buttons | Give me clear indication on where they will take me and are easy to read and it is intuitive| Works as expected|
+|3 | Navigation buttons - How to play | When I click 'How to play' button it takes me to How to play section | Works as expected|
+|3 | Navigation buttons - How to play on smaller devices| Instructions are easy to read and on smaller devices I have scroll option | Works as expected|
+|4, 22, 29 | Navigation buttons  -Play | When I click 'Play buton'  it takes me to game options | Works as expected|
+| 6, 36 | Navigation buttons  -Score board | When I click 'Score board'  it takes me to Scoreboard section | Works as expected|
+| 7, 27 | Return button | When I click return button it takes me back to the main menu |
+| 4, 27 | Play modal | I have two options of the games A1-A2 and  B1-B2 | Works as expected|
+| 19, 36 | Score board | My score appears on the board | Works as expected|
+| 4, 27 | Level options  A1-A2  button | A1-A2  button takes me to  A1-A2  game | Works as expected|
+| 4, 24, 27 | Level options  B1-B2 button | B1-B2 button takes me to B1-B2 game|
+
+</details> 
+
+<details>
+<summary> Game page
+</summary>
+<br>
+
+| User stories | Feature | Expected result | Actual result |
+|  :---| :---|  :---|  :---|
+| User stories | Feature | Expected result | Actual result |
+|  :---| :---|  :---|  :---|
+| 15, 37 | Timer | Time starts as soon as the games loads | Works as expected|
+| 15, 37 | Timer | Goes down by second | Works as expected|
+| 16,38 | Turns | When I select two cards the counter of the turns goes up 1 both when they match and don’t match | Works as expected|
+| 21, 39 | Music | When I click on the crossed speaker icon the cross is removed and the music starts playing |
+| 5 | Cards | Card area fiths my screen size | Works as expected|
+| 5 | Card  | When game loads there are 16 cards of the same color  |  Works as expected |
+| 35 | Card  | When I click a card of my choice it turns around and I see a picture or a word  |  Works as expected |
+| 11, 34 | Card  | Each time card turns  hear the pronunciation of the animal name |  Works as expected |
+| 10 | Card  | When I click the card that is alreay selected  it doesn’t react : no animal name is said or card is not turned  |  Works as expected |
+| 12 | Card  | When I find a match the cards dissaper and sound effect is played |  Works as expected |
+| 13, 33 | Card  | When I don’t find a match cards turn back around  |  Works as expected |
+| 10, 34 | Card  | When I click area where cards which I matched used to be it doesn’t react: no animal name is said neither can I hear a matched sound  |  Works as expected |
+| 10, 14, 32 | Card | When I select two cards they stay face up long enough to see what picture or word is on the card |  Works as expected |
+| 9, 31 | Card | With each new game cards are in a different position  |  Works as expected |
+
+</details> 
+
+<details>
+<summary> Result section
+</summary>
+<br>
+ 
+| User stories | Feature | Expected result | Actual result |
+|  :---| :---|  :---|  :---|
+| 17 | Time's up | When 2 minutes are over the game finished and Time'us message pop's up |  Works as expected |
+| 17 | Well done  | When all pairs are matched Well done message pop's up |  Works as expected |
+| 18, 36 | Points  | Underneath  the Well done message I can see how many points I earned  |  Works as expected |
+| 19,36 | Input  | Input field shows text "Write your name here "  |  Works as expected |
+| 19,36 | Input  | When I type anything in the field it overrides the placeholder message |  Works as expected |
+| 19 | Save to the scoreboard button  | When I click save to the  score board button it saves my name in the scoreboard |  Works as expected |
+| 19 | Save to the scoreboard button  | When I click save to the  score board button it saves my name in the scoreboard |  Works as expected |
+| 20 | Save to the scoreboard button  | When I click save to the  score board button the text of the button changes to Saved  |  Works as expected |
+| 8,30 | Play again button | When I click play again button it takes me to the same level  |  Works as expected |
+| 2, 27 | Main menu button  | When I click Main menu  button it takes me to Main menu  |  Works as expected |
+
+</details> 
+
+<details>
+<summary> Footer
+</summary>
+<br>
+
+| User stories | Feature | Expected result | Actual result |
+|  :---| :---|  :---|  :---|
+| 40 | Link | When I click link it opens on a new page |  Works as expected |
+| 40 | Link | When I click link it takes me to git hub page |  Works as expected |
+
+</details> 
+
+<details>
+<summary> Main page
+</summary>
+<br>
+
+| User stories | Feature | Expected result | Actual result |
+|  :---| :---|  :---|  :---|
+| 41 | 404. html | When the game is not found I am directed to the page that tell me that the page is not found |  Works as expected |
+| 42 | Back to the game button | When I click the back to the game button it takes me back to the the Main menu  |  Works as expected |
+
+</details> 
+
+</details> 
+
+<details>
+<summary> User 3:   Device -  iPhone SE, Browser: Safari
+</summary>
+<br>
+
+<details>
+<summary> Main page
+</summary>
+<br>
+
+| User stories | Feature | Expected result | Actual result |
+|  :---| :---|  :---|  :---|
+| 5  | Layout | Game as well as initial page and result fit the screen size and there is no need to sroll | Works as expected |
+| 2  | Layout | All elements are visible  | Works as expected|
+| 25 | Game name and game type description | Gives indication of the game type and who it is for| Works as expected|
+| 1, 25 | Introduction to the game | Gives the description of the game and it's use | Works as expected|
+| 2, 26 | Navigation buttons | Give me clear indication on where they will take me and are easy to read and it is intuitive| Works as expected|
+|3 | Navigation buttons - How to play | When I click 'How to play' button it takes me to How to play section | Works as expected|
+|3 | Navigation buttons - How to play on smaller devices| Instructions are easy to read and on smaller devices I have scroll option | Works as expected|
+|4, 22, 29 | Navigation buttons  -Play | When I click 'Play buton'  it takes me to game options | Works as expected|
+| 6, 36 | Navigation buttons  -Score board | When I click 'Score board'  it takes me to Scoreboard section | Works as expected|
+| 7, 27 | Return button | When I click return button it takes me back to the main menu |
+| 4, 27 | Play modal | I have two options of the games A1-A2 and  B1-B2 | Works as expected|
+| 19, 36 | Score board | My score appears on the board | Works as expected|
+| 4, 27 | Level options  A1-A2  button | A1-A2  button takes me to  A1-A2  game | Works as expected|
+| 4, 24, 27 | Level options  B1-B2 button | B1-B2 button takes me to B1-B2 game|
+
+</details> 
+
+<details>
+<summary> Game page
+</summary>
+<br>
+
+| User stories | Feature | Expected result | Actual result |
+|  :---| :---|  :---|  :---|
+| User stories | Feature | Expected result | Actual result |
+|  :---| :---|  :---|  :---|
+| 15, 37 | Timer | Time starts as soon as the games loads | Works as expected|
+| 15, 37 | Timer | Goes down by second | Works as expected|
+| 16,38 | Turns | When I select two cards the counter of the turns goes up 1 both when they match and don’t match | Works as expected|
+| 21, 39 | Music | When I click on the crossed speaker icon the cross is removed and the music starts playing |
+| 5 | Cards | Card area fiths my screen size | Works as expected|
+| 5 | Card  | When game loads there are 16 cards of the same color  |  Works as expected |
+| 35 | Card  | When I click a card of my choice it turns around and I see a picture or a word  |  Works as expected |
+| 11, 34 | Card  | Each time card turns  hear the pronunciation of the animal name |  Works as expected |
+| 10 | Card  | When I click the card that is alreay selected  it doesn’t react : no animal name is said or card is not turned  |  Works as expected |
+| 12 | Card  | When I find a match the cards dissaper and sound effect is played |  Works as expected |
+| 13, 33 | Card  | When I don’t find a match cards turn back around  |  Works as expected |
+| 10, 34 | Card  | When I click area where cards which I matched used to be it doesn’t react: no animal name is said neither can I hear a matched sound  |  Works as expected |
+| 10, 14, 32 | Card | When I select two cards they stay face up long enough to see what picture or word is on the card |  Works as expected |
+| 9, 31 | Card | With each new game cards are in a different position  |  Works as expected |
+
+</details> 
+
+<details>
+<summary> Result section
+</summary>
+<br>
+ 
+| User stories | Feature | Expected result | Actual result |
+|  :---| :---|  :---|  :---|
+| 17 | Time's up | When 2 minutes are over the game finished and Time'us message pop's up |  Works as expected |
+| 17 | Well done  | When all pairs are matched Well done message pop's up |  Works as expected |
+| 18, 36 | Points  | Underneath  the Well done message I can see how many points I earned  |  Works as expected |
+| 19,36 | Input  | Input field shows text "Write your name here "  |  Works as expected |
+| 19,36 | Input  | When I type anything in the field it overrides the placeholder message |  Works as expected |
+| 19 | Save to the scoreboard button  | When I click save to the  score board button it saves my name in the scoreboard |  Works as expected |
+| 19 | Save to the scoreboard button  | When I click save to the  score board button it saves my name in the scoreboard |  Works as expected |
+| 20 | Save to the scoreboard button  | When I click save to the  score board button the text of the button changes to Saved  |  Works as expected |
+| 8,30 | Play again button | When I click play again button it takes me to the same level  |  Works as expected |
+| 2, 27 | Main menu button  | When I click Main menu  button it takes me to Main menu  |  Works as expected |
+
+</details> 
+
+<details>
+<summary> Footer
+</summary>
+<br>
+
+| User stories | Feature | Expected result | Actual result |
+|  :---| :---|  :---|  :---|
+| 40 | Link | When I click link it opens on a new page |  Works as expected |
+| 40 | Link | When I click link it takes me to git hub page |  Works as expected |
+
+</details> 
+
+<details>
+<summary> Main page
+</summary>
+<br>
+
+| User stories | Feature | Expected result | Actual result |
+|  :---| :---|  :---|  :---|
+| 41 | 404. html | When the game is not found I am directed to the page that tell me that the page is not found |  Works as expected |
+| 42 | Back to the game button | When I click the back to the game button it takes me back to the the Main menu  |  Works as expected |
+
+</details> 
+
+<details>
+<summary> User 4:   Placeholder
+</summary>
+<br>
+
+</details> 
+
+<details>
+<summary> User 5:   Placeholder
+</summary>
+<br>
+
+</details> 
+
+<details>
+<summary> User 5:   Placeholder
+</summary>
+<br>
+
+</details> 
+
+</details> 
 
 
 <details>
@@ -97,239 +415,6 @@
 
 </details> 
 
-
-2. I want to be able to view photographers work to see whether that fits my requirements and expectations
-
-   AND
-
-13. I want to showcase my work to potential customers
-
-| Feature | Expected result | Actual result |
-|  :---| :---|  :---|
-| Portfolio | The grid of three columns should be displayed when a visitors selects portfolio page | Works as expected|
-
-<details>
-<summary>Screenshot</summary>
-<br>
-
-![Portfolio](./assets/readme%20_docs/user%20testing/potfolio_user_stories.JPG)
-
-</details> 
-
-
-3. I want to be able to find out more about the photographer 
-
-   AND  
-
-15. I want customers to see get the understanding of how I do my photography 
-
-| Feature | Expected result | Actual result |
-|  :---| :---|  :---|
-| Header | Header is played on top of the page above all the other content to enable intuitive navigation though the site  | Works as expected|
-
-<details>
-<summary>Screenshot</summary>
-<br>
-
-![About](./assets/readme%20_docs/user%20testing/about.JPG)
-
-</details> 
-
-
-4. I want to see opinions of other customers
-
-   AND
-
-16. I want customers to see how satisfied other customers are with my service
-
-| Feature | Expected result | Actual result |
-|  :---| :---|  :---|
-| Review section  | Visitors should see two boxes next to each other with name and star rating on the right from the photo and the text containing opinions of other customers underneath start rating when they scroll to the review section | Works as expected|
-
-<details>
-<summary>Screenshot</summary>
-<br>
-
-![Reviewer1](./assets/readme%20_docs/user%20testing/Reviewer1_user_stories.JPG)
-![Reviewer2](./assets/readme%20_docs/user%20testing/Reviewer2_user_stories.JPG)
-
-</details> 
-
-5. I want to be able to navigate through the website easily 
-
-| Feature | Expected result | Actual result |
-|  :---| :---|  :---|
-| Header  | Header is displayed on top of the page above all the other content to enable intuitive navigation through the site | Works as expected|
-|Home | The link changes color so the visitors know where they clicked and takes them back to the first page | Works as expected | 
-|Portfolio  | The link changes color so the visitors know where they clicked and takes them to the portfolio page | Works as expected |
-|Contact | The link changes color and takes the visitor to the contact page | Works as expected |
-
-<details>
-<summary>Screenshot</summary>
-<br>
-
-![Home Link](./assets/readme%20_docs/user%20testing/home_link_user_stories.JPG)
-![Portfolio Link](./assets/readme%20_docs/user%20testing/portfolio_link_user_stories.JPG)
-![Contact Link](./assets/readme%20_docs/user%20testing/contact_link_user_stories.JPG)
-
-</details> 
-
-6. I want to be able to navigate the site across variety of screen sizes
-
-| Feature | Expected result | Actual result |
-|  :---| :---|  :---|
-| Responsive Header  | Header turns into hamburger menu on devices with width under 800 px and it opens over the whole screen when clicked| Works as expected|
-| Responsive About Section | Text gets stacked under the image on devices with width under 1100px where text is wider than the image and under 500px where text is the same width as the image | Works as expected | 
-| Responsive Reviews Section| Review boxes get stacked under each other on devices under 1100 and get a bit longer and narrower on devices under 500px. Name and star rating   get under the image for even smaller devices under 400px | Works as expected |
-|Responsive Porftolio Section| 3 grid layout turns into 2 grid on devices under 800px and into 1 column under 500px | Works as expected |
-|Responsive Contact Section| The form and address box will get centred on devices under 1000px | Works as expected |
-
-
-
-<details>
-<summary>Screenshots for Hamburger Nav Menu</summary>
-<ul>
-
- <details>
- <summary>Hamburger menu closed</summary>
-
-![Hamburger menu under 800px closed](./assets/readme%20_docs/user%20testing/hamburger_menu_user_stories.JPG)
-
-</details> 
-
- <details>
- <summary>Hamburger menu open</summary>
-
-![Hamburger menu under 800px open](./assets/readme%20_docs/user%20testing/hamburger_open_menu_user_stories.JPG)
-</details>
-
-</ul>
-</details> 
-
-<details>
-<summary>Screenshots for About Section</summary>
-<ul>
- 
- <details>
- <summary>About Section under 1100px</summary>
-
- ![About Section under 1100px](./assets/readme%20_docs/user%20testing/photographerpic_under1100_user_stories.JPG)
- </details>
-
- <details>
- <summary>About Section under 500px</summary>
-
- ![About Section under 500px](./assets/readme%20_docs/user%20testing/photographerpic_under500_user_stories.JPG)
- </details>
-</ul>
-</details> 
-
-<details>
-<summary>Screenshots for Reviews Section</summary>
-<ul>
-
- <details>
- <summary>Reviews Section under 1100px</summary>
-
- ![Reviews Section under 1100px](./assets/readme%20_docs/user%20testing/Review_under1100_user_stories.JPG)
- </details>
-
- <details>
- <summary>Reviews Section under 700px</summary>
-
- ![Reviews Section under 700px](./assets/readme%20_docs/user%20testing/Review_under700_user_stories.JPG)
- </details>
-
- <details>
- <summary>Reviews Section under 400px</summary>
- 
- ![Reviews Section under 400px](./assets/readme%20_docs/user%20testing/Review_under400_user_stories.JPG)
-
- </details> 
-</ul>
-</details> 
-
-
-
-<details>
-<summary>Screenshots for Portfolio Section</summary>
-<ul>
-
-  <details> 
-  <summary>Portfolio Section under 900px</summary>
-   
-  ![Portfolio Section under 900px](./assets/readme%20_docs/user%20testing/potfolio_under900px_user_stories.JPG)
-  
-
-  </details> 
-
-  <details>
-  <summary>Portfolio Section under 500px</summary>
-
-  ![Portfolio Section under 500px](./assets/readme%20_docs/user%20testing/potfolio_under500px_user_stories.JPG)
-
-  </details> 
-</ul>  
-</details> 
-
-<details>
-<summary>Screenshots for Contact Section</summary>
-<br>
-
-![Form under 800px](./assets/readme%20_docs/user%20testing/form_user_stories.JPG)
-![Address under 800px](./assets/readme%20_docs/user%20testing/address_user_stories.JPG)
-
-</details> 
-
-8. I want the links to work when I click on them 
-
-| Feature | Expected result | Actual result |
-|  :---| :---|  :---|
-| Header links| Take visitors to Home, Portfolio and Contact page respectively when clicked| Works as expected|
-|HIRE ME button | Take visitors to Contact page when clicked | Works as expected | 
-|Link to Facebook | Opens Facebook page in a new tab | Works as expected | 
-|Link to Instagram | Opens Instagram page in a new tab | Works as expected |
-|Link to Pinterest | Opens Pinterest page in a new tab | Works as expected |
-|Link to Twitter| Opens Twitter page in a new tab | Works as expected |
-
-
-9. I want to be able to read the content effortlessly
-
-| Feature | Expected result | Actual result |
-|  :---| :---|  :---|
-| Text color and Background color | Contrast between text color and background color makes text visible. Yellow text is on dark backgrounds and black text is on white background |
-|Positioning of elements| Sections get stacked under each other rather than text getting smaller | Works as expected | 
-
-10. I want to be able to find contact details for the photographer
-
-AND
-
-14. I want customers to be able to contact me and hire me 
-
-| Feature | Expected result | Actual result |
-|  :---| :---|  :---|
-| Form| Visitors data are sent when they click send button |  Works as expected |
-|Placeholder for input| Visitors are given example of what information is required from them | Works as expected | 
-|Address section | Visitors can find email and phone details as well as address when they scroll down on contact page| Works as expected | 
-
-11. I would like to be able to book the photographer directly
-
-| Feature | Expected result | Actual result |
-|  :---| :---|  :---|
-| HIRE ME! link| Takes visitors directly to Contact page |  Works as expected |
-
-12. I would like to see latest photos photographer posts on social media
-
-| Feature | Expected result | Actual result |
-|  :---| :---|  :---|
-| Footer| Displays links to social media where visitors can see more photos |  Works as expected |
-
-18. I want to know which photo categories are more in demand
-
-| Feature | Expected result | Actual result |
-|  :---| :---|  :---|
-| Checkbox| When visitor clicks on which photo type they prefer it will provide site owner data about which photography the visitors are interested in |  Works as expected |
-
 ### Full Testing
 
 The website was tested on following devices
@@ -339,7 +424,7 @@ The website was tested on following devices
 <ul>
 
  <details>
- <summary>Home page</summary>
+ <summary>Main page</summary>
  
 ![Home page 1](./assets/readme%20_docs/full-testing/Desktop/Home1.JPG)
 ![Home page 2](./assets/readme%20_docs/full-testing/Desktop/Home2.JPG)
@@ -349,7 +434,7 @@ The website was tested on following devices
  </details> 
 
  <details>
- <summary>Portfolio</summary>
+ <summary>Level A1 -A2</summary>
  
 ![Portfolio 1](./assets/readme%20_docs/full-testing/Desktop/Portfolio.JPG)
 ![Portfolio 2](./assets/readme%20_docs/full-testing/Desktop/Portfolio2.JPG)
@@ -358,7 +443,7 @@ The website was tested on following devices
  </details> 
 
  <details>
- <summary>Contact</summary>
+ <summary>Level A1 -A2</summary>
  
 ![Contact 1](./assets/readme%20_docs/full-testing/Desktop/Contact1.JPG)
 ![Contact 2](./assets/readme%20_docs/full-testing/Desktop/Contact2.JPG)

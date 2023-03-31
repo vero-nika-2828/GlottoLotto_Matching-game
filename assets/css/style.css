@@ -2,7 +2,7 @@
 body{
     color: #D79E06;
     font-family: 'Lato', sans-serif;  
-    /*background-color: #e9eef1;*/
+    background-color: #e9eef1;
 }
 
 /*Background image styling*/
@@ -807,6 +807,10 @@ footer a:hover{
       
     }
 
+    footer{
+        margin-top: 6px !important;
+    }
+
     #error404 {
         height: 70%;
     }
@@ -876,9 +880,9 @@ footer a:hover{
 
 }
 
-@media (max-height: 600px) {
+@media (max-height: 570px) {
     #game-info{
-        min-height: 450px;
+        min-height: 500px;
     }
     
     #result{
@@ -886,7 +890,7 @@ footer a:hover{
     }
     
     img{
-        min-height: 650px;
+        min-height: 700px;
     }
 }
 

@@ -411,6 +411,7 @@ function gameOver(){
      
     //Hide card-area
     $(".card-area").hide();
+    $(".game-scores").hide();
 
     //Take the user to the same level
     retryThisLevel ();
