@@ -820,11 +820,11 @@ footer a:hover{
 
      /*Scroll feature added to 'How to play' section for the smaller devices */
     .btn-output{
-        overflow: scroll;
+        overflow: overlay;
     }
 
     ol{
-        overflow: scroll;
+        overflow: overlay;
     }  
 
     .level-A1, .level-B1 {
